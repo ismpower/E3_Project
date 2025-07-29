@@ -88,3 +88,22 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **Institution**: EthI.C Lab
 - **Email**: i.chajar@ethic-lab.ca
 - **Location**: Saint-Jean-sur-Richelieu, Quebec, Canada
+
+## Development History
+
+The E3 Engine represents the culmination of extensive theoretical and computational research. The development progressed through distinct phases:
+
+### 🔬 Theoretical Foundation
+- **Repository**: [bruno-collapse-unified](https://github.com/ismpower/bruno-collapse-unified)
+- **Focus**: Entropy-first physics framework and Bruno constant derivation
+
+### 🧮 Computational Development  
+- **Repository**: [bruno-simulator](https://github.com/ismpower/bruno-simulator)
+- **Focus**: Experimental validation and proto-E3 development
+
+### 🎯 Production Implementation
+- **Repository**: E3_Project (this repository)
+- **Focus**: Physics-informed GNN and production-ready system
+
+For detailed development history, see [Development History Documentation](docs/development/DEVELOPMENT_HISTORY.md).
+
