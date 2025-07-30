@@ -92,3 +92,35 @@ The graph representation will be composed of the following key components:
 ### 2.2. Output Format Specifications
 
 The pipeline will output this standardized graph representation in a format suitable for the E3 GNN model, such as a PyTorch Geometric `Data` object or a similar, easy-to-parse structure like a JSON file that conforms to this schema.
+
+
+## 3. Error Handling Protocol
+
+A robust error handling protocol is critical to maintain data quality and ensure that only valid, well-formed data enters the E3 Engine's processing pipeline. This protocol focuses on early detection, clear flagging, and isolation of problematic data.
+
+### 3.1. Error Detection Mechanisms
+
+The pipeline will employ several mechanisms to detect errors during the ingestion and standardization process:
+
+* **Parsing Errors:** Failure to parse the raw input file according to its specified format (e.g., malformed CIF syntax, unclosed SMILES string, invalid JSON structure).
+* **Schema Validation:** Data not conforming to the expected schema for a given input type or the standardized graph representation (e.g., missing required fields, incorrect data types).
+* **Data Range/Constraint Checks:** Values falling outside physically plausible or defined ranges (e.g., negative temperatures, atomic coordinates outside a reasonable cell, bond lengths too short/long).
+* **Consistency Checks:** Inconsistencies between derived and explicit information (e.g., calculated molecular weight not matching provided weight).
+
+### 3.2. Flagging and Quarantine of Malformed Files
+
+Upon detection of an error, the following actions will be taken:
+
+* **Flagging:** The record or file will be immediately flagged with one or more `quality_flags` within its metadata. These flags will indicate the type of error detected (e.g., `parsing_error`, `schema_mismatch`, `out_of_range_value`).
+* **Quarantine:** Malformed files or problematic records will not proceed into the main processing stream. Instead, they will be moved to a designated "quarantine" area (e.g., a specific directory or a separate database table for review). This ensures that problematic data does not corrupt downstream processes.
+    * **Quarantine Location:** Define a specific directory structure for quarantined files, possibly categorized by error type or source.
+    * **Quarantine Logging:** Each quarantined item will have a corresponding entry in the data ingestion log, linking to its quarantine location and detailed error message.
+* **Partial Processing (if applicable):** For files with multiple independent records, if some records are valid and others are malformed, valid records may proceed while malformed ones are quarantined (e.g., in a large CSV file, only problematic rows are skipped/quarantined).
+
+### 3.3. Error Logging and Reporting
+
+All detected errors and quarantine actions must be meticulously logged according to the "Data Ingestion & Processing" section of the `logging_requirements.md` document.
+
+* **Error Messages:** Detailed error messages, including file paths, line numbers (if applicable), and specific reasons for failure, must be captured.
+* **Automated Alerts:** The system should be capable of generating automated alerts (e.g., email notifications, internal dashboard alerts) for significant volumes of errors or critical failures, prompting human intervention.
+* **Human Review:** A clear process for human review of quarantined data and error logs must be established to debug issues, refine parsers, or decide on data exclusion.
