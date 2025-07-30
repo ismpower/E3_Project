@@ -58,3 +58,37 @@ The DAVP pipeline must support the ingestion and parsing of data from the follow
     * Robust handling of delimiters, quoted fields, and missing values.
     * Type inference for columns or explicit schema definition.
     * Identification of key columns for linking to graph structures (e.g., element names, IDs).
+
+## 2. Standardized Graph Representation
+
+All ingested data, regardless of its original source format, must be converted into a standardized graph representation. This graph will be the primary input for the E3 Engine's GNN model. The representation should be a single, cohesive data structure that captures both the inherent properties of the system and its contextual environment.
+
+### 2.1. Graph Structure Components
+
+The graph representation will be composed of the following key components:
+
+* **Nodes:** Each node represents an individual atom or ion in the system.
+    * `node_id`: Unique identifier.
+    * `element_type`: One-hot encoded vector representing the atomic species (e.g., Argon, Strontium, Rubidium, Iodine).
+    * `position`: 3D coordinates (x, y, z) of the atom/ion.
+    * `node_features`: A feature vector containing context-dependent properties:
+        * `local_temperature` ($T_e$).
+        * `local_density` ($n_0$).
+        * `coulomb_coupling_parameter` ($\Gamma$).
+
+* **Edges:** Edges encode pairwise interactions between nodes.
+    * `source_node_id`, `target_node_id`.
+    * `interaction_type`: Categorical label (e.g., `bond`, `screening`, `coulomb_force`).
+    * `edge_features`: A feature vector representing the interaction:
+        * `distance`: Euclidean distance between the two nodes.
+        * `screening_length`: Characteristic length scale of plasma screening effects.
+        * `effective_potential`: Value of the interaction potential at that distance.
+
+* **Global Properties:** Global properties of the entire system.
+    * `system_id`: Unique identifier for the system (e.g., `Sr_Exp_Run_8`).
+    * `timestamp`: Time of the original measurement.
+    * `total_energy`, `total_entropy`, etc. (if available).
+
+### 2.2. Output Format Specifications
+
+The pipeline will output this standardized graph representation in a format suitable for the E3 GNN model, such as a PyTorch Geometric `Data` object or a similar, easy-to-parse structure like a JSON file that conforms to this schema.
