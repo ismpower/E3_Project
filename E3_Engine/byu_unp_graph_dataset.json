@@ -1,0 +1,268 @@
+[
+  {
+    "case_id": 0,
+    "experiment_id": "BYU_parallel_0G_48K",
+    "node_features": [
+      20,
+      40.078,
+      48,
+      0,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "elevated_ion_temperature_persistence",
+      "anomaly_strength": "baseline"
+    },
+    "targets": {
+      "temperature_ratio": 0.1224564282529819,
+      "anomaly_class": "temperature"
+    }
+  },
+  {
+    "case_id": 1,
+    "experiment_id": "BYU_parallel_50G_48K",
+    "node_features": [
+      20,
+      40.078,
+      48,
+      50,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "elevated_ion_temperature_persistence",
+      "anomaly_strength": "high"
+    },
+    "targets": {
+      "temperature_ratio": 0.5334896157428067,
+      "anomaly_class": "temperature"
+    }
+  },
+  {
+    "case_id": 2,
+    "experiment_id": "BYU_parallel_100G_48K",
+    "node_features": [
+      20,
+      40.078,
+      48,
+      100,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "elevated_ion_temperature_persistence",
+      "anomaly_strength": "high"
+    },
+    "targets": {
+      "temperature_ratio": 0.5972682430331276,
+      "anomaly_class": "temperature"
+    }
+  },
+  {
+    "case_id": 3,
+    "experiment_id": "BYU_parallel_150G_48K",
+    "node_features": [
+      20,
+      40.078,
+      48,
+      150,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "elevated_ion_temperature_persistence",
+      "anomaly_strength": "high"
+    },
+    "targets": {
+      "temperature_ratio": 0.6732442914934521,
+      "anomaly_class": "temperature"
+    }
+  },
+  {
+    "case_id": 4,
+    "experiment_id": "BYU_parallel_200G_48K",
+    "node_features": [
+      20,
+      40.078,
+      48,
+      200,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "elevated_ion_temperature_persistence",
+      "anomaly_strength": "high"
+    },
+    "targets": {
+      "temperature_ratio": 0.7637504717749708,
+      "anomaly_class": "temperature"
+    }
+  },
+  {
+    "case_id": 5,
+    "experiment_id": "BYU_parallel_0G_96K",
+    "node_features": [
+      20,
+      40.078,
+      96,
+      0,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "elevated_ion_temperature_persistence",
+      "anomaly_strength": "baseline"
+    },
+    "targets": {
+      "temperature_ratio": 0.1224564282529819,
+      "anomaly_class": "temperature"
+    }
+  },
+  {
+    "case_id": 6,
+    "experiment_id": "BYU_parallel_50G_96K",
+    "node_features": [
+      20,
+      40.078,
+      96,
+      50,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "elevated_ion_temperature_persistence",
+      "anomaly_strength": "high"
+    },
+    "targets": {
+      "temperature_ratio": 0.5334896157428067,
+      "anomaly_class": "temperature"
+    }
+  },
+  {
+    "case_id": 7,
+    "experiment_id": "BYU_parallel_100G_96K",
+    "node_features": [
+      20,
+      40.078,
+      96,
+      100,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "elevated_ion_temperature_persistence",
+      "anomaly_strength": "high"
+    },
+    "targets": {
+      "temperature_ratio": 0.5972682430331276,
+      "anomaly_class": "temperature"
+    }
+  },
+  {
+    "case_id": 8,
+    "experiment_id": "BYU_parallel_150G_96K",
+    "node_features": [
+      20,
+      40.078,
+      96,
+      150,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "elevated_ion_temperature_persistence",
+      "anomaly_strength": "high"
+    },
+    "targets": {
+      "temperature_ratio": 0.6732442914934521,
+      "anomaly_class": "temperature"
+    }
+  },
+  {
+    "case_id": 9,
+    "experiment_id": "BYU_parallel_200G_96K",
+    "node_features": [
+      20,
+      40.078,
+      96,
+      200,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "elevated_ion_temperature_persistence",
+      "anomaly_strength": "high"
+    },
+    "targets": {
+      "temperature_ratio": 0.7637504717749708,
+      "anomaly_class": "temperature"
+    }
+  },
+  {
+    "case_id": 10,
+    "experiment_id": "BYU_transverse_183G_50K",
+    "node_features": [
+      20,
+      40.078,
+      50,
+      183,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "ion_acoustic_wave_oscillations",
+      "anomaly_strength": "high"
+    },
+    "targets": {
+      "iaw_amplitude": 0.01430034677939594,
+      "anomaly_class": "iaw"
+    }
+  },
+  {
+    "case_id": 11,
+    "experiment_id": "BYU_transverse_183G_100K",
+    "node_features": [
+      20,
+      40.078,
+      100,
+      183,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "ion_acoustic_wave_oscillations",
+      "anomaly_strength": "high"
+    },
+    "targets": {
+      "iaw_amplitude": 0.01430034677939594,
+      "anomaly_class": "iaw"
+    }
+  },
+  {
+    "case_id": 12,
+    "experiment_id": "BYU_transverse_183G_200K",
+    "node_features": [
+      20,
+      40.078,
+      200,
+      183,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "ion_acoustic_wave_oscillations",
+      "anomaly_strength": "high"
+    },
+    "targets": {
+      "iaw_amplitude": 0.01430034677939594,
+      "anomaly_class": "iaw"
+    }
+  },
+  {
+    "case_id": 13,
+    "experiment_id": "BYU_transverse_183G_400K",
+    "node_features": [
+      20,
+      40.078,
+      400,
+      183,
+      1.0
+    ],
+    "target_info": {
+      "anomaly_type": "ion_acoustic_wave_oscillations",
+      "anomaly_strength": "high"
+    },
+    "targets": {
+      "iaw_amplitude": 0.01430034677939594,
+      "anomaly_class": "iaw"
+    }
+  }
+]

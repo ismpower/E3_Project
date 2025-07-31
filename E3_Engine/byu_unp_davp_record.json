@@ -1,0 +1,25 @@
+{
+  "davp_version": "1.0",
+  "compliance_level": "TIER_1_VERIFIED",
+  "data_source": {
+    "primary_source": "BYU ScholarsArchive",
+    "url": "https://scholarsarchive.byu.edu/etd/10026",
+    "verification_method": "Direct PDF comparison",
+    "verification_date": "2025-07-31T09:13:31.341383",
+    "data_integrity_status": "VERIFIED"
+  },
+  "anomaly_validation": {
+    "primary_anomaly": "Elevated ion temperature persistence in magnetized UNPs",
+    "secondary_anomaly": "Ion acoustic wave signatures in transverse expansion",
+    "anomaly_strength_assessment": "HIGH - Clear deviation from theory",
+    "reproducibility_evidence": "Multiple experimental conditions confirm effect",
+    "baseline_comparison": "Pohl et al. hydrodynamic theory"
+  },
+  "dataset_readiness": {
+    "format": "JSON (PyTorch convertible)",
+    "training_ready": true,
+    "validation_ready": true,
+    "anomaly_targets_defined": true,
+    "baseline_comparisons_available": true
+  }
+}

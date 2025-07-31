@@ -1,0 +1,53 @@
+2025-07-31 09:16:45,351 - INFO - === E3 SIMPLE TRAINING STARTING ===
+2025-07-31 09:16:45,351 - INFO - Loading BYU dataset...
+2025-07-31 09:16:45,352 - INFO - Loaded 14 data points
+2025-07-31 09:16:45,352 - INFO - Preparing training data...
+2025-07-31 09:16:45,352 - INFO - Prepared training data: 14 samples, 5 features
+2025-07-31 09:16:45,352 - INFO - Temperature cases: 10
+2025-07-31 09:16:45,352 - INFO - IAW cases: 4
+2025-07-31 09:16:45,357 - INFO - Initialized neural network: 5 -> 32 -> multi-output
+2025-07-31 09:16:45,357 - INFO - Training model for 200 epochs...
+2025-07-31 09:16:45,358 - INFO - Epoch 0: Loss=0.0682, Temp MAE=0.2438, IAW MAE=0.0136
+2025-07-31 09:16:45,364 - INFO - Epoch 20: Loss=0.0679, Temp MAE=0.2434, IAW MAE=0.0136
+2025-07-31 09:16:45,369 - INFO - Epoch 40: Loss=0.0675, Temp MAE=0.2429, IAW MAE=0.0136
+2025-07-31 09:16:45,375 - INFO - Epoch 60: Loss=0.0671, Temp MAE=0.2425, IAW MAE=0.0136
+2025-07-31 09:16:45,381 - INFO - Epoch 80: Loss=0.0667, Temp MAE=0.2420, IAW MAE=0.0135
+2025-07-31 09:16:45,387 - INFO - Epoch 100: Loss=0.0664, Temp MAE=0.2416, IAW MAE=0.0135
+2025-07-31 09:16:45,392 - INFO - Epoch 120: Loss=0.0660, Temp MAE=0.2411, IAW MAE=0.0135
+2025-07-31 09:16:45,398 - INFO - Epoch 140: Loss=0.0656, Temp MAE=0.2406, IAW MAE=0.0135
+2025-07-31 09:16:45,404 - INFO - Epoch 160: Loss=0.0653, Temp MAE=0.2402, IAW MAE=0.0135
+2025-07-31 09:16:45,409 - INFO - Epoch 180: Loss=0.0649, Temp MAE=0.2397, IAW MAE=0.0135
+2025-07-31 09:16:45,415 - INFO - Epoch 199: Loss=0.0646, Temp MAE=0.2393, IAW MAE=0.0135
+2025-07-31 09:16:45,415 - INFO - Training completed
+2025-07-31 09:16:45,415 - INFO - Evaluating model performance...
+2025-07-31 09:16:45,415 - INFO - === MODEL EVALUATION RESULTS ===
+2025-07-31 09:16:45,416 - INFO - Final Loss: 0.0646
+2025-07-31 09:16:45,416 - INFO - Temperature MAE: 0.2393, R²: -0.8086
+2025-07-31 09:16:45,416 - INFO - IAW MAE: 0.0135, R²: -73612.3947
+2025-07-31 09:16:45,416 - INFO - Classification Accuracy: 21.43%
+2025-07-31 09:16:45,416 - INFO - Generating training plots...
+2025-07-31 09:16:46,579 - INFO - ✓ Training plots saved: e3_training_results.png
+2025-07-31 09:16:46,579 - INFO - Saving trained model...
+2025-07-31 09:16:46,580 - INFO - ✓ Model saved: e3_simple_model.json
+2025-07-31 09:16:46,580 - INFO - ✓ Results saved: e3_training_results.json
+2025-07-31 09:16:46,580 - INFO - Testing anomaly predictions...
+2025-07-31 09:16:46,580 - INFO - Testing specific scenarios:
+2025-07-31 09:16:46,580 - INFO - 
+Unmagnetized_48K:
+2025-07-31 09:16:46,580 - INFO -   Expected: Normal temperature decay
+2025-07-31 09:16:46,580 - INFO -   Temperature ratio: 0.582
+2025-07-31 09:16:46,580 - INFO -   IAW amplitude: 3.302
+2025-07-31 09:16:46,580 - INFO -   Classification: Temp=0.19, IAW=0.81
+2025-07-31 09:16:46,581 - INFO - 
+Magnetized_200G_48K:
+2025-07-31 09:16:46,581 - INFO -   Expected: Temperature anomaly
+2025-07-31 09:16:46,581 - INFO -   Temperature ratio: 0.342
+2025-07-31 09:16:46,581 - INFO -   IAW amplitude: 0.000
+2025-07-31 09:16:46,581 - INFO -   Classification: Temp=0.40, IAW=0.60
+2025-07-31 09:16:46,581 - INFO - 
+IAW_183G_100K:
+2025-07-31 09:16:46,581 - INFO -   Expected: IAW oscillations
+2025-07-31 09:16:46,581 - INFO -   Temperature ratio: 0.345
+2025-07-31 09:16:46,581 - INFO -   IAW amplitude: 0.000
+2025-07-31 09:16:46,581 - INFO -   Classification: Temp=0.54, IAW=0.46
+2025-07-31 09:16:46,581 - INFO - === TRAINING COMPLETED SUCCESSFULLY ===

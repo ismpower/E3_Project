@@ -1,0 +1,33 @@
+{
+  "sample_note": "This is a placeholder for your experimental data",
+  "instructions": [
+    "Replace this file with your actual experimental data",
+    "Supported formats: JSON, CSV",
+    "For BYU UNP data, use the brigham_uni_data.json format",
+    "The workflow will process any data placed in this directory"
+  ],
+  "example_structure": {
+    "experiment_id": "sample_experiment",
+    "element": "Ca",
+    "conditions": {
+      "temperature": 50,
+      "magnetic_field": 100
+    },
+    "measurements": {
+      "time_series": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "values": [
+        0.8,
+        0.6,
+        0.4,
+        0.3,
+        0.2
+      ]
+    }
+  }
+}
