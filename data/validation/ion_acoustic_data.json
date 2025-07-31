@@ -1,0 +1,706 @@
+{
+  "description": "Known ion acoustic speed test data",
+  "physics_law": "cs = sqrt(kTe/mi)",
+  "data_points": [
+    {
+      "temperature": 100.0,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 908.5372795601472,
+      "mass_ratio": 1.0,
+      "point_id": 0
+    },
+    {
+      "temperature": 107.22672220103232,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 148.75249941134444,
+      "mass_ratio": 40.0,
+      "point_id": 1
+    },
+    {
+      "temperature": 114.97569953977356,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 281.22579909020226,
+      "mass_ratio": 12.0,
+      "point_id": 2
+    },
+    {
+      "temperature": 123.28467394420659,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 291.2102617015004,
+      "mass_ratio": 12.0,
+      "point_id": 3
+    },
+    {
+      "temperature": 132.19411484660287,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 522.2985463769537,
+      "mass_ratio": 4.0,
+      "point_id": 4
+    },
+    {
+      "temperature": 141.74741629268047,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 540.841903085715,
+      "mass_ratio": 4.0,
+      "point_id": 5
+    },
+    {
+      "temperature": 151.99110829529332,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 323.3413297902782,
+      "mass_ratio": 12.0,
+      "point_id": 6
+    },
+    {
+      "temperature": 162.97508346206433,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 183.3890338831338,
+      "mass_ratio": 40.0,
+      "point_id": 7
+    },
+    {
+      "temperature": 174.7528400007683,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 346.7083094553454,
+      "mass_ratio": 12.0,
+      "point_id": 8
+    },
+    {
+      "temperature": 187.3817422860383,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 1243.67352295405,
+      "mass_ratio": 1.0,
+      "point_id": 9
+    },
+    {
+      "temperature": 200.9233002565048,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 643.9140599161584,
+      "mass_ratio": 4.0,
+      "point_id": 10
+    },
+    {
+      "temperature": 215.44346900318845,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 384.9628277987744,
+      "mass_ratio": 12.0,
+      "point_id": 11
+    },
+    {
+      "temperature": 231.01297000831605,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 218.33880969292375,
+      "mass_ratio": 40.0,
+      "point_id": 12
+    },
+    {
+      "temperature": 247.70763559917114,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 714.961166503683,
+      "mass_ratio": 4.0,
+      "point_id": 13
+    },
+    {
+      "temperature": 265.6087782946687,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 740.3446948235598,
+      "mass_ratio": 4.0,
+      "point_id": 14
+    },
+    {
+      "temperature": 284.8035868435802,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 766.6294238521643,
+      "mass_ratio": 4.0,
+      "point_id": 15
+    },
+    {
+      "temperature": 305.3855508833416,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 458.3279807841148,
+      "mass_ratio": 12.0,
+      "point_id": 16
+    },
+    {
+      "temperature": 327.45491628777285,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 474.60016705811654,
+      "mass_ratio": 12.0,
+      "point_id": 17
+    },
+    {
+      "temperature": 351.1191734215131,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 491.45007072498356,
+      "mass_ratio": 12.0,
+      "point_id": 18
+    },
+    {
+      "temperature": 376.49358067924675,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 1762.8750859035233,
+      "mass_ratio": 1.0,
+      "point_id": 19
+    },
+    {
+      "temperature": 403.70172585965537,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 288.63105684016926,
+      "mass_ratio": 40.0,
+      "point_id": 20
+    },
+    {
+      "temperature": 432.8761281083057,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 1890.2731711129807,
+      "mass_ratio": 1.0,
+      "point_id": 21
+    },
+    {
+      "temperature": 464.1588833612782,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 978.6921161357886,
+      "mass_ratio": 4.0,
+      "point_id": 22
+    },
+    {
+      "temperature": 497.7023564332114,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 585.109268496259,
+      "mass_ratio": 12.0,
+      "point_id": 23
+    },
+    {
+      "temperature": 533.6699231206312,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 1049.4194765723266,
+      "mass_ratio": 4.0,
+      "point_id": 24
+    },
+    {
+      "temperature": 572.236765935022,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 2173.3548016998116,
+      "mass_ratio": 1.0,
+      "point_id": 25
+    },
+    {
+      "temperature": 613.5907273413176,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 2250.5162137354723,
+      "mass_ratio": 1.0,
+      "point_id": 26
+    },
+    {
+      "temperature": 657.9332246575682,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 1165.208557830727,
+      "mass_ratio": 4.0,
+      "point_id": 27
+    },
+    {
+      "temperature": 705.4802310718645,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 696.6177776212154,
+      "mass_ratio": 12.0,
+      "point_id": 28
+    },
+    {
+      "temperature": 756.463327554629,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 1249.4149433678085,
+      "mass_ratio": 4.0,
+      "point_id": 29
+    },
+    {
+      "temperature": 811.1308307896873,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 2587.546759998385,
+      "mass_ratio": 1.0,
+      "point_id": 30
+    },
+    {
+      "temperature": 869.7490026177834,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 423.65245384298447,
+      "mass_ratio": 40.0,
+      "point_id": 31
+    },
+    {
+      "temperature": 932.60334688322,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 1387.2707880826401,
+      "mass_ratio": 4.0,
+      "point_id": 32
+    },
+    {
+      "temperature": 1000.0,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 1436.5235712916035,
+      "mass_ratio": 4.0,
+      "point_id": 33
+    },
+    {
+      "temperature": 1072.2672220103232,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 470.39670578270454,
+      "mass_ratio": 40.0,
+      "point_id": 34
+    },
+    {
+      "temperature": 1149.7569953977356,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 487.0973724233877,
+      "mass_ratio": 40.0,
+      "point_id": 35
+    },
+    {
+      "temperature": 1232.8467394420659,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 920.887704990442,
+      "mass_ratio": 12.0,
+      "point_id": 36
+    },
+    {
+      "temperature": 1321.9411484660286,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 3303.3060502925177,
+      "mass_ratio": 1.0,
+      "point_id": 37
+    },
+    {
+      "temperature": 1417.4741629268049,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 540.841903085715,
+      "mass_ratio": 40.0,
+      "point_id": 38
+    },
+    {
+      "temperature": 1519.9110829529332,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 1771.0134009985256,
+      "mass_ratio": 4.0,
+      "point_id": 39
+    },
+    {
+      "temperature": 1629.7508346206434,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 3667.780677662676,
+      "mass_ratio": 1.0,
+      "point_id": 40
+    },
+    {
+      "temperature": 1747.5284000076829,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 3797.9992392634867,
+      "mass_ratio": 1.0,
+      "point_id": 41
+    },
+    {
+      "temperature": 1873.817422860383,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 3932.8409981804984,
+      "mass_ratio": 1.0,
+      "point_id": 42
+    },
+    {
+      "temperature": 2009.2330025650458,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 1175.6208523693763,
+      "mass_ratio": 12.0,
+      "point_id": 43
+    },
+    {
+      "temperature": 2154.4346900318847,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 1217.3593503433112,
+      "mass_ratio": 12.0,
+      "point_id": 44
+    },
+    {
+      "temperature": 2310.1297000831605,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 690.4479402396879,
+      "mass_ratio": 40.0,
+      "point_id": 45
+    },
+    {
+      "temperature": 2477.0763559917114,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 2260.905724722522,
+      "mass_ratio": 4.0,
+      "point_id": 46
+    },
+    {
+      "temperature": 2656.0877829466867,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 2341.1754892647195,
+      "mass_ratio": 4.0,
+      "point_id": 47
+    },
+    {
+      "temperature": 2848.035868435802,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 1399.6674289700647,
+      "mass_ratio": 12.0,
+      "point_id": 48
+    },
+    {
+      "temperature": 3053.8555088334156,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 2510.36573811254,
+      "mass_ratio": 4.0,
+      "point_id": 49
+    },
+    {
+      "temperature": 3274.5491628777286,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 1500.8175058000627,
+      "mass_ratio": 12.0,
+      "point_id": 50
+    },
+    {
+      "temperature": 3511.191734215131,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 1554.1015797417856,
+      "mass_ratio": 12.0,
+      "point_id": 51
+    },
+    {
+      "temperature": 3764.9358067924672,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 881.4375429517615,
+      "mass_ratio": 40.0,
+      "point_id": 52
+    },
+    {
+      "temperature": 4037.017258596558,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 5772.621136803388,
+      "mass_ratio": 1.0,
+      "point_id": 53
+    },
+    {
+      "temperature": 4328.7612810830615,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 2988.7843103131113,
+      "mass_ratio": 4.0,
+      "point_id": 54
+    },
+    {
+      "temperature": 4641.588833612782,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 3094.896215039121,
+      "mass_ratio": 4.0,
+      "point_id": 55
+    },
+    {
+      "temperature": 4977.023564332114,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 1013.4389810149805,
+      "mass_ratio": 40.0,
+      "point_id": 56
+    },
+    {
+      "temperature": 5336.699231206313,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 3318.5557669102627,
+      "mass_ratio": 4.0,
+      "point_id": 57
+    },
+    {
+      "temperature": 5722.3676593502205,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 3436.3756685174963,
+      "mass_ratio": 4.0,
+      "point_id": 58
+    },
+    {
+      "temperature": 6135.907273413176,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 3558.378573271205,
+      "mass_ratio": 4.0,
+      "point_id": 59
+    },
+    {
+      "temperature": 6579.332246575683,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 2127.37003773984,
+      "mass_ratio": 12.0,
+      "point_id": 60
+    },
+    {
+      "temperature": 7054.8023107186455,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 7631.065415245144,
+      "mass_ratio": 1.0,
+      "point_id": 61
+    },
+    {
+      "temperature": 7564.633275546291,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 2281.1091605552942,
+      "mass_ratio": 12.0,
+      "point_id": 62
+    },
+    {
+      "temperature": 8111.308307896872,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 2362.096215084203,
+      "mass_ratio": 12.0,
+      "point_id": 63
+    },
+    {
+      "temperature": 8697.490026177835,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 4236.524538429844,
+      "mass_ratio": 4.0,
+      "point_id": 64
+    },
+    {
+      "temperature": 9326.0334688322,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 2532.798346669437,
+      "mass_ratio": 12.0,
+      "point_id": 65
+    },
+    {
+      "temperature": 10000.0,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 2622.721214614306,
+      "mass_ratio": 12.0,
+      "point_id": 66
+    },
+    {
+      "temperature": 10722.672220103232,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 1487.5249941134443,
+      "mass_ratio": 40.0,
+      "point_id": 67
+    },
+    {
+      "temperature": 11497.569953977356,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 9741.947448467754,
+      "mass_ratio": 1.0,
+      "point_id": 68
+    },
+    {
+      "temperature": 12328.467394420659,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 1595.0242931089454,
+      "mass_ratio": 40.0,
+      "point_id": 69
+    },
+    {
+      "temperature": 13219.411484660288,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 1651.653025146259,
+      "mass_ratio": 40.0,
+      "point_id": 70
+    },
+    {
+      "temperature": 14174.741629268048,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 10816.8380617143,
+      "mass_ratio": 1.0,
+      "point_id": 71
+    },
+    {
+      "temperature": 15199.11082952933,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 1771.0134009985256,
+      "mass_ratio": 40.0,
+      "point_id": 72
+    },
+    {
+      "temperature": 16297.508346206469,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 11598.540899369933,
+      "mass_ratio": 1.0,
+      "point_id": 73
+    },
+    {
+      "temperature": 17475.28400007683,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 3467.083094553454,
+      "mass_ratio": 12.0,
+      "point_id": 74
+    },
+    {
+      "temperature": 18738.174228603868,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 1966.4204990902513,
+      "mass_ratio": 40.0,
+      "point_id": 75
+    },
+    {
+      "temperature": 20092.33002565046,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 12878.28119832316,
+      "mass_ratio": 1.0,
+      "point_id": 76
+    },
+    {
+      "temperature": 21544.346900318866,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 3849.628277987746,
+      "mass_ratio": 12.0,
+      "point_id": 77
+    },
+    {
+      "temperature": 23101.29700083158,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 2183.388096929236,
+      "mass_ratio": 40.0,
+      "point_id": 78
+    },
+    {
+      "temperature": 24770.76355991714,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 4127.830219410304,
+      "mass_ratio": 12.0,
+      "point_id": 79
+    },
+    {
+      "temperature": 26560.87782946684,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 4274.382088494934,
+      "mass_ratio": 12.0,
+      "point_id": 80
+    },
+    {
+      "temperature": 28480.35868435805,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 7666.2942385216475,
+      "mass_ratio": 4.0,
+      "point_id": 81
+    },
+    {
+      "temperature": 30538.555088334124,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 2510.3657381125386,
+      "mass_ratio": 40.0,
+      "point_id": 82
+    },
+    {
+      "temperature": 32745.491628777316,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 16440.632052506706,
+      "mass_ratio": 1.0,
+      "point_id": 83
+    },
+    {
+      "temperature": 35111.917342151275,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 17024.329837579782,
+      "mass_ratio": 1.0,
+      "point_id": 84
+    },
+    {
+      "temperature": 37649.35806792471,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 17628.75085903524,
+      "mass_ratio": 1.0,
+      "point_id": 85
+    },
+    {
+      "temperature": 40370.1725859655,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 9127.315430764565,
+      "mass_ratio": 4.0,
+      "point_id": 86
+    },
+    {
+      "temperature": 43287.612810830615,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 5456.748620920037,
+      "mass_ratio": 12.0,
+      "point_id": 87
+    },
+    {
+      "temperature": 46415.88833612782,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 5650.48156704762,
+      "mass_ratio": 12.0,
+      "point_id": 88
+    },
+    {
+      "temperature": 49770.23564332114,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 10134.389810149805,
+      "mass_ratio": 4.0,
+      "point_id": 89
+    },
+    {
+      "temperature": 53366.99231206313,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 3318.5557669102627,
+      "mass_ratio": 40.0,
+      "point_id": 90
+    },
+    {
+      "temperature": 57223.676593502205,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 21733.548016998117,
+      "mass_ratio": 1.0,
+      "point_id": 91
+    },
+    {
+      "temperature": 61359.072734131754,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 3558.378573271205,
+      "mass_ratio": 40.0,
+      "point_id": 92
+    },
+    {
+      "temperature": 65793.32246575682,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 6727.3347452562575,
+      "mass_ratio": 12.0,
+      "point_id": 93
+    },
+    {
+      "temperature": 70548.02310718645,
+      "ion_mass": 6.690487592e-26,
+      "ion_acoustic_speed": 3815.532707622572,
+      "mass_ratio": 40.0,
+      "point_id": 94
+    },
+    {
+      "temperature": 75646.3327554629,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 7213.500538829452,
+      "mass_ratio": 12.0,
+      "point_id": 95
+    },
+    {
+      "temperature": 81113.08307896872,
+      "ion_mass": 1.672621898e-27,
+      "ion_acoustic_speed": 25875.467599983847,
+      "mass_ratio": 1.0,
+      "point_id": 96
+    },
+    {
+      "temperature": 86974.90026177834,
+      "ion_mass": 6.690487592e-27,
+      "ion_acoustic_speed": 13397.066904631853,
+      "mass_ratio": 4.0,
+      "point_id": 97
+    },
+    {
+      "temperature": 93260.334688322,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 8009.411629384166,
+      "mass_ratio": 12.0,
+      "point_id": 98
+    },
+    {
+      "temperature": 100000.0,
+      "ion_mass": 2.0071462776000003e-26,
+      "ion_acoustic_speed": 8293.772705824498,
+      "mass_ratio": 12.0,
+      "point_id": 99
+    }
+  ]
+}

@@ -1,0 +1,806 @@
+{
+  "description": "Known Bohm velocity test data",
+  "physics_law": "vB = sqrt(kTe/mi)",
+  "data_points": [
+    {
+      "electron_temperature": 1000.0,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 2873.047142583207,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 0
+    },
+    {
+      "electron_temperature": 1072.2672220103232,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 1487.5249941134446,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 1
+    },
+    {
+      "electron_temperature": 1149.7569953977356,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 889.3140619259476,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 2
+    },
+    {
+      "electron_temperature": 1232.8467394420659,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 506.5338267391272,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 3
+    },
+    {
+      "electron_temperature": 1321.9411484660286,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 3303.3060502925177,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 4
+    },
+    {
+      "electron_temperature": 1417.4741629268049,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 1710.2922678109082,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 5
+    },
+    {
+      "electron_temperature": 1519.9110829529332,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 1022.4950638049334,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 6
+    },
+    {
+      "electron_temperature": 1629.7508346206434,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 582.3908106988962,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 7
+    },
+    {
+      "electron_temperature": 1747.5284000076829,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 3797.9992392634867,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 8
+    },
+    {
+      "electron_temperature": 1873.817422860383,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 1966.4204990902492,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 9
+    },
+    {
+      "electron_temperature": 2009.2330025650479,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 1175.6208523693767,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 10
+    },
+    {
+      "electron_temperature": 2154.4346900318847,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 669.6079086564147,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 11
+    },
+    {
+      "electron_temperature": 2310.1297000831605,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 4366.7761938584745,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 12
+    },
+    {
+      "electron_temperature": 2477.0763559917114,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 2260.905724722522,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 13
+    },
+    {
+      "electron_temperature": 2656.0877829466867,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 1351.6782989471396,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 14
+    },
+    {
+      "electron_temperature": 2848.035868435802,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 769.8863771513608,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 15
+    },
+    {
+      "electron_temperature": 3053.8555088334156,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 5020.73147622508,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 16
+    },
+    {
+      "electron_temperature": 3274.5491628777286,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 2599.492172934507,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 17
+    },
+    {
+      "electron_temperature": 3511.191734215131,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 1554.1015797417856,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 18
+    },
+    {
+      "electron_temperature": 3764.9358067924672,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 885.1822477911963,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 19
+    },
+    {
+      "electron_temperature": 4037.017258596554,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 5772.6211368033855,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 20
+    },
+    {
+      "electron_temperature": 4328.761281083057,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 2988.7843103131095,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 21
+    },
+    {
+      "electron_temperature": 4641.588833612782,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 1786.8391628667905,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 22
+    },
+    {
+      "electron_temperature": 4977.023564332114,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 1017.7444815998203,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 23
+    },
+    {
+      "electron_temperature": 5336.699231206313,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 6637.111533820525,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 24
+    },
+    {
+      "electron_temperature": 5722.3676593502205,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 3436.3756685174963,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 25
+    },
+    {
+      "electron_temperature": 6135.907273413176,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 2054.4308271567265,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 26
+    },
+    {
+      "electron_temperature": 6579.332246575683,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 1170.1588372468354,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 27
+    },
+    {
+      "electron_temperature": 7054.8023107186455,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 7631.065415245144,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 28
+    },
+    {
+      "electron_temperature": 7564.633275546291,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 3950.9969636925616,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 29
+    },
+    {
+      "electron_temperature": 8111.308307896872,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 2362.096215084203,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 30
+    },
+    {
+      "electron_temperature": 8697.490026177835,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 1345.3983088510297,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 31
+    },
+    {
+      "electron_temperature": 9326.0334688322,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 8773.87084351583,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 32
+    },
+    {
+      "electron_temperature": 10000.0,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 4542.686397800736,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 33
+    },
+    {
+      "electron_temperature": 10722.672220103232,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 2715.836647095576,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 34
+    },
+    {
+      "electron_temperature": 11497.569953977356,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 1546.8811171977545,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 35
+    },
+    {
+      "electron_temperature": 12328.467394420659,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 10087.819379048557,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 36
+    },
+    {
+      "electron_temperature": 13219.411484660288,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 5222.985463769538,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 37
+    },
+    {
+      "electron_temperature": 14174.741629268048,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 3122.5521833556704,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 38
+    },
+    {
+      "electron_temperature": 15199.11082952933,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 1778.5373855467828,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 39
+    },
+    {
+      "electron_temperature": 16297.508346206434,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 11598.54089936992,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 40
+    },
+    {
+      "electron_temperature": 17475.28400007683,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 6005.164073829712,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 41
+    },
+    {
+      "electron_temperature": 18738.17422860383,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 3590.176216307655,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 42
+    },
+    {
+      "electron_temperature": 20092.33002565046,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 2044.885800608813,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 43
+    },
+    {
+      "electron_temperature": 21544.346900318866,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 13335.503535457325,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 44
+    },
+    {
+      "electron_temperature": 23101.29700083158,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 6904.479402396875,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 45
+    },
+    {
+      "electron_temperature": 24770.76355991714,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 4127.830219410304,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 46
+    },
+    {
+      "electron_temperature": 26560.87782946684,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 2351.1217540394823,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 47
+    },
+    {
+      "electron_temperature": 28480.35868435805,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 15332.588477043295,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 48
+    },
+    {
+      "electron_temperature": 30538.555088334124,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 7938.473492485386,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 49
+    },
+    {
+      "electron_temperature": 32745.491628777316,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 4746.001670581168,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 50
+    },
+    {
+      "electron_temperature": 35111.917342151275,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 2703.218683738689,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 51
+    },
+    {
+      "electron_temperature": 37649.35806792471,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 17628.75085903524,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 52
+    },
+    {
+      "electron_temperature": 40370.17258596558,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 9127.315430764575,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 53
+    },
+    {
+      "electron_temperature": 43287.612810830615,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 5456.748620920037,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 54
+    },
+    {
+      "electron_temperature": 46415.88833612782,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 3108.04459171842,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 55
+    },
+    {
+      "electron_temperature": 49770.23564332114,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 20268.77962029961,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 56
+    },
+    {
+      "electron_temperature": 53366.99231206313,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 10494.194765723267,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 57
+    },
+    {
+      "electron_temperature": 57223.676593502205,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 6273.934899029759,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 58
+    },
+    {
+      "electron_temperature": 61359.072734131754,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 3573.4960113363527,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 59
+    },
+    {
+      "electron_temperature": 65793.32246575682,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 23304.17115661454,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 60
+    },
+    {
+      "electron_temperature": 70548.02310718645,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 12065.773842956627,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 61
+    },
+    {
+      "electron_temperature": 75646.3327554629,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 7213.500538829452,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 62
+    },
+    {
+      "electron_temperature": 81113.08307896872,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 4108.652037059877,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 63
+    },
+    {
+      "electron_temperature": 86974.90026177834,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 26794.133809263705,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 64
+    },
+    {
+      "electron_temperature": 93260.334688322,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 13872.707880826403,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 65
+    },
+    {
+      "electron_temperature": 100000.0,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 8293.772705824498,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 66
+    },
+    {
+      "electron_temperature": 107226.72220103232,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 4723.951421264751,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 67
+    },
+    {
+      "electron_temperature": 114975.69953977356,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 30806.74278282392,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 68
+    },
+    {
+      "electron_temperature": 123284.67394420659,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 15950.242931089453,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 69
+    },
+    {
+      "electron_temperature": 132194.11484660287,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 9535.823186760523,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 70
+    },
+    {
+      "electron_temperature": 141747.4162926805,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 5431.396192518223,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 71
+    },
+    {
+      "electron_temperature": 151991.10829529332,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 35420.268019970514,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 72
+    },
+    {
+      "electron_temperature": 162975.08346206468,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 18338.9033883134,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 73
+    },
+    {
+      "electron_temperature": 174752.8400007683,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 10963.87941585384,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 74
+    },
+    {
+      "electron_temperature": 187381.74228603867,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 6244.785767124459,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 75
+    },
+    {
+      "electron_temperature": 200923.3002565046,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 40724.7009348238,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 76
+    },
+    {
+      "electron_temperature": 215443.46900318866,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 21085.282458636568,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 77
+    },
+    {
+      "electron_temperature": 231012.9700083158,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 12605.797055075192,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 78
+    },
+    {
+      "electron_temperature": 247707.6355991714,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 7179.986120511562,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 79
+    },
+    {
+      "electron_temperature": 265608.7782946684,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 46823.509785294365,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 80
+    },
+    {
+      "electron_temperature": 284803.5868435805,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 24242.95100675456,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 81
+    },
+    {
+      "electron_temperature": 305385.55088334123,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 14493.603346636877,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 82
+    },
+    {
+      "electron_temperature": 327454.9162877732,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 8255.23926891682,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 83
+    },
+    {
+      "electron_temperature": 351119.17342151277,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 53835.65792471653,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 84
+    },
+    {
+      "electron_temperature": 376493.58067924716,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 27873.502509100636,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 85
+    },
+    {
+      "electron_temperature": 403701.72585965495,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 16664.121836315782,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 86
+    },
+    {
+      "electron_temperature": 432876.12810830615,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 9491.5190981192,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 87
+    },
+    {
+      "electron_temperature": 464158.8833612782,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 61897.92430078243,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 88
+    },
+    {
+      "electron_temperature": 497702.35643321136,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 32047.75449607479,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 89
+    },
+    {
+      "electron_temperature": 533669.9231206313,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 19159.69065346425,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 90
+    },
+    {
+      "electron_temperature": 572236.765935022,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 10912.940480013758,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 91
+    },
+    {
+      "electron_temperature": 613590.7273413176,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 71167.57146542409,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 92
+    },
+    {
+      "electron_temperature": 657933.2246575683,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 36847.129918651226,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 93
+    },
+    {
+      "electron_temperature": 705480.2310718645,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 22028.988358477134,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 94
+    },
+    {
+      "electron_temperature": 756463.3275546291,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 12547.229657254942,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 95
+    },
+    {
+      "electron_temperature": 811130.8307896872,
+      "ion_mass": 1.672621898e-27,
+      "bohm_velocity": 81825.41313783963,
+      "ion_type": "H+",
+      "mass_ratio": 1.0,
+      "point_id": 96
+    },
+    {
+      "electron_temperature": 869749.0026177834,
+      "ion_mass": 6.690487592e-27,
+      "bohm_velocity": 42365.24538429845,
+      "ion_type": "He+",
+      "mass_ratio": 4.0,
+      "point_id": 97
+    },
+    {
+      "electron_temperature": 932603.3468832199,
+      "ion_mass": 2.0071462776000003e-26,
+      "bohm_velocity": 25327.983466694368,
+      "ion_type": "C+",
+      "mass_ratio": 12.0,
+      "point_id": 98
+    },
+    {
+      "electron_temperature": 1000000.0,
+      "ion_mass": 6.634e-26,
+      "bohm_velocity": 14426.265071290802,
+      "ion_type": "Ar+",
+      "mass_ratio": 39.66228116427542,
+      "point_id": 99
+    }
+  ]
+}

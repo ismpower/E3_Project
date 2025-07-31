@@ -1,0 +1,49 @@
+pipeline:
+  version: "1.0.0"
+  quarantine_dir: "data/quarantined"
+  output_dir: "data/processed"
+  log_file: "logs/davp_pipeline.log"
+
+validation_rules:
+  temperature:
+    min: 0.0
+    max: 1000000.0  # 1 million K
+  density:
+    min: 0.0
+    max: 1.0e30     # particles/m³
+  pressure:
+    min: 0.0
+    max: 1.0e15     # Pa
+  energy:
+    min: -1.0e10    # eV
+    max: 1.0e10     # eV
+
+authorized_sources:
+  - name: "Materials Project"
+    url: "https://materialsproject.org"
+    formats: ["cif", "json"]
+  - name: "OQMD"
+    url: "http://oqmd.org"
+    formats: ["cif"]
+  - name: "PubChem"
+    url: "https://pubchem.ncbi.nlm.nih.gov"
+    formats: ["smiles", "json"]
+  - name: "PDB"
+    url: "https://www.rcsb.org"
+    formats: ["pdb"]
+
+element_support:
+  max_atomic_number: 118
+  priority_elements: ["H", "C", "N", "O", "Ar", "Sr", "Rb", "I"]  # E3 focus elements
+
+graph_construction:
+  bond_cutoff_distance: 3.0  # Angstroms
+  max_neighbors: 20
+  include_hydrogen: true
+  periodic_boundary_conditions: true
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  max_file_size: "100MB"
+  backup_count: 5

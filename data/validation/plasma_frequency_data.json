@@ -1,0 +1,606 @@
+{
+  "description": "Known plasma frequency test data",
+  "physics_law": "\u03c9p = sqrt(ne\u00b2/\u03b5\u2080m)",
+  "data_points": [
+    {
+      "density": 1e+16,
+      "plasma_frequency_rad_s": 5641460231.180627,
+      "plasma_frequency_mhz": 897.8662820487434,
+      "point_id": 0
+    },
+    {
+      "density": 1.2045035402587786e+16,
+      "plasma_frequency_rad_s": 6191495639.2989,
+      "plasma_frequency_mhz": 985.4071361263345,
+      "point_id": 1
+    },
+    {
+      "density": 1.4508287784959432e+16,
+      "plasma_frequency_rad_s": 6795158820.686201,
+      "plasma_frequency_mhz": 1081.483115406703,
+      "point_id": 2
+    },
+    {
+      "density": 1.747528400007683e+16,
+      "plasma_frequency_rad_s": 7457678417.032346,
+      "plasma_frequency_mhz": 1186.9263840604392,
+      "point_id": 3
+    },
+    {
+      "density": 2.1049041445120132e+16,
+      "plasma_frequency_rad_s": 8184792856.137197,
+      "plasma_frequency_mhz": 1302.650241237467,
+      "point_id": 4
+    },
+    {
+      "density": 2.535364493970117e+16,
+      "plasma_frequency_rad_s": 8982800055.426981,
+      "plasma_frequency_mhz": 1429.6570316273555,
+      "point_id": 5
+    },
+    {
+      "density": 3.0538555088334124e+16,
+      "plasma_frequency_rad_s": 9858611971.502054,
+      "plasma_frequency_mhz": 1569.0468272894877,
+      "point_id": 6
+    },
+    {
+      "density": 3.67837977182865e+16,
+      "plasma_frequency_rad_s": 10819814468.198597,
+      "plasma_frequency_mhz": 1722.0269559510136,
+      "point_id": 7
+    },
+    {
+      "density": 4.430621457583886e+16,
+      "plasma_frequency_rad_s": 11874733021.71185,
+      "plasma_frequency_mhz": 1889.9224583019998,
+      "point_id": 8
+    },
+    {
+      "density": 5.3366992312063016e+16,
+      "plasma_frequency_rad_s": 13032504831.888363,
+      "plasma_frequency_mhz": 2074.1875648640435,
+      "point_id": 9
+    },
+    {
+      "density": 6.428073117284346e+16,
+      "plasma_frequency_rad_s": 14303157964.279806,
+      "plasma_frequency_mhz": 2276.418291839342,
+      "point_id": 10
+    },
+    {
+      "density": 7.742636826811278e+16,
+      "plasma_frequency_rad_s": 15697698208.449238,
+      "plasma_frequency_mhz": 2498.366265039486,
+      "point_id": 11
+    },
+    {
+      "density": 9.326033468832181e+16,
+      "plasma_frequency_rad_s": 17228204404.85557,
+      "plasma_frequency_mhz": 2741.953891630329,
+      "point_id": 12
+    },
+    {
+      "density": 1.1233240329780312e+17,
+      "plasma_frequency_rad_s": 18907933065.991074,
+      "plasma_frequency_mhz": 3009.2910111031756,
+      "point_id": 13
+    },
+    {
+      "density": 1.3530477745798075e+17,
+      "plasma_frequency_rad_s": 20751433197.95051,
+      "plasma_frequency_mhz": 3302.693169695081,
+      "point_id": 14
+    },
+    {
+      "density": 1.62975083462064e+17,
+      "plasma_frequency_rad_s": 22774672316.96227,
+      "plasma_frequency_mhz": 3624.7016765426943,
+      "point_id": 15
+    },
+    {
+      "density": 1.9630406500402765e+17,
+      "plasma_frequency_rad_s": 24995174752.37504,
+      "plasma_frequency_mhz": 3978.1056152862284,
+      "point_id": 16
+    },
+    {
+      "density": 2.364489412645407e+17,
+      "plasma_frequency_rad_s": 27432173434.014767,
+      "plasma_frequency_mhz": 4365.966001777623,
+      "point_id": 17
+    },
+    {
+      "density": 2.8480358684357933e+17,
+      "plasma_frequency_rad_s": 30106776478.622574,
+      "plasma_frequency_mhz": 4791.642297135589,
+      "point_id": 18
+    },
+    {
+      "density": 3.430469286314926e+17,
+      "plasma_frequency_rad_s": 33042150018.26374,
+      "plasma_frequency_mhz": 5258.821505790635,
+      "point_id": 19
+    },
+    {
+      "density": 4.1320124001153344e+17,
+      "plasma_frequency_rad_s": 36263718854.28077,
+      "plasma_frequency_mhz": 5771.550110553549,
+      "point_id": 20
+    },
+    {
+      "density": 4.9770235643320934e+17,
+      "plasma_frequency_rad_s": 39799386674.760345,
+      "plasma_frequency_mhz": 6334.2691213138205,
+      "point_id": 21
+    },
+    {
+      "density": 5.994842503189421e+17,
+      "plasma_frequency_rad_s": 43679777742.93038,
+      "plasma_frequency_mhz": 6951.852540942722,
+      "point_id": 22
+    },
+    {
+      "density": 7.220809018385457e+17,
+      "plasma_frequency_rad_s": 47938502149.8771,
+      "plasma_frequency_mhz": 7629.649581574392,
+      "point_id": 23
+    },
+    {
+      "density": 8.697490026177798e+17,
+      "plasma_frequency_rad_s": 52612446929.076256,
+      "plasma_frequency_mhz": 8373.530996922496,
+      "point_id": 24
+    },
+    {
+      "density": 1.0476157527896662e+18,
+      "plasma_frequency_rad_s": 57742095554.23027,
+      "plasma_frequency_mhz": 9189.939931940302,
+      "point_id": 25
+    },
+    {
+      "density": 1.2618568830660186e+18,
+      "plasma_frequency_rad_s": 63371878587.74972,
+      "plasma_frequency_mhz": 10085.947730259808,
+      "point_id": 26
+    },
+    {
+      "density": 1.5199110829529393e+18,
+      "plasma_frequency_rad_s": 69550558517.03133,
+      "plasma_frequency_mhz": 11069.315182787657,
+      "point_id": 27
+    },
+    {
+      "density": 1.8307382802953697e+18,
+      "plasma_frequency_rad_s": 76331652111.79433,
+      "plasma_frequency_mhz": 12148.55974796298,
+      "point_id": 28
+    },
+    {
+      "density": 2.205130739903041e+18,
+      "plasma_frequency_rad_s": 83773893960.7396,
+      "plasma_frequency_mhz": 13333.029325907984,
+      "point_id": 29
+    },
+    {
+      "density": 2.6560877829466947e+18,
+      "plasma_frequency_rad_s": 91941745202.45813,
+      "plasma_frequency_mhz": 14632.983225466765,
+      "point_id": 30
+    },
+    {
+      "density": 3.1992671377973847e+18,
+      "plasma_frequency_rad_s": 100905951856.97476,
+      "plasma_frequency_mhz": 16059.68102543035,
+      "point_id": 31
+    },
+    {
+      "density": 3.8535285937105193e+18,
+      "plasma_frequency_rad_s": 110744157593.9314,
+      "plasma_frequency_mhz": 17625.48009962204,
+      "point_id": 32
+    },
+    {
+      "density": 4.641588833612792e+18,
+      "plasma_frequency_rad_s": 121541576244.9085,
+      "plasma_frequency_mhz": 19343.94265055767,
+      "point_id": 33
+    },
+    {
+      "density": 5.590810182512222e+18,
+      "plasma_frequency_rad_s": 133391729884.86702,
+      "plasma_frequency_mhz": 21229.953178755488,
+      "point_id": 34
+    },
+    {
+      "density": 6.734150657750856e+18,
+      "plasma_frequency_rad_s": 146397258875.62515,
+      "plasma_frequency_mhz": 23299.84740515959,
+      "point_id": 35
+    },
+    {
+      "density": 8.111308307896889e+18,
+      "plasma_frequency_rad_s": 160670810887.56573,
+      "plasma_frequency_mhz": 25571.553763339205,
+      "point_id": 36
+    },
+    {
+      "density": 9.770099572992246e+18,
+      "plasma_frequency_rad_s": 176336016599.8714,
+      "plasma_frequency_mhz": 28064.748687004045,
+      "point_id": 37
+    },
+    {
+      "density": 1.176811952435004e+19,
+      "plasma_frequency_rad_s": 193528560530.32245,
+      "plasma_frequency_mhz": 30801.027037859894,
+      "point_id": 38
+    },
+    {
+      "density": 1.4174741629268077e+19,
+      "plasma_frequency_rad_s": 212397356269.67676,
+      "plasma_frequency_mhz": 33804.089149969426,
+      "point_id": 39
+    },
+    {
+      "density": 1.7073526474706887e+19,
+      "plasma_frequency_rad_s": 233105836299.95868,
+      "plasma_frequency_mhz": 37099.946110708595,
+      "point_id": 40
+    },
+    {
+      "density": 2.0565123083486597e+19,
+      "plasma_frequency_rad_s": 255833367568.43176,
+      "plasma_frequency_mhz": 40717.1450563617,
+      "point_id": 41
+    },
+    {
+      "density": 2.4770763559917138e+19,
+      "plasma_frequency_rad_s": 280776805078.2847,
+      "plasma_frequency_mhz": 44687.016433758596,
+      "point_id": 42
+    },
+    {
+      "density": 2.9836472402833342e+19,
+      "plasma_frequency_rad_s": 308152196952.50146,
+      "plasma_frequency_mhz": 49043.9453696179,
+      "point_id": 43
+    },
+    {
+      "density": 3.5938136638046405e+19,
+      "plasma_frequency_rad_s": 338196655739.34436,
+      "plasma_frequency_mhz": 53825.66949806467,
+      "point_id": 44
+    },
+    {
+      "density": 4.328761281083062e+19,
+      "plasma_frequency_rad_s": 371170412167.81,
+      "plasma_frequency_mhz": 59073.60582596314,
+      "point_id": 45
+    },
+    {
+      "density": 5.214008287999674e+19,
+      "plasma_frequency_rad_s": 407359069141.7197,
+      "plasma_frequency_mhz": 64833.209467217865,
+      "point_id": 46
+    },
+    {
+      "density": 6.280291441834272e+19,
+      "plasma_frequency_rad_s": 447076075495.439,
+      "plasma_frequency_mhz": 71154.3673532245,
+      "point_id": 47
+    },
+    {
+      "density": 7.56463327554629e+19,
+      "plasma_frequency_rad_s": 490665440937.72394,
+      "plasma_frequency_mhz": 78091.8303296032,
+      "point_id": 48
+    },
+    {
+      "density": 9.111627561154868e+19,
+      "plasma_frequency_rad_s": 538504715699.2573,
+      "plasma_frequency_mhz": 85705.68738183258,
+      "point_id": 49
+    },
+    {
+      "density": 1.0974987654930591e+20,
+      "plasma_frequency_rad_s": 591008260692.1256,
+      "plasma_frequency_mhz": 94061.8860972953,
+      "point_id": 50
+    },
+    {
+      "density": 1.3219411484660287e+20,
+      "plasma_frequency_rad_s": 648630836505.8053,
+      "plasma_frequency_mhz": 103232.80387172992,
+      "point_id": 51
+    },
+    {
+      "density": 1.5922827933410873e+20,
+      "plasma_frequency_rad_s": 711871542325.8485,
+      "plasma_frequency_mhz": 113297.87480761019,
+      "point_id": 52
+    },
+    {
+      "density": 1.9179102616724927e+20,
+      "plasma_frequency_rad_s": 781278138892.2587,
+      "plasma_frequency_mhz": 124344.27773433934,
+      "point_id": 53
+    },
+    {
+      "density": 2.310129700083158e+20,
+      "plasma_frequency_rad_s": 857451792940.965,
+      "plasma_frequency_mhz": 136467.6913095629,
+      "point_id": 54
+    },
+    {
+      "density": 2.7825594022071144e+20,
+      "plasma_frequency_rad_s": 941052284222.5154,
+      "plasma_frequency_mhz": 149773.12274193257,
+      "point_id": 55
+    },
+    {
+      "density": 3.3516026509388474e+20,
+      "plasma_frequency_rad_s": 1032803720198.6339,
+      "plasma_frequency_mhz": 164375.8173133114,
+      "point_id": 56
+    },
+    {
+      "density": 4.03701725859655e+20,
+      "plasma_frequency_rad_s": 1133500807914.6348,
+      "plasma_frequency_mhz": 180402.2565782711,
+      "point_id": 57
+    },
+    {
+      "density": 4.8626015800653336e+20,
+      "plasma_frequency_rad_s": 1244015737371.6917,
+      "plasma_frequency_mhz": 197991.25388681382,
+      "point_id": 58
+    },
+    {
+      "density": 5.8570208180566734e+20,
+      "plasma_frequency_rad_s": 1365305736019.369,
+      "plasma_frequency_mhz": 217295.15671920095,
+      "point_id": 59
+    },
+    {
+      "density": 7.054802310718631e+20,
+      "plasma_frequency_rad_s": 1498421359801.8438,
+      "plasma_frequency_mhz": 238481.16624694288,
+      "point_id": 60
+    },
+    {
+      "density": 8.497534359086473e+20,
+      "plasma_frequency_rad_s": 1644515592570.9543,
+      "plasma_frequency_mhz": 261732.78554936478,
+      "point_id": 61
+    },
+    {
+      "density": 1.0235310218990269e+21,
+      "plasma_frequency_rad_s": 1804853832680.7014,
+      "plasma_frequency_mhz": 287251.40902948624,
+      "point_id": 62
+    },
+    {
+      "density": 1.2328467394420736e+21,
+      "plasma_frequency_rad_s": 1980824853262.4858,
+      "plasma_frequency_mhz": 315258.0667960029,
+      "point_id": 63
+    },
+    {
+      "density": 1.4849682622544696e+21,
+      "plasma_frequency_rad_s": 2173952831113.539,
+      "plasma_frequency_mhz": 345995.33912034007,
+      "point_id": 64
+    },
+    {
+      "density": 1.7886495290574352e+21,
+      "plasma_frequency_rad_s": 2385910548387.24,
+      "plasma_frequency_mhz": 379729.45755092404,
+      "point_id": 65
+    },
+    {
+      "density": 2.1544346900318954e+21,
+      "plasma_frequency_rad_s": 2618533881431.8633,
+      "plasma_frequency_mhz": 416752.610883488,
+      "point_id": 66
+    },
+    {
+      "density": 2.5950242113997426e+21,
+      "plasma_frequency_rad_s": 2873837702273.2065,
+      "plasma_frequency_mhz": 457385.47596063546,
+      "point_id": 67
+    },
+    {
+      "density": 3.125715849688235e+21,
+      "plasma_frequency_rad_s": 3154033330472.24,
+      "plasma_frequency_mhz": 501979.9952212506,
+      "point_id": 68
+    },
+    {
+      "density": 3.7649358067924866e+21,
+      "plasma_frequency_rad_s": 3461547686517.2456,
+      "plasma_frequency_mhz": 550922.4250575342,
+      "point_id": 69
+    },
+    {
+      "density": 4.534878508128591e+21,
+      "plasma_frequency_rad_s": 3799044312648.0156,
+      "plasma_frequency_mhz": 604636.6813830836,
+      "point_id": 70
+    },
+    {
+      "density": 5.462277217684337e+21,
+      "plasma_frequency_rad_s": 4169446443184.607,
+      "plasma_frequency_mhz": 663588.0113897516,
+      "point_id": 71
+    },
+    {
+      "density": 6.57933224657571e+21,
+      "plasma_frequency_rad_s": 4575962324184.532,
+      "plasma_frequency_mhz": 728287.0232962464,
+      "point_id": 72
+    },
+    {
+      "density": 7.924828983539186e+21,
+      "plasma_frequency_rad_s": 5022113001735.253,
+      "plasma_frequency_mhz": 799294.1089922419,
+      "point_id": 73
+    },
+    {
+      "density": 9.545484566618329e+21,
+      "plasma_frequency_rad_s": 5511762819571.058,
+      "plasma_frequency_mhz": 877224.2978848564,
+      "point_id": 74
+    },
+    {
+      "density": 1.1497569953977404e+22,
+      "plasma_frequency_rad_s": 6049152890169.778,
+      "plasma_frequency_mhz": 962752.5839891454,
+      "point_id": 75
+    },
+    {
+      "density": 1.3848863713938746e+22,
+      "plasma_frequency_rad_s": 6638937829240.074,
+      "plasma_frequency_mhz": 1056619.7724033352,
+      "point_id": 76
+    },
+    {
+      "density": 1.6681005372000558e+22,
+      "plasma_frequency_rad_s": 7286226071776.121,
+      "plasma_frequency_mhz": 1159638.8958082127,
+      "point_id": 77
+    },
+    {
+      "density": 2.009233002565054e+22,
+      "plasma_frequency_rad_s": 7996624118877.634,
+      "plasma_frequency_mhz": 1272702.2565672477,
+      "point_id": 78
+    },
+    {
+      "density": 2.4201282647943834e+22,
+      "plasma_frequency_rad_s": 8776285098580.188,
+      "plasma_frequency_mhz": 1396789.155422779,
+      "point_id": 79
+    },
+    {
+      "density": 2.91505306282517e+22,
+      "plasma_frequency_rad_s": 9631962061306.846,
+      "plasma_frequency_mhz": 1532974.3737305861,
+      "point_id": 80
+    },
+    {
+      "density": 3.511191734215142e+22,
+      "plasma_frequency_rad_s": 10571066471560.244,
+      "plasma_frequency_mhz": 1682437.4827018136,
+      "point_id": 81
+    },
+    {
+      "density": 4.229242874389499e+22,
+      "plasma_frequency_rad_s": 11601732402482.389,
+      "plasma_frequency_mhz": 1846473.0602844828,
+      "point_id": 82
+    },
+    {
+      "density": 5.094138014816365e+22,
+      "plasma_frequency_rad_s": 12732886989305.19,
+      "plasma_frequency_mhz": 2026501.9041784022,
+      "point_id": 83
+    },
+    {
+      "density": 6.135907273413189e+22,
+      "plasma_frequency_rad_s": 13974327751925.078,
+      "plasma_frequency_mhz": 2224083.3381051295,
+      "point_id": 84
+    },
+    {
+      "density": 7.390722033525775e+22,
+      "plasma_frequency_rad_s": 15336807456333.105,
+      "plasma_frequency_mhz": 2440928.7179240515,
+      "point_id": 85
+    },
+    {
+      "density": 8.902150854450356e+22,
+      "plasma_frequency_rad_s": 16832127249930.256,
+      "plasma_frequency_mhz": 2678916.254578191,
+      "point_id": 86
+    },
+    {
+      "density": 1.0722672220103254e+23,
+      "plasma_frequency_rad_s": 18473238877420.535,
+      "plasma_frequency_mhz": 2940107.282258854,
+      "point_id": 87
+    },
+    {
+      "density": 1.2915496650148827e+23,
+      "plasma_frequency_rad_s": 20274356862627.34,
+      "plasma_frequency_mhz": 3226764.1126962323,
+      "point_id": 88
+    },
+    {
+      "density": 1.5556761439304787e+23,
+      "plasma_frequency_rad_s": 22251081627899.234,
+      "plasma_frequency_mhz": 3541369.630221421,
+      "point_id": 89
+    },
+    {
+      "density": 1.8738174228603868e+23,
+      "plasma_frequency_rad_s": 24420534617504.594,
+      "plasma_frequency_mhz": 3886648.797322604,
+      "point_id": 90
+    },
+    {
+      "density": 2.257019719633917e+23,
+      "plasma_frequency_rad_s": 26801506595391.695,
+      "plasma_frequency_mhz": 4265592.2569666235,
+      "point_id": 91
+    },
+    {
+      "density": 2.7185882427329512e+23,
+      "plasma_frequency_rad_s": 29414620401796.46,
+      "plasma_frequency_mhz": 4681482.23611762,
+      "point_id": 92
+    },
+    {
+      "density": 3.2745491628777314e+23,
+      "plasma_frequency_rad_s": 32282509578418.43,
+      "plasma_frequency_mhz": 5137920.974816752,
+      "point_id": 93
+    },
+    {
+      "density": 3.94420605943768e+23,
+      "plasma_frequency_rad_s": 35430014409332.086,
+      "plasma_frequency_mhz": 5638861.9270622805,
+      "point_id": 94
+    },
+    {
+      "density": 4.750810162102813e+23,
+      "plasma_frequency_rad_s": 38884397075643.09,
+      "plasma_frequency_mhz": 6188644.003736638,
+      "point_id": 95
+    },
+    {
+      "density": 5.72236765935022e+23,
+      "plasma_frequency_rad_s": 42675577787460.04,
+      "plasma_frequency_mhz": 6792029.154176956,
+      "point_id": 96
+    },
+    {
+      "density": 6.892612104349737e+23,
+      "plasma_frequency_rad_s": 46836393938440.4,
+      "plasma_frequency_mhz": 7454243.611902074,
+      "point_id": 97
+    },
+    {
+      "density": 8.30217568131977e+23,
+      "plasma_frequency_rad_s": 51402884527584.73,
+      "plasma_frequency_mhz": 8181023.161747015,
+      "point_id": 98
+    },
+    {
+      "density": 1e+24,
+      "plasma_frequency_rad_s": 56414602311806.266,
+      "plasma_frequency_mhz": 8978662.820487434,
+      "point_id": 99
+    }
+  ]
+}
