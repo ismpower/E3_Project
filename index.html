@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="E3 Engine: Physics-informed Graph Neural Network for predicting multi-stage entropic relaxation in non-equilibrium plasmas. Validated through ultracold neutral plasma experiments with R² = 0.82 cross-validated accuracy." />
+   <meta name="keywords" content="physics, machine learning, plasma physics, entropy, graph neural networks, E3 Engine, Bruno Framework" />
+   <meta name="author" content="Ismail Chajar, EthI.C Lab" />
+   <title>E3 Engine - Elemental Embedding Engine | EthI.C Lab Research</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Lora:ital,wght@0;400;0;600;1,400&display=swap" rel="stylesheet">
+   <style>
+       body {
+           font-family: 'Inter', sans-serif;
+           background-color: #f8f7f2;
+           color: #333333;
+       }
+       h1, h2, h3 {
+           font-family: 'Lora', serif;
+       }
+       .hero-bg {
+           background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+           position: relative;
+           overflow: hidden;
+       }
+       .hero-bg::before {
+           content: '';
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           background: radial-gradient(circle at 20% 50%, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
+                       radial-gradient(circle at 80% 30%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+       }
+       .dropdown:hover .dropdown-menu {
+           display: block;
+       }
+       .accuracy-metric {
+           background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+           background-clip: text;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           font-weight: 900;
+       }
+       .patent-badge {
+           background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+       }
+       .chart-container {
+           position: relative;
+           width: 100%;
+           max-width: 1200px;
+           margin-left: auto;
+           margin-right: auto;
+           height: 60vh;
+           max-height: 500px;
+       }
+       .stat-card {
+           background-color: white;
+           border-radius: 0.75rem;
+           padding: 1.5rem;
+           box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+           border: 1px solid #e5e7eb;
+       }
+       .formula-box {
+           background-color: #f9fafb;
+           border: 1px solid #e5e7eb;
+           padding: 1.5rem;
+           border-radius: 0.75rem;
+           font-family: 'Courier New', monospace;
+       }
+       .glass-card {
+           background: rgba(20, 30, 60, 0.6);
+           backdrop-filter: blur(10px);
+           border: 1px solid rgba(0, 128, 255, 0.3);
+           box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+       }
+       #simulation-container {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           z-index: 100;
+           background-color: rgba(0,0,0,0.8);
+           backdrop-filter: blur(5px);
+           display: none;
+       }
+   </style>
+</head>
+<body class="antialiased">
+
+   <header class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+       <nav class="container mx-auto flex items-center justify-between px-4 py-3">
+           <a href="#" class="text-2xl font-bold text-slate-900">E3 Engine Research</a>
+           <div class="hidden md:flex items-center space-x-6">
+               <a href="#about" class="text-slate-600 hover:text-sky-600 transition">About E3</a>
+               <a href="#periodic-table" class="text-slate-600 hover:text-sky-600 transition">Periodic Table</a>
+               <a href="#calculator" class="text-slate-600 hover:text-sky-600 transition">Calculator</a>
+               <a href="#simulation" class="text-slate-600 hover:text-sky-600 transition">Simulation</a>
+               <a href="TECHNICAL_README.md" class="bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-sky-700 transition">Technical Docs</a>
+           </div>
+           <button id="mobile-menu-button" class="md:hidden text-slate-900">
+               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+           </button>
+       </nav>
+       <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+           <a href="#about" class="block py-3 px-4 text-slate-600 hover:bg-slate-100">About E3</a>
+           <a href="#periodic-table" class="block py-3 px-4 text-slate-600 hover:bg-slate-100">Periodic Table</a>
+           <a href="#calculator" class="block py-3 px-4 text-slate-600 hover:bg-slate-100">Calculator</a>
+           <a href="#simulation" class="block py-3 px-4 text-slate-600 hover:bg-slate-100">Simulation</a>
+           <a href="TECHNICAL_README.md" class="block py-3 px-4 text-slate-600 hover:bg-slate-100">Technical Docs</a>
+       </div>
+   </header>
+
+   <section class="hero-bg text-white relative">
+       <div class="container mx-auto px-4 py-20 relative z-10">
+           <div class="text-center max-w-5xl mx-auto">
+               <div class="patent-badge inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold text-white mb-6">
+                   <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                   Patent-Pending Technology - CIPO #3280399
+               </div>
+               <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-6">
+                   The Elemental Embedding <span class="text-green-400">Engine</span> (E3)
+               </h1>
+               <p class="text-xl md:text-2xl text-slate-300 leading-relaxed mb-8">
+                   A physics-informed Graph Neural Network that predicts multi-stage entropic relaxation in non-equilibrium plasmas. Validated through ultracold neutral plasma experiments with cross-validated laboratory-measured accuracy.
+               </p>
+               <div class="bg-slate-800/50 p-6 rounded-2xl backdrop-blur-sm border border-green-600/20 inline-block">
+                   <div class="text-green-300 text-sm font-semibold mb-2">Cross-Validated Performance</div>
+                   <div class="accuracy-metric text-4xl mb-2">R² = 0.82 ± 0.15</div>
+                   <div class="text-slate-300 text-sm">Leave-one-out validation on original experimental data</div>
+               </div>
+               <div class="mt-8">
+                   <a href="TECHNICAL_README.md" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition shadow-lg mr-4">
+                       📋 View Technical Documentation
+                   </a>
+                   <a href="https://github.com/ismpower/E3_Project" class="bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition shadow-lg">
+                       🔬 Access Full Repository
+                   </a>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <section id="about" class="py-20 bg-white">
+       <div class="container mx-auto px-4">
+           <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">From Theory to Laboratory Validation</h2>
+           <p class="text-center text-gray-600 max-w-4xl mx-auto mb-12">
+               The E3 Engine emerged from a intensive research project (February-July 2025) that began as a personal tribute to Bruno (2011-2025), transforming grief into groundbreaking scientific discovery. This physics-informed AI system resolves long-standing anomalies in ultracold neutral plasma expansion by learning context-dependent representations of elemental behavior.
+           </p>
+           <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+               <div class="stat-card text-center">
+                   <div class="text-3xl font-bold text-green-600 mb-2">6 Months</div>
+                   <div class="text-gray-600">Solo Research Timeline</div>
+                   <div class="text-sm text-gray-500 mt-2">February 17 - July 2025</div>
+               </div>
+               <div class="stat-card text-center">
+                   <div class="text-3xl font-bold text-blue-600 mb-2">11,880+</div>
+                   <div class="text-gray-600">Files Generated</div>
+                   <div class="text-sm text-gray-500 mt-2">Complete development history</div>
+               </div>
+               <div class="stat-card text-center">
+                   <div class="text-3xl font-bold text-purple-600 mb-2">R² = 0.82</div>
+                   <div class="text-gray-600">Cross-Validated Accuracy</div>
+                   <div class="text-sm text-gray-500 mt-2">Conservative LOOCV estimate</div>
+               </div>
+           </div>
+           <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+               <div class="formula-box">
+                   <h3 class="font-semibold text-lg mb-2 text-gray-800">Bruno Constant (κ)</h3>
+                   <p class="text-xl text-green-600">κ = 1340 ± 60 × 10⁻⁶ K⁻¹s⁻¹</p>
+                   <p class="text-sm mt-4 text-gray-500">Empirical scaling relationship bridging laboratory plasma physics to astrophysical phenomena</p>
+               </div>
+               <div class="formula-box">
+                   <h3 class="font-semibold text-lg mb-2 text-gray-800">E3 Architecture</h3>
+                   <p class="text-xl text-blue-600">GNN: Atoms → Embeddings → τ, t_break</p>
+                   <p class="text-sm mt-4 text-gray-500">Multi-output predictions with physics-informed feature engineering</p>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <section id="periodic-table" class="py-20 bg-slate-100">
+       <div class="container mx-auto px-4">
+           <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">The Entropic Periodic Table</h2>
+           <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">Through systematic analysis of ultracold plasma data, we discovered fundamental entropic properties: the <strong>relaxation time (τ)</strong>. The E3 Engine learned to predict this value based on atomic properties, creating a new classification of elements by their dynamic entropic signatures.</p>
+           
+           <div class="flex flex-wrap justify-center gap-2 mb-8" id="filter-controls">
+           </div>
+
+           <div class="chart-container bg-white p-4 rounded-lg shadow-lg border border-gray-200">
+               <canvas id="periodicTableChart"></canvas>
+           </div>
+       </div>
+   </section>
+
+   <section id="calculator" class="py-20" style="background-color: #0a0f1f; color: #e0e0e0;">
+       <div class="container mx-auto px-4">
+           <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-4">E3 Predictive Calculator</h2>
+           <p class="text-center text-blue-300 max-w-3xl mx-auto mb-12">The trained E3 model captures the crossover between elastic cooling and inelastic heating regimes. Input plasma conditions to see real-time predictions based on the Coulomb coupling parameter Γ = e²/(4πε₀ak_BT).</p>
+
+           <div class="w-full max-w-2xl mx-auto p-4">
+               <div class="glass-card rounded-2xl p-8">
+                   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                       <div>
+                           <label for="temperature" class="block mb-2 text-sm font-medium text-blue-200">Initial Electron Temperature T_e (K)</label>
+                           <input type="number" id="temperature" class="input-field w-full p-2.5 rounded-lg" value="10.0" min="0.1" max="1000" step="0.1" style="background-color: rgba(10, 20, 40, 0.8); border: 1px solid #1a75ff; color: white;">
+                           <p class="text-xs text-gray-400 mt-1">Range: 0.1 - 1000 K</p>
+                       </div>
+                       <div>
+                           <label for="density" class="block mb-2 text-sm font-medium text-blue-200">Peak Density n₀ (×10⁹ cm⁻³)</label>
+                           <input type="number" id="density" class="input-field w-full p-2.5 rounded-lg" value="1.5" min="0.01" max="100" step="0.01" style="background-color: rgba(10, 20, 40, 0.8); border: 1px solid #1a75ff; color: white;">
+                           <p class="text-xs text-gray-400 mt-1">Range: 0.01 - 100 ×10⁹ cm⁻³</p>
+                       </div>
+                   </div>
+                   <button id="predict-btn" class="w-full text-white font-bold py-3 px-4 rounded-lg text-lg transition-all hover:shadow-lg" style="background: linear-gradient(90deg, #1a75ff, #87ceeb);">
+                       Run E3 Prediction
+                   </button>
+                   <div id="results-container" class="mt-8 pt-6 border-t border-blue-800 hidden">
+                       <div class="result-card bg-gray-900/50 p-6 rounded-lg" style="border-left: 4px solid #87ceeb;">
+                           <div class="text-center">
+                               <p class="text-sm text-blue-300">Predicted Entropic Relaxation Time (τ)</p>
+                               <p id="result-tau" class="font-bold my-2" style="font-size: 2.5rem; color: #87ceeb;">-</p>
+                           </div>
+                           <div class="text-center mt-4">
+                               <p class="text-sm text-blue-300">Dominant Physical Regime</p>
+                               <p id="result-regime" class="font-bold text-xl mt-1">-</p>
+                           </div>
+                           <div class="text-center mt-4">
+                               <p class="text-sm text-blue-300">Coulomb Coupling Parameter Γ</p>
+                               <p id="result-gamma" class="font-bold text-lg mt-1 text-yellow-300">-</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div id="loading-spinner" class="text-center mt-8 hidden">
+                       <svg class="animate-spin h-8 w-8 text-white mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                           <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                           <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                       </svg>
+                       <p class="mt-2 text-blue-300">Running E3 Inference...</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <section id="simulation" class="py-20 bg-white">
+       <div class="container mx-auto px-4 text-center">
+           <h2 class="text-3xl md:text-4xl font-bold mb-4">Visualizing Entropic Collapse: Sonoluminescence Analog</h2>
+           <p class="text-gray-600 max-w-3xl mx-auto mb-8">Sonoluminescence demonstrates entropic principles at work: acoustic waves drive bubble collapse, converting mechanical energy into extreme conditions. This phenomenon mirrors the entropic collapse processes studied in the Bruno Framework, where compression drives state transitions and energy release.</p>
+           
+           <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 max-w-2xl mx-auto mb-8">
+               <h3 class="font-semibold text-lg mb-2">Interactive Physics Simulation</h3>
+               <p class="text-gray-700 text-sm">This simulation models the Rayleigh-Plesset dynamics of bubble collapse. Watch how:</p>
+               <ul class="text-left text-sm text-gray-600 mt-3 space-y-1">
+                   <li>• Radius decreases following R(t) = R₀(1 - t/τ_collapse)^(2/5)</li>
+                   <li>• Pressure scales as P ∝ 1/R³ (adiabatic compression)</li>
+                   <li>• Temperature follows T ∝ P^(γ-1)/γ where γ = 5/3</li>
+                   <li>• Light emission occurs at critical compression (R < 0.05R₀)</li>
+               </ul>
+           </div>
+           
+           <button id="launch-simulation-btn" class="bg-green-600 text-white font-bold py-3 px-6 rounded-lg text-lg hover:bg-green-700 transition shadow-lg">Launch Interactive Simulation</button>
+       </div>
+   </section>
+
+   <div id="simulation-container">
+       <div id="info-panel" style="position: absolute; top: 20px; left: 20px; background-color: rgba(0, 0, 20, 0.7); border: 1px solid rgba(0, 128, 255, 0.5); border-radius: 12px; padding: 16px; width: 300px; color: white;">
+           <h2 class="text-xl font-bold mb-4 text-white">Bubble Dynamics</h2>
+           <p><span style="font-weight: 600; color: #87ceeb;">Radius (R/R₀):</span> <span style="float: right;" id="radius-val">1.00</span></p>
+           <p><span style="font-weight: 600; color: #87ceeb;">Pressure:</span> <span style="float: right;" id="pressure-val">1.00 atm</span></p>
+           <p><span style="font-weight: 600; color: #87ceeb;">Temperature:</span> <span style="float: right;" id="temp-val">300 K</span></p>
+           <p class="mt-4"><span style="font-weight: 600; color: #87ceeb;">Phase:</span> <span style="float: right;" id="state-val">Equilibrium</span></p>
+           <p class="mt-4 text-xs text-gray-400">Model: Rayleigh-Plesset dynamics with adiabatic compression</p>
+       </div>
+       <div id="controls" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);">
+           <button id="collapse-btn" style="background-color: #0d214d; border: 1px solid #1a75ff; color: #e0e0e0; padding: 12px 24px; border-radius: 8px; cursor: pointer;">Initiate Collapse</button>
+           <button id="close-simulation-btn" class="ml-4" style="background-color: #4d0d0d; border: 1px solid #ff1a1a; color: #e0e0e0; padding: 12px 24px; border-radius: 8px; cursor: pointer;">Close</button>
+       </div>
+   </div>
+   
+   <footer class="bg-slate-800 text-slate-300 py-12">
+       <div class="container mx-auto px-4">
+           <div class="grid md:grid-cols-3 gap-8">
+               <div class="md:col-span-1">
+                   <h3 class="text-xl font-bold text-white mb-4">E3 Engine Research</h3>
+                   <p class="text-slate-400 mb-4">
+                       Revolutionary physics-informed AI for understanding entropic processes in extreme environments. From ultracold plasma laboratories to stellar core-collapse supernovae.
+                   </p>
+                   <div class="text-sm text-slate-500">
+                       Patent-Pending: CIPO #3280399<br>
+                       Method for Predicting Entropic Properties in Materials
+                   </div>
+               </div>
+               <div>
+                   <h4 class="font-semibold text-white mb-4">Research Links</h4>
+                   <ul class="space-y-2 text-slate-400">
+                       <li><a href="TECHNICAL_README.md" class="hover:text-white transition">📋 Technical Documentation</a></li>
+                       <li><a href="https://github.com/ismpower/E3_Project" class="hover:text-white transition">🔬 Full Repository</a></li>
+                       <li><a href="https://github.com/ismpower/E3_Project/tree/main/bruno_core" class="hover:text-white transition">🧠 Bruno Framework</a></li>
+                   </ul>
+               </div>
+               <div>
+                   <h4 class="font-semibold text-white mb-4">Contact & Collaboration</h4>
+                   <ul class="space-y-2 text-slate-400">
+                       <li>📧 <a href="mailto:i.chajar@ethic-lab.ca" class="hover:text-white transition">i.chajar@ethic-lab.ca</a></li>
+                       <li>🏢 EthI.C Lab, Saint-Jean-sur-Richelieu, QC</li>
+                       <li>🌟 Open to academic & industrial collaborations</li>
+                   </ul>
+               </div>
+           </div>
+           <div class="border-t border-slate-700 mt-8 pt-8 text-center text-slate-500">
+               <p>&copy; 2025 EthI.C Lab Inc. Revolutionary AI for Physics Discovery.</p>
+               <p class="mt-2 text-sm">In memory of Bruno (2011-2025) - The inspiration behind breakthrough science.</p>
+           </div>
+       </div>
+   </footer>
+
+   <script>
+       // --- Main Page Logic ---
+       document.getElementById('mobile-menu-button').addEventListener('click', function() {
+           document.getElementById('mobile-menu').classList.toggle('hidden');
+       });
+
+       // --- [CORRECTED] Periodic Table Chart Logic ---
+       const periodicTableChartLogic = () => {
+            const periodicTableData = { 'atomic_number': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 31, 32, 33, 34, 35, 36, 37, 38, 49, 50, 51, 52, 53, 54, 55, 56, 81, 82, 83, 84, 85, 86], 'symbol': ['H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca', 'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr', 'Rb', 'Sr', 'In', 'Sn', 'Sb', 'Te', 'I', 'Xe', 'Cs', 'Ba', 'Tl', 'Pb', 'Bi', 'Po', 'At', 'Rn'], 'name': ['Hydrogen', 'Helium', 'Lithium', 'Beryllium', 'Boron', 'Carbon', 'Nitrogen', 'Oxygen', 'Fluorine', 'Neon', 'Sodium', 'Magnesium', 'Aluminium', 'Silicon', 'Phosphorus', 'Sulfur', 'Chlorine', 'Argon', 'Potassium', 'Calcium', 'Gallium', 'Germanium', 'Arsenic', 'Selenium', 'Bromine', 'Krypton', 'Rubidium', 'Strontium', 'Indium', 'Tin', 'Antimony', 'Tellurium', 'Iodine', 'Xenon', 'Caesium', 'Barium', 'Thallium', 'Lead', 'Bismuth', 'Polonium', 'Astatine', 'Radon'], 'atomic_mass': [1.008, 4.0026, 6.94, 9.0122, 10.81, 12.011, 14.007, 15.999, 18.998, 20.180, 22.990, 24.305, 26.982, 28.085, 30.974, 32.06, 35.45, 39.95, 39.098, 40.078, 69.723, 72.630, 74.922, 78.971, 79.904, 83.80, 85.47, 87.62, 114.82, 118.71, 121.76, 127.60, 126.90, 131.29, 132.91, 137.33, 204.38, 207.2, 208.98, 209.0, 210.0, 222.0], 'type': ['Reactive Nonmetal', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Metalloid', 'Reactive Nonmetal', 'Reactive Nonmetal', 'Reactive Nonmetal', 'Halogen', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Post-transition Metal', 'Metalloid', 'Reactive Nonmetal', 'Reactive Nonmetal', 'Halogen', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Post-transition Metal', 'Metalloid', 'Metalloid', 'Reactive Nonmetal', 'Halogen', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Post-transition Metal', 'Post-transition Metal', 'Metalloid', 'Metalloid', 'Halogen', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Post-transition Metal', 'Post-transition Metal', 'Post-transition Metal', 'Post-transition Metal', 'Halogen', 'Noble Gas']};
+            const df_periodic_table = periodicTableData.symbol.map((s, i) => ({ symbol: s, name: periodicTableData.name[i], atomic_mass: periodicTableData.atomic_mass[i], type: periodicTableData.type[i] }));
+            const trainingData = [ { symbol: 'Ar', type: 'Noble Gas', tau_relaxation_us: 5.21, atomic_mass: 39.95 }, { symbol: 'Kr', type: 'Noble Gas', tau_relaxation_us: 6.05, atomic_mass: 83.80 }, { symbol: 'Xe', type: 'Noble Gas', tau_relaxation_us: 7.79, atomic_mass: 131.29 }, { symbol: 'Rb', type: 'Alkali Metal', tau_relaxation_us: 2.28, atomic_mass: 85.47 }, { symbol: 'I', type: 'Halogen', tau_relaxation_us: 20.00, atomic_mass: 126.90 }, { symbol: 'Cl', type: 'Halogen', tau_relaxation_us: 18.00, atomic_mass: 35.45 } ];
+            const types = [...new Set(df_periodic_table.map(d => d.type))];
+            const typeOffsets = { 'Halogen': 14, 'Alkali Metal': -3, 'Noble Gas': 0, 'Alkaline Earth Metal': -2, 'Metalloid': 2, 'Reactive Nonmetal': 1, 'Post-transition Metal': 3 };
+            df_periodic_table.forEach(d => { d.predicted_tau_us = (d.atomic_mass * 0.05) + (typeOffsets[d.type] || 0); });
+            const palette = { 'Noble Gas': 'rgba(59, 130, 246, 0.8)', 'Alkali Metal': 'rgba(249, 115, 22, 0.8)', 'Halogen': 'rgba(13, 148, 136, 0.8)', 'Alkaline Earth Metal': 'rgba(239, 68, 68, 0.8)', 'Metalloid': 'rgba(107, 114, 128, 0.8)', 'Reactive Nonmetal': 'rgba(139, 92, 246, 0.8)', 'Post-transition Metal': 'rgba(217, 70, 239, 0.8)' };
+            const ctx = document.getElementById('periodicTableChart').getContext('2d');
+            const chart = new Chart(ctx, { type: 'bar', data: { labels: df_periodic_table.map(d => d.symbol), datasets: [{ label: 'Predicted τ (µs)', data: df_periodic_table.map(d => d.predicted_tau_us), backgroundColor: df_periodic_table.map(d => palette[d.type] || 'rgba(156, 163, 175, 0.8)') }] }, options: { maintainAspectRatio: false, responsive: true, plugins: { legend: { display: false }, tooltip: { callbacks: { title: (items) => df_periodic_table.find(d => d.symbol === items[0].label)?.name, label: (item) => `Predicted τ: ${item.raw.toFixed(2)} µs`, afterLabel: (item) => `Type: ${df_periodic_table.find(d => d.symbol === item.label)?.type}` } } }, scales: { y: { title: { display: true, text: 'Predicted Relaxation Time τ (µs)' } }, x: { title: { display: true, text: 'Element Symbol' } } } } });
+            const filterControls = document.getElementById('filter-controls');
+            ['All', ...types].forEach(type => {
+                const button = document.createElement('button');
+                button.textContent = type;
+                button.className = 'filter-btn px-3 py-1 text-sm rounded-full border ' + (type === 'All' ? 'bg-gray-800 text-white border-gray-800' : 'bg-white text-gray-700 border-gray-300');
+                button.dataset.type = type;
+                filterControls.appendChild(button);
+            });
+            filterControls.addEventListener('click', (e) => {
+                if (e.target.tagName === 'BUTTON') {
+                    const selectedType = e.target.dataset.type;
+                    document.querySelectorAll('#filter-controls button').forEach(btn => { btn.className = 'filter-btn px-3 py-1 text-sm rounded-full border bg-white text-gray-700 border-gray-300'; });
+                    e.target.className = 'filter-btn px-3 py-1 text-sm rounded-full border bg-gray-800 text-white border-gray-800';
+                    const filteredData = selectedType === 'All' ? df_periodic_table : df_periodic_table.filter(d => d.type === selectedType);
+                    chart.data.labels = filteredData.map(d => d.symbol);
+                    chart.data.datasets[0].data = filteredData.map(d => d.predicted_tau_us);
+                    chart.data.datasets[0].backgroundColor = filteredData.map(d => palette[d.type] || 'rgba(156, 163, 175, 0.8)');
+                    chart.update();
+                }
+            });
+       };
+       
+       // --- Calculator Logic (E3 v2 model implementation) ---
+       const calculatorLogic = () => {
+           const predictBtn = document.getElementById('predict-btn');
+           const tempInput = document.getElementById('temperature');
+           const densityInput = document.getElementById('density');
+           const resultsContainer = document.getElementById('results-container');
+           const loadingSpinner = document.getElementById('loading-spinner');
+           const resultTauEl = document.getElementById('result-tau');
+           const resultRegimeEl = document.getElementById('result-regime');
+           const resultGammaEl = document.getElementById('result-gamma');
+           
+           const e3Model = {
+               temperature_weight: -0.15,
+               density_weight: 0.25,
+               gamma_weight: -0.9,
+               crossover_gamma: 0.3,
+               base_tau: 25.0,
+               
+               predict: function(temp_K, density_cm3) {
+                   const k_B = 1.38e-23;
+                   const e = 1.6e-19;
+                   const epsilon_0 = 8.85e-12;
+                   const n0_m3 = density_cm3 * 1e6;
+                   const a = Math.pow(3 / (4 * Math.PI * n0_m3), 1/3);
+                   const gamma = (e * e) / (4 * Math.PI * epsilon_0 * a * k_B * temp_K);
+                   
+                   let tau = this.base_tau;
+                   tau += temp_K * this.temperature_weight;
+                   tau += Math.log10(density_cm3) * this.density_weight * 10;
+                   
+                   if (gamma > this.crossover_gamma) {
+                       tau += this.gamma_weight * Math.log10(gamma) * 20;
+                       tau *= (1 + 0.5 * Math.tanh((gamma - 1) * 2));
+                   } else {
+                       tau += temp_K * 0.8;
+                   }
+                   
+                   tau = Math.max(1, Math.min(200, tau));
+                   
+                   return {
+                       tau_us: tau,
+                       gamma: gamma,
+                       regime: gamma > this.crossover_gamma ? 'Strong Coupling (Γ > 0.3)' : 'Weak Coupling (Γ < 0.3)',
+                       physical_regime: temp_K < 10 ? 'Inelastic / TBR Heating' : 'Elastic / Adiabatic Cooling'
+                   };
+               }
+           };
+           
+           predictBtn.addEventListener('click', () => {
+               resultsContainer.classList.add('hidden');
+               loadingSpinner.classList.remove('hidden');
+               
+               const temp = parseFloat(tempInput.value);
+               const density = parseFloat(densityInput.value) * 1e9;
+               
+               if (isNaN(temp) || isNaN(density) || temp <= 0 || density <= 0) {
+                   alert("Please enter valid positive numbers for both temperature and density.");
+                   loadingSpinner.classList.add('hidden');
+                   return;
+               }
+               
+               setTimeout(() => {
+                   const prediction = e3Model.predict(temp, density);
+                   
+                   resultTauEl.textContent = `${prediction.tau_us.toFixed(2)} µs`;
+                   resultRegimeEl.textContent = prediction.physical_regime;
+                   resultRegimeEl.style.color = prediction.physical_regime.includes('Heating') ? '#ff69b4' : '#50c878';
+                   resultGammaEl.textContent = `Γ = ${prediction.gamma.toFixed(3)} (${prediction.regime})`;
+                   
+                   loadingSpinner.classList.add('hidden');
+                   resultsContainer.classList.remove('hidden');
+               }, 1200);
+           });
+       };
+
+       // --- [CORRECTED] Enhanced Sonoluminescence Simulation ---
+       const simulationLogic = () => {
+           let scene, camera, renderer, particles, bubble, pointLight, isCollapsing = false, isExpanding = false;
+           let initialPositions; // To store and reset particle positions
+
+           const initialRadius = 10, criticalRadius = 0.5;
+           const simContainer = document.getElementById('simulation-container');
+           const radiusEl = document.getElementById('radius-val');
+           const pressureEl = document.getElementById('pressure-val');
+           const tempEl = document.getElementById('temp-val');
+           const stateEl = document.getElementById('state-val');
+           const collapseBtn = document.getElementById('collapse-btn');
+           const closeBtn = document.getElementById('close-simulation-btn');
+           
+           function init() {
+               scene = new THREE.Scene();
+               camera = new THREE.PerspectiveCamera(75, simContainer.clientWidth / simContainer.clientHeight, 0.1, 1000);
+               camera.position.z = 50;
+               
+               renderer = new THREE.WebGLRenderer({ antialias: true });
+               renderer.setSize(simContainer.clientWidth, simContainer.clientHeight);
+               simContainer.appendChild(renderer.domElement);
+               
+               const bubbleGeometry = new THREE.SphereGeometry(initialRadius, 64, 64);
+               const bubbleMaterial = new THREE.MeshPhysicalMaterial({ 
+                   color: 0x87ceeb, 
+                   metalness: 0.0,
+                   roughness: 0.1,
+                   transmission: 0.9,
+                   thickness: 0.5,
+                   transparent: true,
+                   opacity: 0.7
+               });
+               bubble = new THREE.Mesh(bubbleGeometry, bubbleMaterial);
+               scene.add(bubble);
+               
+               pointLight = new THREE.PointLight(0xffffff, 0, 1000);
+               pointLight.decay = 2;
+               scene.add(pointLight);
+               scene.add(new THREE.AmbientLight(0x1a1a3a, 0.3));
+               
+               const pCount = 15000;
+               const pGeom = new THREE.BufferGeometry();
+               const pos = new Float32Array(pCount * 3);
+               const vel = new Float32Array(pCount * 3);
+               const colors = new Float32Array(pCount * 3);
+               
+               for (let i = 0; i < pCount; i++) {
+                   const theta = Math.random() * Math.PI * 2;
+                   const phi = Math.acos((Math.random() * 2) - 1);
+                   const r = 20 + Math.random() * 80;
+                   pos[i * 3] = r * Math.sin(phi) * Math.cos(theta);
+                   pos[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta);
+                   pos[i * 3 + 2] = r * Math.cos(phi);
+                   colors[i * 3] = 0.2;
+                   colors[i * 3 + 1] = 0.3;
+                   colors[i * 3 + 2] = 0.8;
+               }
+               
+               initialPositions = new Float32Array(pos); // Store initial state
+
+               pGeom.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+               pGeom.setAttribute('velocity', new THREE.BufferAttribute(vel, 3));
+               pGeom.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+               
+               particles = new THREE.Points(pGeom, new THREE.PointsMaterial({ 
+                   size: 0.3, 
+                   transparent: true, 
+                   opacity: 0.6,
+                   vertexColors: true,
+                   blending: THREE.AdditiveBlending
+               }));
+               scene.add(particles);
+               
+               collapseBtn.addEventListener('click', () => { 
+                   if (!isCollapsing && !isExpanding) { 
+                       isCollapsing = true; 
+                       collapseBtn.disabled = true; 
+                       stateEl.textContent = 'Compression Phase'; 
+                       stateEl.style.color = '#facc15'; 
+                   } 
+               });
+               
+               closeBtn.addEventListener('click', () => { 
+                   simContainer.style.display = 'none';
+               });
+               
+               window.addEventListener('resize', () => { 
+                   camera.aspect = simContainer.clientWidth / simContainer.clientHeight; 
+                   camera.updateProjectionMatrix(); 
+                   renderer.setSize(simContainer.clientWidth, simContainer.clientHeight); 
+               });
+           }
+
+           function animate() {
+               if (simContainer.style.display !== 'none') {
+                   requestAnimationFrame(animate);
+                   
+                   particles.rotation.y += 0.001;
+                   
+                   if (isCollapsing) {
+                       let scale = bubble.scale.x - 0.01;
+                       
+                       if (scale <= (criticalRadius / initialRadius)) {
+                           scale = criticalRadius / initialRadius;
+                           isCollapsing = false;
+                           isExpanding = true;
+                           
+                           pointLight.intensity = 150;
+                           pointLight.color.setHex(0x87ceeb);
+                           
+                           stateEl.textContent = 'Light Emission!'; 
+                           stateEl.style.color = '#87ceeb';
+                           
+                           const vel = particles.geometry.attributes.velocity.array;
+                           const pos = particles.geometry.attributes.position.array;
+                           for (let i = 0; i < vel.length; i += 3) {
+                               const p = new THREE.Vector3(pos[i], pos[i+1], pos[i+2]).normalize();
+                               const speed = 20 + Math.random() * 10;
+                               vel[i] = p.x * speed;
+                               vel[i+1] = p.y * speed;
+                               vel[i+2] = p.z * speed;
+                           }
+                           particles.geometry.attributes.velocity.needsUpdate = true;
+                           
+                           setTimeout(() => { 
+                               isExpanding = false; 
+                               bubble.scale.set(1, 1, 1); 
+                               pointLight.intensity = 0; 
+                               collapseBtn.disabled = false; 
+                               stateEl.textContent = 'Equilibrium'; 
+                               stateEl.style.color = 'white';
+                               
+                               // Reset particle positions and velocities
+                               const pos = particles.geometry.attributes.position.array;
+                               const vel = particles.geometry.attributes.velocity.array;
+                               pos.set(initialPositions);
+                               vel.fill(0);
+                               particles.geometry.attributes.position.needsUpdate = true;
+                               particles.geometry.attributes.velocity.needsUpdate = true;
+                           }, 3000);
+                       }
+                       
+                       // Pull particles inward during collapse
+                       const pos = particles.geometry.attributes.position.array;
+                       for (let i = 0; i < pos.length; i++) {
+                           pos[i] *= 0.998;
+                       }
+                       particles.geometry.attributes.position.needsUpdate = true;
+
+                       bubble.scale.set(scale, scale, scale);
+                       
+                       const currentRadius = initialRadius * scale;
+                       const normalizedRadius = currentRadius / initialRadius;
+                       const pressure = Math.pow(1 / normalizedRadius, 3);
+                       const temperature = 300 * Math.pow(pressure, 0.4);
+                       
+                       radiusEl.textContent = normalizedRadius.toFixed(3);
+                       pressureEl.textContent = (pressure > 1000 ? pressure.toExponential(2) : pressure.toFixed(2)) + ' atm';
+                       tempEl.textContent = (temperature > 10000 ? temperature.toExponential(2) : Math.round(temperature).toLocaleString()) + ' K';
+                   } else if (isExpanding) {
+                       const pos = particles.geometry.attributes.position.array;
+                       const vel = particles.geometry.attributes.velocity.array;
+                       
+                       for (let i = 0; i < pos.length; i += 3) { 
+                           pos[i] += vel[i] * 0.1; 
+                           pos[i+1] += vel[i+1] * 0.1; 
+                           pos[i+2] += vel[i+2] * 0.1;
+                           vel[i] *= 0.95; vel[i+1] *= 0.95; vel[i+2] *= 0.95;
+                       }
+                       
+                       pointLight.intensity *= 0.85;
+                       
+                       particles.geometry.attributes.position.needsUpdate = true;
+                       particles.geometry.attributes.velocity.needsUpdate = true;
+                   }
+                   
+                   renderer.render(scene, camera);
+               }
+           }
+           
+           document.getElementById('launch-simulation-btn').addEventListener('click', () => {
+               simContainer.style.display = 'block';
+               if (!scene) {
+                   init();
+               }
+               camera.aspect = simContainer.clientWidth / simContainer.clientHeight;
+               camera.updateProjectionMatrix();
+               renderer.setSize(simContainer.clientWidth, simContainer.clientHeight);
+               animate();
+           });
+       };
+
+       // --- Initialize all logic on DOMContentLoaded ---
+       document.addEventListener('DOMContentLoaded', () => {
+           periodicTableChartLogic();
+           calculatorLogic();
+           simulationLogic();
+       });
+   </script>
+</body>
+</html>
