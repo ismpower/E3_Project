@@ -328,37 +328,121 @@
        });
 
        // --- [CORRECTED] Periodic Table Chart Logic ---
-       const periodicTableChartLogic = () => {
-            const periodicTableData = { 'atomic_number': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 31, 32, 33, 34, 35, 36, 37, 38, 49, 50, 51, 52, 53, 54, 55, 56, 81, 82, 83, 84, 85, 86], 'symbol': ['H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca', 'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr', 'Rb', 'Sr', 'In', 'Sn', 'Sb', 'Te', 'I', 'Xe', 'Cs', 'Ba', 'Tl', 'Pb', 'Bi', 'Po', 'At', 'Rn'], 'name': ['Hydrogen', 'Helium', 'Lithium', 'Beryllium', 'Boron', 'Carbon', 'Nitrogen', 'Oxygen', 'Fluorine', 'Neon', 'Sodium', 'Magnesium', 'Aluminium', 'Silicon', 'Phosphorus', 'Sulfur', 'Chlorine', 'Argon', 'Potassium', 'Calcium', 'Gallium', 'Germanium', 'Arsenic', 'Selenium', 'Bromine', 'Krypton', 'Rubidium', 'Strontium', 'Indium', 'Tin', 'Antimony', 'Tellurium', 'Iodine', 'Xenon', 'Caesium', 'Barium', 'Thallium', 'Lead', 'Bismuth', 'Polonium', 'Astatine', 'Radon'], 'atomic_mass': [1.008, 4.0026, 6.94, 9.0122, 10.81, 12.011, 14.007, 15.999, 18.998, 20.180, 22.990, 24.305, 26.982, 28.085, 30.974, 32.06, 35.45, 39.95, 39.098, 40.078, 69.723, 72.630, 74.922, 78.971, 79.904, 83.80, 85.47, 87.62, 114.82, 118.71, 121.76, 127.60, 126.90, 131.29, 132.91, 137.33, 204.38, 207.2, 208.98, 209.0, 210.0, 222.0], 'type': ['Reactive Nonmetal', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Metalloid', 'Reactive Nonmetal', 'Reactive Nonmetal', 'Reactive Nonmetal', 'Halogen', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Post-transition Metal', 'Metalloid', 'Reactive Nonmetal', 'Reactive Nonmetal', 'Halogen', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Post-transition Metal', 'Metalloid', 'Metalloid', 'Reactive Nonmetal', 'Halogen', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Post-transition Metal', 'Post-transition Metal', 'Metalloid', 'Metalloid', 'Halogen', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Post-transition Metal', 'Post-transition Metal', 'Post-transition Metal', 'Post-transition Metal', 'Halogen', 'Noble Gas']};
-            const df_periodic_table = periodicTableData.symbol.map((s, i) => ({ symbol: s, name: periodicTableData.name[i], atomic_mass: periodicTableData.atomic_mass[i], type: periodicTableData.type[i] }));
-            const trainingData = [ { symbol: 'Ar', type: 'Noble Gas', tau_relaxation_us: 5.21, atomic_mass: 39.95 }, { symbol: 'Kr', type: 'Noble Gas', tau_relaxation_us: 6.05, atomic_mass: 83.80 }, { symbol: 'Xe', type: 'Noble Gas', tau_relaxation_us: 7.79, atomic_mass: 131.29 }, { symbol: 'Rb', type: 'Alkali Metal', tau_relaxation_us: 2.28, atomic_mass: 85.47 }, { symbol: 'I', type: 'Halogen', tau_relaxation_us: 20.00, atomic_mass: 126.90 }, { symbol: 'Cl', type: 'Halogen', tau_relaxation_us: 18.00, atomic_mass: 35.45 } ];
-            const types = [...new Set(df_periodic_table.map(d => d.type))];
-            const typeOffsets = { 'Halogen': 14, 'Alkali Metal': -3, 'Noble Gas': 0, 'Alkaline Earth Metal': -2, 'Metalloid': 2, 'Reactive Nonmetal': 1, 'Post-transition Metal': 3 };
-            df_periodic_table.forEach(d => { d.predicted_tau_us = (d.atomic_mass * 0.05) + (typeOffsets[d.type] || 0); });
-            const palette = { 'Noble Gas': 'rgba(59, 130, 246, 0.8)', 'Alkali Metal': 'rgba(249, 115, 22, 0.8)', 'Halogen': 'rgba(13, 148, 136, 0.8)', 'Alkaline Earth Metal': 'rgba(239, 68, 68, 0.8)', 'Metalloid': 'rgba(107, 114, 128, 0.8)', 'Reactive Nonmetal': 'rgba(139, 92, 246, 0.8)', 'Post-transition Metal': 'rgba(217, 70, 239, 0.8)' };
-            const ctx = document.getElementById('periodicTableChart').getContext('2d');
-            const chart = new Chart(ctx, { type: 'bar', data: { labels: df_periodic_table.map(d => d.symbol), datasets: [{ label: 'Predicted τ (µs)', data: df_periodic_table.map(d => d.predicted_tau_us), backgroundColor: df_periodic_table.map(d => palette[d.type] || 'rgba(156, 163, 175, 0.8)') }] }, options: { maintainAspectRatio: false, responsive: true, plugins: { legend: { display: false }, tooltip: { callbacks: { title: (items) => df_periodic_table.find(d => d.symbol === items[0].label)?.name, label: (item) => `Predicted τ: ${item.raw.toFixed(2)} µs`, afterLabel: (item) => `Type: ${df_periodic_table.find(d => d.symbol === item.label)?.type}` } } }, scales: { y: { title: { display: true, text: 'Predicted Relaxation Time τ (µs)' } }, x: { title: { display: true, text: 'Element Symbol' } } } } });
-            const filterControls = document.getElementById('filter-controls');
-            ['All', ...types].forEach(type => {
-                const button = document.createElement('button');
-                button.textContent = type;
-                button.className = 'filter-btn px-3 py-1 text-sm rounded-full border ' + (type === 'All' ? 'bg-gray-800 text-white border-gray-800' : 'bg-white text-gray-700 border-gray-300');
-                button.dataset.type = type;
-                filterControls.appendChild(button);
+       // --- CORRECTED Periodic Table Chart Logic with Real E3 Predictions ---
+const periodicTableChartLogic = () => {
+    // Real experimental training data from your E3 model
+    const trainingData = [
+        { symbol: 'Ar', type: 'Noble Gas', tau_relaxation_us: 5.21 },
+        { symbol: 'Kr', type: 'Noble Gas', tau_relaxation_us: 6.05 },
+        { symbol: 'Xe', type: 'Noble Gas', tau_relaxation_us: 7.79 },
+        { symbol: 'Rb', type: 'Alkali Metal', tau_relaxation_us: 2.28 },
+        { symbol: 'I', type: 'Halogen', tau_relaxation_us: 20.00 },
+        { symbol: 'Cl', type: 'Halogen', tau_relaxation_us: 18.00 }
+    ];
+    
+    // Complete predicted dataset from your E3 model
+    const predictedData = {
+        'H': 6.89, 'He': 4.05, 'Li': 0.54, 'Be': 7.51, 'B': 0.19, 'C': 7.22,
+        'N': 7.28, 'O': 7.34, 'F': 17.41, 'Ne': 4.51, 'Na': 0.99, 'Mg': 7.94,
+        'Al': 8.02, 'Si': 0.69, 'P': 7.75, 'S': 7.78, 'Cl': 18.00, 'Ar': 5.21,
+        'K': 1.45, 'Ca': 8.39, 'Ga': 9.24, 'Ge': 1.94, 'As': 2.02, 'Se': 9.12,
+        'Br': 19.26, 'Kr': 6.05, 'Rb': 2.28, 'Sr': 9.75, 'In': 10.51, 'Sn': 10.62,
+        'Sb': 3.34, 'Te': 3.42, 'I': 20.00, 'Xe': 7.79, 'Cs': 3.61, 'Ba': 10.85,
+        'Tl': 11.39, 'Pb': 11.48, 'Bi': 11.57, 'Po': 11.66, 'At': 21.96, 'Rn': 11.85
+    };
+    
+    const periodicTableData = { 
+        'symbol': ['H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca', 'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr', 'Rb', 'Sr', 'In', 'Sn', 'Sb', 'Te', 'I', 'Xe', 'Cs', 'Ba', 'Tl', 'Pb', 'Bi', 'Po', 'At', 'Rn'],
+        'name': ['Hydrogen', 'Helium', 'Lithium', 'Beryllium', 'Boron', 'Carbon', 'Nitrogen', 'Oxygen', 'Fluorine', 'Neon', 'Sodium', 'Magnesium', 'Aluminium', 'Silicon', 'Phosphorus', 'Sulfur', 'Chlorine', 'Argon', 'Potassium', 'Calcium', 'Gallium', 'Germanium', 'Arsenic', 'Selenium', 'Bromine', 'Krypton', 'Rubidium', 'Strontium', 'Indium', 'Tin', 'Antimony', 'Tellurium', 'Iodine', 'Xenon', 'Caesium', 'Barium', 'Thallium', 'Lead', 'Bismuth', 'Polonium', 'Astatine', 'Radon'],
+        'type': ['Reactive Nonmetal', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Metalloid', 'Reactive Nonmetal', 'Reactive Nonmetal', 'Reactive Nonmetal', 'Halogen', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Post-transition Metal', 'Metalloid', 'Reactive Nonmetal', 'Reactive Nonmetal', 'Halogen', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Post-transition Metal', 'Metalloid', 'Metalloid', 'Reactive Nonmetal', 'Halogen', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Post-transition Metal', 'Post-transition Metal', 'Metalloid', 'Metalloid', 'Halogen', 'Noble Gas', 'Alkali Metal', 'Alkaline Earth Metal', 'Post-transition Metal', 'Post-transition Metal', 'Post-transition Metal', 'Post-transition Metal', 'Halogen', 'Noble Gas']
+    };
+    
+    const df_periodic_table = periodicTableData.symbol.map((s, i) => ({ 
+        symbol: s, 
+        name: periodicTableData.name[i], 
+        type: periodicTableData.type[i],
+        predicted_tau_us: predictedData[s] || 5.0  // Use real E3 predictions
+    }));
+    
+    const types = [...new Set(df_periodic_table.map(d => d.type))];
+    const palette = { 
+        'Noble Gas': 'rgba(59, 130, 246, 0.8)', 
+        'Alkali Metal': 'rgba(249, 115, 22, 0.8)', 
+        'Halogen': 'rgba(13, 148, 136, 0.8)', 
+        'Alkaline Earth Metal': 'rgba(239, 68, 68, 0.8)', 
+        'Metalloid': 'rgba(107, 114, 128, 0.8)', 
+        'Reactive Nonmetal': 'rgba(139, 92, 246, 0.8)', 
+        'Post-transition Metal': 'rgba(217, 70, 239, 0.8)' 
+    };
+    
+    const ctx = document.getElementById('periodicTableChart').getContext('2d');
+    const chart = new Chart(ctx, { 
+        type: 'bar', 
+        data: { 
+            labels: df_periodic_table.map(d => d.symbol), 
+            datasets: [{ 
+                label: 'Predicted τ (µs)', 
+                data: df_periodic_table.map(d => d.predicted_tau_us), 
+                backgroundColor: df_periodic_table.map(d => palette[d.type] || 'rgba(156, 163, 175, 0.8)') 
+            }] 
+        }, 
+        options: { 
+            maintainAspectRatio: false, 
+            responsive: true, 
+            plugins: { 
+                legend: { display: false }, 
+                tooltip: { 
+                    callbacks: { 
+                        title: (items) => df_periodic_table.find(d => d.symbol === items[0].label)?.name, 
+                        label: (item) => `Predicted τ: ${item.raw.toFixed(2)} µs`, 
+                        afterLabel: (item) => `Type: ${df_periodic_table.find(d => d.symbol === item.label)?.type}` 
+                    } 
+                } 
+            }, 
+            scales: { 
+                y: { 
+                    title: { display: true, text: 'Predicted Relaxation Time τ (µs)' },
+                    beginAtZero: true  // Ensure chart starts at 0
+                }, 
+                x: { 
+                    title: { display: true, text: 'Element Symbol' } 
+                } 
+            } 
+        } 
+    });
+    
+    // Filter controls
+    const filterControls = document.getElementById('filter-controls');
+    ['All', ...types].forEach(type => {
+        const button = document.createElement('button');
+        button.textContent = type;
+        button.className = 'filter-btn px-3 py-1 text-sm rounded-full border ' + 
+            (type === 'All' ? 'bg-gray-800 text-white border-gray-800' : 'bg-white text-gray-700 border-gray-300');
+        button.dataset.type = type;
+        filterControls.appendChild(button);
+    });
+    
+    filterControls.addEventListener('click', (e) => {
+        if (e.target.tagName === 'BUTTON') {
+            const selectedType = e.target.dataset.type;
+            
+            // Update button styles
+            document.querySelectorAll('#filter-controls button').forEach(btn => { 
+                btn.className = 'filter-btn px-3 py-1 text-sm rounded-full border bg-white text-gray-700 border-gray-300'; 
             });
-            filterControls.addEventListener('click', (e) => {
-                if (e.target.tagName === 'BUTTON') {
-                    const selectedType = e.target.dataset.type;
-                    document.querySelectorAll('#filter-controls button').forEach(btn => { btn.className = 'filter-btn px-3 py-1 text-sm rounded-full border bg-white text-gray-700 border-gray-300'; });
-                    e.target.className = 'filter-btn px-3 py-1 text-sm rounded-full border bg-gray-800 text-white border-gray-800';
-                    const filteredData = selectedType === 'All' ? df_periodic_table : df_periodic_table.filter(d => d.type === selectedType);
-                    chart.data.labels = filteredData.map(d => d.symbol);
-                    chart.data.datasets[0].data = filteredData.map(d => d.predicted_tau_us);
-                    chart.data.datasets[0].backgroundColor = filteredData.map(d => palette[d.type] || 'rgba(156, 163, 175, 0.8)');
-                    chart.update();
-                }
-            });
-       };
+            e.target.className = 'filter-btn px-3 py-1 text-sm rounded-full border bg-gray-800 text-white border-gray-800';
+            
+            // Filter data
+            const filteredData = selectedType === 'All' ? df_periodic_table : 
+                df_periodic_table.filter(d => d.type === selectedType);
+            
+            chart.data.labels = filteredData.map(d => d.symbol);
+            chart.data.datasets[0].data = filteredData.map(d => d.predicted_tau_us);
+            chart.data.datasets[0].backgroundColor = filteredData.map(d => palette[d.type] || 'rgba(156, 163, 175, 0.8)');
+            chart.update();
+        }
+    });
+};
        
        // --- Calculator Logic (E3 v2 model implementation) ---
        const calculatorLogic = () => {
