@@ -1,0 +1,91 @@
+{
+  "material": "Aluminum Oxide, Corundum 99.9%",
+  "properties": {
+    "physical": [
+      {
+        "property": "Density",
+        "metric": "3.96 g/cc",
+        "english": "0.143 lb/in^3",
+        "comments": "99.9% pure"
+      },
+      {
+        "property": "Water Absorption",
+        "metric": "0.00 %",
+        "english": "0.00 %",
+        "comments": null
+      },
+      {
+        "property": "Lattice Constant a",
+        "metric": "4.7591 Å",
+        "english": "4.7591 Å",
+        "comments": null
+      },
+      {
+        "property": "Lattice Constant c",
+        "metric": "12.9894 Å",
+        "english": "12.9894 Å",
+        "comments": null
+      }
+    ],
+    "mechanical": [
+      {
+        "property": "Flexural Strength",
+        "metric": "1900 MPa",
+        "english": "276000 psi",
+        "comments": "At 1000°C"
+      },
+      {
+        "property": "Poissons Ratio",
+        "metric": "0.22",
+        "english": "0.22",
+        "comments": null
+      },
+      {
+        "property": "Fracture Toughness",
+        "metric": "4.00 MPa-m0.5",
+        "english": "3.64 ksi-in0.5",
+        "comments": null
+      },
+      {
+        "property": "Shear Modulus",
+        "metric": "150 GPa",
+        "english": "21800 ksi",
+        "comments": null
+      }
+    ],
+    "thermal": [
+      {
+        "property": "Melting Point",
+        "metric": "2054 °C",
+        "english": "3729 °F",
+        "comments": null
+      },
+      {
+        "property": "Boiling Point",
+        "metric": "3000 °C",
+        "english": "5430 °F",
+        "comments": "Approximate minimum"
+      }
+    ],
+    "component_elements": [
+      {
+        "element": "Aluminum, Al",
+        "metric": "52.9 %",
+        "english": "52.9 %",
+        "comments": null
+      },
+      {
+        "element": "Oxygen, O",
+        "metric": "47.1 %",
+        "english": "47.1 %",
+        "comments": null
+      }
+    ],
+    "descriptive": {
+      "crystal_structure": "Hexagonal - Corundum",
+      "color": "White (high purity)",
+      "CAS_Number": "1344-28-1",
+      "purity": "99.9%"
+    }
+  }
+}

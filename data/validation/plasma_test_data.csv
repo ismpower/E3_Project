@@ -1,0 +1,6 @@
+temperature,density,element,expansion_velocity,time
+1000.0,1e20,Ar,2500.0,0.001
+800.0,8e19,Ar,3200.0,0.002
+600.0,6e19,Ar,4100.0,0.003
+400.0,4e19,Ar,5800.0,0.004
+200.0,2e19,Ar,8200.0,0.005

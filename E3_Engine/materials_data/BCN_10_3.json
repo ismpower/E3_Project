@@ -1,0 +1,96 @@
+{
+  "Physical Properties": [
+    {
+      "property": "Density",
+      "metric": "5.60 - 6.00 g/cc",
+      "english": "0.202 - 0.217 lb/in³",
+      "comments": null
+    }
+  ],
+  "Mechanical Properties": [
+    {
+      "property": "Hardness, Rockwell R",
+      "metric": "80 - 120",
+      "english": "80 - 120",
+      "comments": null
+    },
+    {
+      "property": "Modulus of Elasticity",
+      "metric": "28.0 GPa",
+      "english": "4060 ksi",
+      "comments": null
+    },
+    {
+      "property": "Compressive Strength",
+      "metric": "27.0 - 33.0 MPa",
+      "english": "3920 - 4790 psi",
+      "comments": null
+    }
+  ],
+  "Electrical Properties": [
+    {
+      "property": "Electrical Resistivity",
+      "metric": "0.0250 ohm-cm",
+      "english": "0.0250 ohm-cm",
+      "comments": null
+    },
+    {
+      "property": "Magnetic Coercive Force, Hc",
+      "metric": "5000 - 5600 Oe",
+      "english": "5000 - 5600 Oe",
+      "comments": null
+    },
+    {
+      "property": "Magnetic Coercive Force, Hc",
+      "metric": "8000 - 8900 Oe",
+      "english": "8000 - 8900 Oe",
+      "comments": "Intrinsic"
+    },
+    {
+      "property": "Magnetic Remanence, Br",
+      "metric": "7100 - 7600 Gauss",
+      "english": "7100 - 7600 Gauss",
+      "comments": null
+    },
+    {
+      "property": "Magnetic Maximum Energy Product, BH",
+      "metric": "10 - 11 MGOe",
+      "english": "10 - 11 MGOe",
+      "comments": null
+    },
+    {
+      "property": "Curie Temperature",
+      "metric": "<= 300 °C",
+      "english": "<= 572 °F",
+      "comments": null
+    }
+  ],
+  "Thermal Properties": [
+    {
+      "property": "Maximum Service Temperature, Air",
+      "metric": "<= 110 °C",
+      "english": "<= 230 °F",
+      "comments": "Long term"
+    },
+    {
+      "property": "Maximum Service Temperature, Air",
+      "metric": "<= 150 °C",
+      "english": "<= 302 °F",
+      "comments": "Short term"
+    }
+  ],
+  "Descriptive Properties": [
+    {
+      "property": "Reversible Temperature Coefficients",
+      "metric": "-0.11",
+      "english": "Bd. %/°C",
+      "comments": null
+    },
+    {
+      "property": "Reversible Temperature Coefficients",
+      "metric": "-0.39",
+      "english": "Hd. %/°C",
+      "comments": null
+    }
+  ]
+}

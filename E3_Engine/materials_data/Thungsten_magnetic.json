@@ -1,0 +1,87 @@
+{
+  "alloyName": "Tungsten Steel Hard Magnetic Alloy",
+  "properties": {
+    "physical": [
+      {
+        "property": "Density",
+        "metric": "8.12 g/cc",
+        "english": "0.293 lb/in³",
+        "comments": null
+      }
+    ],
+    "mechanical": [
+      {
+        "property": "Hardness, Rockwell C",
+        "metric": "60 - 65",
+        "english": "60 - 65",
+        "comments": null
+      }
+    ],
+    "electrical": [
+      {
+        "property": "Electrical Resistivity",
+        "metric": "0.0000300 ohm-cm",
+        "english": "0.0000300 ohm-cm",
+        "comments": null
+      },
+      {
+        "property": "Magnetic Coercive Force, Hc",
+        "metric": "74 Oe",
+        "english": "74 Oe",
+        "comments": null
+      },
+      {
+        "property": "Magnetic Remanence, Br",
+        "metric": "9500 Gauss",
+        "english": "9500 Gauss",
+        "comments": null
+      },
+      {
+        "property": "Magnetic Maximum Energy Product, BH",
+        "metric": "0.33 MGOe",
+        "english": "0.33 MGOe",
+        "comments": null
+      },
+      {
+        "property": "Curie Temperature",
+        "metric": "760 °C",
+        "english": "1400 °F",
+        "comments": null
+      }
+    ],
+    "thermal": [
+      {
+        "property": "CTE, linear",
+        "metric": "14.5 µm/m-°C",
+        "english": "8.06 µin/in-°F",
+        "comments": null
+      }
+    ],
+    "componentElements": [
+      {
+        "element": "Carbon, C",
+        "metric": "0.70 %",
+        "english": "0.70 %",
+        "comments": null
+      },
+      {
+        "element": "Chromium, Cr",
+        "metric": "0.50 %",
+        "english": "0.50 %",
+        "comments": null
+      },
+      {
+        "element": "Iron, Fe",
+        "metric": "92.8 %",
+        "english": "92.8 %",
+        "comments": "As balance"
+      },
+      {
+        "element": "Tungsten, W",
+        "metric": null,
+        "english": null,
+        "comments": null
+      }
+    ]
+  }
+}

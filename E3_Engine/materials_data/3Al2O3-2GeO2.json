@@ -1,0 +1,67 @@
+{
+  "material": "Aluminum Germanate, 3Al2O3-2GeO2",
+  "properties": {
+    "physical": [
+      {
+        "property": "Density",
+        "metric": "4.2 g/cc",
+        "english": "0.152 lb/in^3",
+        "comments": "Estimated for ceramic"
+      }
+    ],
+    "mechanical": [
+      {
+        "property": "Knoop Microhardness",
+        "metric": "1120 kg/mm^2",
+        "english": "1120 kg/mm^2",
+        "comments": null
+      }
+    ],
+    "thermal": [
+      {
+        "property": "Melting Point",
+        "metric": "1550 °C",
+        "english": "2820 °F",
+        "comments": null
+      },
+      {
+        "property": "CTE, linear",
+        "metric": "5.80 µm/m-°C",
+        "english": "3.22 µin/in-°F",
+        "comments": "At 20°C"
+      }
+    ],
+    "optical": [
+      {
+        "property": "Refractive Index",
+        "metric": "1.664",
+        "english": "1.664",
+        "comments": null
+      }
+    ],
+    "component_elements": [
+      {
+        "element": "Aluminum, Al",
+        "metric": "32.4 %",
+        "english": "32.4 %",
+        "comments": "3Al2O3 component"
+      },
+      {
+        "element": "Germanium, Ge",
+        "metric": "58.7 %",
+        "english": "58.7 %",
+        "comments": "2GeO2 component"
+      },
+      {
+        "element": "Oxygen, O",
+        "metric": "8.9 %",
+        "english": "8.9 %",
+        "comments": "Oxide component"
+      }
+    ],
+    "descriptive": {
+      "crystal_structure": "Ceramic composite",
+      "applications": "High-temperature applications"
+    }
+  }
+}

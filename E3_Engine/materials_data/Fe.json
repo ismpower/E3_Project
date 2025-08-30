@@ -1,0 +1,92 @@
+{
+  "material": "Iron, Fe",
+  "properties": {
+    "physical": [
+      {
+        "property": "Density",
+        "metric": "7.87 g/cc",
+        "english": "0.284 lb/in³",
+        "comments": null
+      }
+    ],
+    "chemical": [
+      {
+        "property": "Atomic Mass",
+        "metric": "55.845",
+        "english": "55.845",
+        "comments": "1995"
+      },
+      {
+        "property": "Atomic Number",
+        "metric": "26",
+        "english": "26",
+        "comments": null
+      },
+      {
+        "property": "Electronegativity",
+        "metric": "1.83",
+        "english": "1.83",
+        "comments": "Pauling"
+      }
+    ],
+    "mechanical": [
+      {
+        "property": "Hardness, Vickers",
+        "metric": "150",
+        "english": "150",
+        "comments": null
+      },
+      {
+        "property": "Tensile Strength at Break",
+        "metric": "540 MPa",
+        "english": "78300 psi",
+        "comments": null
+      },
+      {
+        "property": "Modulus of Elasticity",
+        "metric": "200 GPa",
+        "english": "29000 ksi",
+        "comments": null
+      }
+    ],
+    "electrical": [
+      {
+        "property": "Electrical Resistivity",
+        "metric": "0.00000890 ohm-cm",
+        "english": "0.00000890 ohm-cm",
+        "comments": null
+      }
+    ],
+    "thermal": [
+      {
+        "property": "Melting Point",
+        "metric": "1535 °C",
+        "english": "2795 °F",
+        "comments": null
+      },
+      {
+        "property": "Thermal Conductivity",
+        "metric": "76.2 W/m-K",
+        "english": "529 BTU-in/hr-ft²-°F",
+        "comments": null
+      },
+      {
+        "property": "Specific Heat Capacity",
+        "metric": "0.440 J/g-°C",
+        "english": "0.105 BTU/lb-°F",
+        "comments": null
+      }
+    ],
+    "component_elements": [
+      {
+        "element": "Iron, Fe",
+        "metric": "100 %",
+        "english": "100 %",
+        "comments": null
+      }
+    ],
+    "descriptive": {
+      "CAS_Number": "7439-89-6"
+    }
+  }
+}

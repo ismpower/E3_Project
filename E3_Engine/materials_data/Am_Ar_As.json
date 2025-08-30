@@ -1,0 +1,384 @@
+{
+  "Americium, Am": {
+    "Physical": {
+      "Density": {
+        "value": 13.61,
+        "unit": "g/cc"
+      }
+    },
+    "Chemical": {
+      "Atomic Mass": {
+        "value": 234,
+        "unit": null
+      },
+      "Atomic Number": {
+        "value": 95,
+        "unit": null
+      },
+      "Thermal Neutron Cross Section": {
+        "value": null,
+        "unit": "barns/atom"
+      },
+      "X-ray Absorption Edge": {
+        "value": [
+          0.09972,
+          0.52084,
+          0.54036,
+          0.66933
+        ],
+        "unit": "Å"
+      },
+      "Critical Temperature": {
+        "value": null,
+        "unit": "°C"
+      },
+      "Critical Molar Volume": {
+        "value": null,
+        "unit": "cm³/mol"
+      },
+      "Electronegativity": {
+        "value": 1.3,
+        "unit": null
+      },
+      "Ionic Radius": {
+        "value": [
+          0.92,
+          1.07
+        ],
+        "unit": "Å"
+      },
+      "Electrochemical Equivalent": {
+        "value": null,
+        "unit": "g/A/h"
+      }
+    },
+    "Mechanical": {
+      "Bulk Modulus": {
+        "value": 45.0,
+        "unit": "GPa"
+      }
+    },
+    "Electrical": {
+      "Electrical Resistivity": {
+        "value": null,
+        "unit": "ohm-cm"
+      },
+      "Magnetic Susceptibility": {
+        "value": null,
+        "unit": null
+      },
+      "Critical Superconducting Temperature": {
+        "value": null,
+        "unit": "K"
+      }
+    },
+    "Thermal": {
+      "Heat of Fusion": {
+        "value": null,
+        "unit": "J/g"
+      },
+      "Heat of Vaporization": {
+        "value": null,
+        "unit": "J/g"
+      },
+      "CTE, linear": {
+        "value": [
+          6.2,
+          7.5
+        ],
+        "unit": "µm/m-°C"
+      },
+      "Specific Heat Capacity": {
+        "value": null,
+        "unit": "J/g-°C"
+      },
+      "Thermal Conductivity": {
+        "value": null,
+        "unit": "W/m-K"
+      },
+      "Melting Point": {
+        "value": 1173,
+        "unit": "°C"
+      },
+      "Boiling Point": {
+        "value": 2011,
+        "unit": "°C"
+      },
+      "Sublimation Temperature": {
+        "value": null,
+        "unit": "°C"
+      },
+      "Heat of Formation": {
+        "value": null,
+        "unit": "kJ/mol"
+      }
+    },
+    "Component Elements": {
+      "Americium, Am": {
+        "value": 100,
+        "unit": "%"
+      },
+      "Argon, Ar": {
+        "value": null,
+        "unit": "%"
+      },
+      "Arsenic, As": {
+        "value": null,
+        "unit": "%"
+      }
+    }
+  },
+  "Argon, Ar": {
+    "Physical": {
+      "Density": {
+        "value": 0.001633,
+        "unit": "g/cc"
+      }
+    },
+    "Chemical": {
+      "Atomic Mass": {
+        "value": 39.948,
+        "unit": null
+      },
+      "Atomic Number": {
+        "value": 18,
+        "unit": null
+      },
+      "Thermal Neutron Cross Section": {
+        "value": null,
+        "unit": "barns/atom"
+      },
+      "X-ray Absorption Edge": {
+        "value": [
+          3.87068,
+          43.192,
+          50.39,
+          50.803
+        ],
+        "unit": "Å"
+      },
+      "Critical Temperature": {
+        "value": -122.28,
+        "unit": "°C"
+      },
+      "Critical Molar Volume": {
+        "value": 75.0,
+        "unit": "cm³/mol"
+      },
+      "Electronegativity": {
+        "value": null,
+        "unit": null
+      },
+      "Ionic Radius": {
+        "value": 1.54,
+        "unit": "Å"
+      },
+      "Electrochemical Equivalent": {
+        "value": null,
+        "unit": "g/A/h"
+      }
+    },
+    "Mechanical": {
+      "Bulk Modulus": {
+        "value": null,
+        "unit": "GPa"
+      }
+    },
+    "Electrical": {
+      "Electrical Resistivity": {
+        "value": null,
+        "unit": "ohm-cm"
+      },
+      "Magnetic Susceptibility": {
+        "value": null,
+        "unit": null
+      },
+      "Critical Superconducting Temperature": {
+        "value": null,
+        "unit": "K"
+      }
+    },
+    "Thermal": {
+      "Heat of Fusion": {
+        "value": 29.54,
+        "unit": "J/g"
+      },
+      "Heat of Vaporization": {
+        "value": 161.0,
+        "unit": "J/g"
+      },
+      "CTE, linear": {
+        "value": null,
+        "unit": "µm/m-°C"
+      },
+      "Specific Heat Capacity": {
+        "value": 0.52,
+        "unit": "J/g-°C"
+      },
+      "Thermal Conductivity": {
+        "value": null,
+        "unit": "W/m-K"
+      },
+      "Melting Point": {
+        "value": -189.35,
+        "unit": "°C"
+      },
+      "Boiling Point": {
+        "value": -185.85,
+        "unit": "°C"
+      },
+      "Sublimation Temperature": {
+        "value": null,
+        "unit": "°C"
+      },
+      "Heat of Formation": {
+        "value": 0.0,
+        "unit": "kJ/mol"
+      }
+    },
+    "Component Elements": {
+      "Americium, Am": {
+        "value": null,
+        "unit": "%"
+      },
+      "Argon, Ar": {
+        "value": 100,
+        "unit": "%"
+      },
+      "Arsenic, As": {
+        "value": null,
+        "unit": "%"
+      }
+    }
+  },
+  "Arsenic, As": {
+    "Physical": {
+      "Density": {
+        "value": 5.72,
+        "unit": "g/cc"
+      }
+    },
+    "Chemical": {
+      "Atomic Mass": {
+        "value": 74.9216,
+        "unit": null
+      },
+      "Atomic Number": {
+        "value": 33,
+        "unit": null
+      },
+      "Thermal Neutron Cross Section": {
+        "value": 4.2,
+        "unit": "barns/atom"
+      },
+      "X-ray Absorption Edge": {
+        "value": [
+          1.044,
+          8.107,
+          9.1281,
+          9.3767
+        ],
+        "unit": "Å"
+      },
+      "Critical Temperature": {
+        "value": 1400,
+        "unit": "°C"
+      },
+      "Critical Molar Volume": {
+        "value": null,
+        "unit": "cm³/mol"
+      },
+      "Electronegativity": {
+        "value": 2.18,
+        "unit": null
+      },
+      "Ionic Radius": {
+        "value": [
+          0.46,
+          0.58,
+          2.22
+        ],
+        "unit": "Å"
+      },
+      "Electrochemical Equivalent": {
+        "value": 0.932,
+        "unit": "g/A/h"
+      }
+    },
+    "Mechanical": {
+      "Bulk Modulus": {
+        "value": null,
+        "unit": "GPa"
+      }
+    },
+    "Electrical": {
+      "Electrical Resistivity": {
+        "value": 0.000046,
+        "unit": "ohm-cm"
+      },
+      "Magnetic Susceptibility": {
+        "value": -3.1e-7,
+        "unit": null
+      },
+      "Critical Superconducting Temperature": {
+        "value": {
+          "min": 0.31,
+          "max": 0.5
+        },
+        "unit": "K"
+      }
+    },
+    "Thermal": {
+      "Heat of Fusion": {
+        "value": 370.5,
+        "unit": "J/g"
+      },
+      "Heat of Vaporization": {
+        "value": 416.9,
+        "unit": "J/g"
+      },
+      "CTE, linear": {
+        "value": 4.7,
+        "unit": "µm/m-°C"
+      },
+      "Specific Heat Capacity": {
+        "value": 0.33,
+        "unit": "J/g-°C"
+      },
+      "Thermal Conductivity": {
+        "value": 50.2,
+        "unit": "W/m-K"
+      },
+      "Melting Point": {
+        "value": 817,
+        "unit": "°C"
+      },
+      "Boiling Point": {
+        "value": null,
+        "unit": "°C"
+      },
+      "Sublimation Temperature": {
+        "value": 603,
+        "unit": "°C"
+      },
+      "Heat of Formation": {
+        "value": null,
+        "unit": "kJ/mol"
+      }
+    },
+    "Component Elements": {
+      "Americium, Am": {
+        "value": null,
+        "unit": "%"
+      },
+      "Argon, Ar": {
+        "value": null,
+        "unit": "%"
+      },
+      "Arsenic, As": {
+        "value": 100,
+        "unit": "%"
+      }
+    }
+  }
+}

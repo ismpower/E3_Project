@@ -1,0 +1,226 @@
+{
+  "productName": "Pyrotek PTB 2200 Structural Board",
+  "properties": {
+    "physicalProperties": {
+      "density": {
+        "metric": {
+          "min": 0.480,
+          "max": 0.640,
+          "unit": "g/cc"
+        },
+        "english": {
+          "min": 0.0173,
+          "max": 0.0231,
+          "unit": "lb/in³"
+        }
+      }
+    },
+    "mechanicalProperties": {
+      "modulusOfRupture": [
+        {
+          "metric": {
+            "value": 0.00140,
+            "unit": "GPa"
+          },
+          "english": {
+            "value": 0.203,
+            "unit": "ksi"
+          },
+          "comments": "parallel to grain"
+        },
+        {
+          "metric": {
+            "value": 0.00620,
+            "unit": "GPa"
+          },
+          "english": {
+            "value": 0.899,
+            "unit": "ksi"
+          },
+          "comments": "perpendicular to grain"
+        }
+      ],
+      "compressiveStrength": [
+        {
+          "metric": {
+            "value": 4.10,
+            "unit": "MPa"
+          },
+          "english": {
+            "value": 595,
+            "unit": "psi"
+          },
+          "comments": "Thickness"
+        },
+        {
+          "metric": {
+            "value": 17.9,
+            "unit": "MPa"
+          },
+          "english": {
+            "value": 2600,
+            "unit": "psi"
+          },
+          "comments": "Length"
+        }
+      ]
+    },
+    "thermalProperties": {
+      "cteLinear": [
+        {
+          "metric": {
+            "value": 0.900,
+            "unit": "µm/m-°C",
+            "temperature": {
+              "value": 20.0,
+              "unit": "°C"
+            }
+          },
+          "english": {
+            "value": 0.500,
+            "unit": "µin/in-°F",
+            "temperature": {
+              "value": 68.0,
+              "unit": "°F"
+            }
+          },
+          "comments": "thickness"
+        },
+        {
+          "metric": {
+            "value": 1.10,
+            "unit": "µm/m-°C",
+            "temperature": {
+              "value": 20.0,
+              "unit": "°C"
+            }
+          },
+          "english": {
+            "value": 0.611,
+            "unit": "µin/in-°F",
+            "temperature": {
+              "value": 68.0,
+              "unit": "°F"
+            }
+          },
+          "comments": "Length"
+        }
+      ],
+      "thermalConductivity": [
+        {
+          "metric": {
+            "value": 0.0700,
+            "unit": "W/m-K",
+            "temperature": {
+              "value": 204,
+              "unit": "°C"
+            }
+          },
+          "english": {
+            "value": 0.486,
+            "unit": "BTU-in/hr-ft²-°F",
+            "temperature": {
+              "value": 399,
+              "unit": "°F"
+            }
+          }
+        },
+        {
+          "metric": {
+            "value": 0.0900,
+            "unit": "W/m-K",
+            "temperature": {
+              "value": 425,
+              "unit": "°C"
+            }
+          },
+          "english": {
+            "value": 0.625,
+            "unit": "BTU-in/hr-ft²-°F",
+            "temperature": {
+              "value": 797,
+              "unit": "°F"
+            }
+          }
+        },
+        {
+          "metric": {
+            "value": 0.110,
+            "unit": "W/m-K",
+            "temperature": {
+              "value": 630,
+              "unit": "°C"
+            }
+          },
+          "english": {
+            "value": 0.763,
+            "unit": "BTU-in/hr-ft²-°F",
+            "temperature": {
+              "value": 1170,
+              "unit": "°F"
+            }
+          }
+        },
+        {
+          "metric": {
+            "value": 0.150,
+            "unit": "W/m-K",
+            "temperature": {
+              "value": 980,
+              "unit": "°C"
+            }
+          },
+          "english": {
+            "value": 1.04,
+            "unit": "BTU-in/hr-ft²-°F",
+            "temperature": {
+              "value": 1800,
+              "unit": "°F"
+            }
+          }
+        }
+      ],
+      "maximumServiceTemperatureAir": {
+        "metric": {
+          "value": 1204,
+          "unit": "°C"
+        },
+        "english": {
+          "value": 2199,
+          "unit": "°F"
+        },
+        "comments": "Continuous"
+      },
+      "shrinkage": [
+        {
+          "value": "1.6 %",
+          "condition": {
+            "metric": {
+              "temperature": "1350 °C",
+              "time": "86400 sec"
+            },
+            "english": {
+              "temperature": "2460 °F",
+              "time": "24.0 hour"
+            }
+          },
+          "comments": "Linear"
+        },
+        {
+          "value": "10 %",
+          "condition": {
+            "metric": {
+              "temperature": "1350 °C",
+              "time": "86400 sec"
+            },
+            "english": {
+              "temperature": "2460 °F",
+              "time": "24.0 hour"
+            }
+          },
+          "comments": "Thickness"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "material": "Tungsten, W",
+  "properties": {
+    "physical": [
+      {
+        "property": "Density",
+        "metric": "19.3 g/cc",
+        "english": "0.697 lb/in³",
+        "comments": null
+      },
+      {
+        "property": "Lattice Constant",
+        "metric": "3.165 Å",
+        "english": "3.165 Å",
+        "comments": "body-centered cubic"
+      }
+    ],
+    "chemical": [
+      {
+        "property": "Atomic Mass",
+        "metric": "183.84",
+        "english": "183.84",
+        "comments": "1995"
+      },
+      {
+        "property": "Atomic Number",
+        "metric": "74",
+        "english": "74",
+        "comments": null
+      },
+      {
+        "property": "Electronegativity",
+        "metric": "1.7",
+        "english": "1.7",
+        "comments": "Pauling"
+      }
+    ],
+    "mechanical": [
+      {
+        "property": "Hardness, Vickers",
+        "metric": "310",
+        "english": "310",
+        "comments": null
+      },
+      {
+        "property": "Tensile Strength, Ultimate",
+        "metric": "980 MPa",
+        "english": "142000 psi",
+        "comments": null
+      },
+      {
+        "property": "Modulus of Elasticity",
+        "metric": "400 GPa",
+        "english": "58000 ksi",
+        "comments": null
+      }
+    ],
+    "electrical": [
+      {
+        "property": "Electrical Resistivity",
+        "metric": "0.00000565 ohm-cm",
+        "english": "0.00000565 ohm-cm",
+        "comments": null
+      }
+    ],
+    "thermal": [
+      {
+        "property": "Melting Point",
+        "metric": "3370 °C",
+        "english": "6100 °F",
+        "comments": null
+      },
+      {
+        "property": "Thermal Conductivity",
+        "metric": "163.3 W/m-K",
+        "english": "1133 BTU-in/hr-ft²-°F",
+        "comments": null
+      },
+      {
+        "property": "Specific Heat Capacity",
+        "metric": "0.134 J/g-°C",
+        "english": "0.0320 BTU/lb-°F",
+        "comments": null
+      }
+    ],
+    "component_elements": [
+      {
+        "element": "Tungsten, W",
+        "metric": "100 %",
+        "english": "100 %",
+        "comments": null
+      }
+    ],
+    "descriptive": {
+      "CAS_Number": "7440-33-7"
+    }
+  }
+}

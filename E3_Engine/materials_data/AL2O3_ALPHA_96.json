@@ -1,0 +1,247 @@
+{
+  "material_name": "Alumina, alpha Al2O3, 96%",
+  "properties": {
+    "physical_properties": {
+      "density": {
+        "metric": {
+          "value": 3.72,
+          "unit": "g/cc"
+        },
+        "english": {
+          "value": 0.134,
+          "unit": "lb/in³"
+        },
+        "comments": null
+      }
+    },
+    "mechanical_properties": {
+      "modulus_of_elasticity": {
+        "metric": {
+          "value": 303,
+          "unit": "GPa"
+        },
+        "english": {
+          "value": 43900,
+          "unit": "ksi"
+        },
+        "comments": null
+      },
+      "compressive_strength": {
+        "metric": {
+          "value": 2067,
+          "unit": "MPa",
+          "condition": "At Temperature 25.0 °C"
+        },
+        "english": {
+          "value": 299800,
+          "unit": "psi",
+          "condition": "At Temperature 77.0 °F"
+        },
+        "comments": null
+      },
+      "poissons_ratio": {
+        "metric": {
+          "value": 0.21,
+          "unit": null
+        },
+        "english": {
+          "value": 0.21,
+          "unit": null
+        },
+        "comments": null
+      },
+      "shear_modulus": {
+        "metric": {
+          "value": 125,
+          "unit": "GPa"
+        },
+        "english": {
+          "value": 18100,
+          "unit": "ksi"
+        },
+        "comments": "Calculated"
+      }
+    },
+    "electrical_properties": {
+      "electrical_resistivity": [
+        {
+          "metric": {
+            "value": "1.00e+6",
+            "unit": "ohm-cm",
+            "condition": "At Temperature 1000 °C"
+          },
+          "english": {
+            "value": "1.00e+6",
+            "unit": "ohm-cm",
+            "condition": "At Temperature 1830 °F"
+          }
+        },
+        {
+          "metric": {
+            "value": "4.00e+9",
+            "unit": "ohm-cm",
+            "condition": "At Temperature 500 °C"
+          },
+          "english": {
+            "value": "4.00e+9",
+            "unit": "ohm-cm",
+            "condition": "At Temperature 932 °F"
+          }
+        }
+      ],
+      "dielectric_constant": [
+        {
+          "metric": {
+            "value": 8.9,
+            "condition": "At Frequency 1e+10 Hz"
+          },
+          "english": {
+            "value": 8.9,
+            "condition": "At Frequency 1e+10 Hz"
+          }
+        },
+        {
+          "metric": {
+            "value": 9.0,
+            "condition": "At Frequency 1000 Hz"
+          },
+          "english": {
+            "value": 9.0,
+            "condition": "At Frequency 1000 Hz"
+          }
+        },
+        {
+          "metric": {
+            "value": 9.0,
+            "condition": "At Frequency 1e+6 Hz"
+          },
+          "english": {
+            "value": 9.0,
+            "condition": "At Frequency 1e+6 Hz"
+          }
+        }
+      ],
+      "dielectric_strength": {
+        "metric": {
+          "value": 8.26,
+          "unit": "kV/mm"
+        },
+        "english": {
+          "value": 210,
+          "unit": "kV/in"
+        },
+        "comments": "AC, avg. RMS values at 60 Hz, 63 mm thick"
+      },
+      "dissipation_factor": [
+        {
+          "metric": {
+            "value": 0.0001,
+            "condition": "At Frequency 1e+6 Hz"
+          },
+          "english": {
+            "value": 0.0001,
+            "condition": "At Frequency 1e+6 Hz"
+          }
+        },
+        {
+          "metric": {
+            "value": 0.0006,
+            "condition": "At Frequency 1e+10 Hz"
+          },
+          "english": {
+            "value": 0.0006,
+            "condition": "At Frequency 1e+10 Hz"
+          }
+        },
+        {
+          "metric": {
+            "value": 0.0011,
+            "condition": "At Frequency 1000 Hz"
+          },
+          "english": {
+            "value": 0.0011,
+            "condition": "At Frequency 1000 Hz"
+          }
+        }
+      ]
+    },
+    "thermal_properties": {
+      "cte_linear": [
+        {
+          "metric": {
+            "value": 7.4,
+            "unit": "µm/m-°C",
+            "condition": "From Temperature 25.0 - 400 °C"
+          },
+          "english": {
+            "value": 4.11,
+            "unit": "µin/in-°F",
+            "condition": "From Temperature 77.0 - 752 °F"
+          }
+        },
+        {
+          "metric": {
+            "value": 8.2,
+            "unit": "µm/m-°C",
+            "condition": "From Temperature 25.0 - 1000 °C"
+          },
+          "english": {
+            "value": 4.56,
+            "unit": "µin/in-°F",
+            "condition": "From Temperature 77.0 - 1830 °F"
+          }
+        }
+      ],
+      "thermal_conductivity": [
+        {
+          "metric": {
+            "value": 24.0,
+            "unit": "W/m-K"
+          },
+          "english": {
+            "value": 167,
+            "unit": "BTU-in/hr-ft²-°F"
+          },
+          "comments": null
+        },
+        {
+          "metric": {
+            "value": 10.0,
+            "unit": "W/m-K",
+            "condition": "At Temperature 400 °C"
+          },
+          "english": {
+            "value": 69.4,
+            "unit": "BTU-in/hr-ft²-°F",
+            "condition": "At Temperature 752 °F"
+          }
+        },
+        {
+          "metric": {
+            "value": 19.0,
+            "unit": "W/m-K",
+            "condition": "At Temperature 100 °C"
+          },
+          "english": {
+            "value": 132,
+            "unit": "BTU-in/hr-ft²-°F",
+            "condition": "At Temperature 212 °F"
+          }
+        }
+      ]
+    },
+    "component_elements_properties": {
+      "Al2O3": {
+        "metric": {
+          "value": 96,
+          "unit": "%"
+        },
+        "english": {
+          "value": 96,
+          "unit": "%"
+        },
+        "comments": null
+      }
+    }
+  }
+}

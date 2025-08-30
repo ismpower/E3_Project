@@ -1,0 +1,239 @@
+{
+  "page_title": "MatWeb - The Online Materials Information Resource",
+  "data_selection": [
+    {
+      "category": "Physical",
+      "properties": [
+        {
+          "name": "Density",
+          "unit": "g/cc",
+          "value1": 2.6989,
+          "value2": 10.491
+        }
+      ]
+    },
+    {
+      "category": "Chemical",
+      "properties": [
+        {
+          "name": "Atomic Mass",
+          "unit": "",
+          "value1": 26.98154,
+          "value2": 107.8682
+        },
+        {
+          "name": "Atomic Number",
+          "unit": "",
+          "value1": 13,
+          "value2": 47
+        },
+        {
+          "name": "Thermal Neutron Cross Section",
+          "unit": "barns/atom",
+          "value1": 0.215,
+          "value2": 63
+        },
+        {
+          "name": "X-ray Absorption Edge",
+          "unit": "Å",
+          "value1": [
+            7.9511,
+            142.48,
+            172.16,
+            172.16
+          ],
+          "value2": [
+            0.4858,
+            3.23824,
+            3.49478,
+            3.67288
+          ]
+        },
+        {
+          "name": "Electrode Potential",
+          "unit": "V",
+          "value1": -1.69,
+          "value2": 0.799
+        },
+        {
+          "name": "Electronegativity",
+          "unit": "",
+          "value1": 1.61,
+          "value2": 1.93
+        },
+        {
+          "name": "Ionic Radius",
+          "unit": "Å",
+          "value1": 0.51,
+          "value2": [
+            0.89,
+            1.26
+          ]
+        },
+        {
+          "name": "Electrochemical Equivalent",
+          "unit": "g/A/h",
+          "value1": 0.3354,
+          "value2": 4.025
+        }
+      ]
+    },
+    {
+      "category": "Mechanical",
+      "properties": [
+        {
+          "name": "Hardness, Vickers",
+          "unit": "",
+          "value1": 15,
+          "value2": 25
+        },
+        {
+          "name": "Tensile Strength, Ultimate",
+          "unit": "MPa",
+          "value1": null,
+          "value2": 140
+        },
+        {
+          "name": "Modulus of Elasticity",
+          "unit": "GPa",
+          "value1": 68,
+          "value2": 76
+        },
+        {
+          "name": "Poissons Ratio",
+          "unit": "",
+          "value1": 0.36,
+          "value2": [
+            0.37,
+            0.39
+          ]
+        },
+        {
+          "name": "Shear Modulus",
+          "unit": "GPa",
+          "value1": 25,
+          "value2": 27.8
+        }
+      ]
+    },
+    {
+      "category": "Electrical",
+      "properties": [
+        {
+          "name": "Electrical Resistivity",
+          "unit": "ohm-cm",
+          "value1": 0.0000027,
+          "value2": 0.00000155
+        },
+        {
+          "name": "Magnetic Susceptibility",
+          "unit": "",
+          "value1": "6.0e-7",
+          "value2": "2.0e-7"
+        },
+        {
+          "name": "Critical Magnetic Field Strength, Oersted",
+          "unit": "",
+          "value1": "101.9 - 107.9",
+          "value2": null
+        },
+        {
+          "name": "Critical Superconducting Temperature",
+          "unit": "K",
+          "value1": "1.73 - 1.77",
+          "value2": null
+        }
+      ]
+    },
+    {
+      "category": "Thermal",
+      "properties": [
+        {
+          "name": "Heat of Fusion",
+          "unit": "J/g",
+          "value1": 386.9,
+          "value2": 105
+        },
+        {
+          "name": "Heat of Vaporization",
+          "unit": "J/g",
+          "value1": 9462,
+          "value2": 2332
+        },
+        {
+          "name": "CTE, linear",
+          "unit": "µm/m-°C",
+          "value1": [
+            24,
+            25.5,
+            27.4
+          ],
+          "value2": [
+            19.6,
+            19.9,
+            20.6,
+            22.4
+          ]
+        },
+        {
+          "name": "Specific Heat Capacity",
+          "unit": "J/g-°C",
+          "value1": 0.9,
+          "value2": 0.234
+        },
+        {
+          "name": "Thermal Conductivity",
+          "unit": "W/m-K",
+          "value1": 210,
+          "value2": 419
+        },
+        {
+          "name": "Melting Point",
+          "unit": "°C",
+          "value1": 660.37,
+          "value2": 961.93
+        },
+        {
+          "name": "Boiling Point",
+          "unit": "°C",
+          "value1": 2519,
+          "value2": 2162
+        }
+      ]
+    },
+    {
+      "category": "Optical",
+      "properties": [
+        {
+          "name": "Emissivity (0-1)",
+          "unit": "",
+          "value1": "0.20 - 0.30",
+          "value2": null
+        },
+        {
+          "name": "Reflection Coefficient, Visible (0-1)",
+          "unit": "",
+          "value1": 0.9,
+          "value2": 0.9
+        }
+      ]
+    },
+    {
+      "category": "Component Elements",
+      "properties": [
+        {
+          "name": "Aluminum, Al",
+          "unit": "%",
+          "value1": 100,
+          "value2": null
+        },
+        {
+          "name": "Silver, Ag",
+          "unit": "%",
+          "value1": null,
+          "value2": 100
+        }
+      ]
+    }
+  ]
+}

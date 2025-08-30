@@ -1,0 +1,207 @@
+{
+  "Physical Properties": {
+    "Density": {
+      "Metric": "8.88 g/cc",
+      "English": "0.321 lb/in³",
+      "Comments": null
+    }
+  },
+  "Chemical Properties": {
+    "Atomic Mass": {
+      "Metric": "58.6934",
+      "English": "58.6934",
+      "Comments": "1995"
+    },
+    "Atomic Number": {
+      "Metric": "28",
+      "English": "28",
+      "Comments": null
+    },
+    "Thermal Neutron Cross Section": {
+      "Metric": "4.8 barns/atom",
+      "English": "4.8 barns/atom",
+      "Comments": null
+    },
+    "X-ray Absorption Edge": [
+      {
+        "Metric": "1.488 Å",
+        "English": "1.488 Å",
+        "Comments": "K"
+      },
+      {
+        "Metric": "12.267 Å",
+        "English": "12.267 Å",
+        "Comments": "LI"
+      },
+      {
+        "Metric": "14.135 Å",
+        "English": "14.135 Å",
+        "Comments": "LII"
+      },
+      {
+        "Metric": "14.4476 Å",
+        "English": "14.4476 Å",
+        "Comments": "LIII"
+      }
+    ],
+    "Electrode Potential": {
+      "Metric": "-0.250 V",
+      "English": "-0.250 V",
+      "Comments": null
+    },
+    "Electronegativity": {
+      "Metric": "1.91",
+      "English": "1.91",
+      "Comments": "Pauling"
+    },
+    "Ionic Radius": {
+      "Metric": "0.690 Å",
+      "English": "0.690 Å",
+      "Comments": "Crystal Ionic Radius for Valence +2"
+    },
+    "Electrochemical Equivalent": {
+      "Metric": "1.0945 g/A/h",
+      "English": "1.0945 g/A/h",
+      "Comments": null
+    }
+  },
+  "Mechanical Properties": {
+    "Tensile Strength, Ultimate": [
+      {
+        "Metric": "45.0 MPa",
+        "English": "6530 psi",
+        "Comments": "Annealed"
+      },
+      {
+        "Metric": "317 MPa",
+        "English": "46000 psi",
+        "Comments": "Typical"
+      }
+    ],
+    "Tensile Strength, Yield": {
+      "Metric": "59.0 MPa",
+      "English": "8560 psi",
+      "Comments": "Typical"
+    },
+    "Elongation at Break": {
+      "Metric": "30 %",
+      "English": "30 %",
+      "Comments": "Annealed"
+    },
+    "Modulus of Elasticity": {
+      "Metric": "207 GPa",
+      "English": "30000 ksi",
+      "Comments": null
+    },
+    "Poissons Ratio": {
+      "Metric": "0.31",
+      "English": "0.31",
+      "Comments": null
+    },
+    "Shear Modulus": {
+      "Metric": "76.0 GPa",
+      "English": "11000 ksi",
+      "Comments": null
+    }
+  },
+  "Electrical Properties": {
+    "Electrical Resistivity": {
+      "Metric": "0.00000640 ohm-cm",
+      "English": "0.00000640 ohm-cm",
+      "Comments": null
+    },
+    "Magnetic Permeability": {
+      "Metric": "1240",
+      "English": "1240",
+      "Comments": "mu(max) with B=1900G"
+    },
+    "Curie Temperature": {
+      "Metric": "358 °C",
+      "English": "676 °F",
+      "Comments": null
+    }
+  },
+  "Thermal Properties": {
+    "Heat of Fusion": {
+      "Metric": "305.6 J/g",
+      "English": "131.5 BTU/lb",
+      "Comments": null
+    },
+    "Heat of Vaporization": {
+      "Metric": "5862 J/g",
+      "English": "2522 BTU/lb",
+      "Comments": null
+    },
+    "CTE, linear": [
+      {
+        "Metric": "13.1 µm/m-°C",
+        "English": "7.28 µin/in-°F",
+        "Comments": null
+      },
+      {
+        "Metric": "@Temperature 20.0 °C",
+        "English": "@Temperature 68.0 °F",
+        "Comments": null
+      }
+    ],
+    "Specific Heat Capacity": {
+      "Metric": "0.460 J/g-°C",
+      "English": "0.110 BTU/lb-°F",
+      "Comments": null
+    },
+    "Thermal Conductivity": {
+      "Metric": "60.7 W/m-K",
+      "English": "421 BTU-in/hr-ft²-°F",
+      "Comments": null
+    },
+    "Melting Point": {
+      "Metric": "1455 °C",
+      "English": "2651 °F",
+      "Comments": null
+    },
+    "Boiling Point": {
+      "Metric": "2913 °C",
+      "English": "5275 °F",
+      "Comments": null
+    }
+  },
+  "Optical Properties": {
+    "Emissivity (0-1)": [
+      {
+        "Metric": "0.080",
+        "English": "0.080",
+        "Comments": null
+      },
+      {
+        "Metric": "@Temperature 200 - 400 °C",
+        "English": "@Temperature 392 - 752 °F",
+        "Comments": "polished total spectrum"
+      },
+      {
+        "Metric": "0.19",
+        "English": "0.19",
+        "Comments": null
+      },
+      {
+        "Metric": "@Temperature 1000 °C",
+        "English": "@Temperature 1830 °F",
+        "Comments": "unoxidized"
+      }
+    ],
+    "Reflection Coefficient, Visible (0-1)": {
+      "Metric": "0.413",
+      "English": "0.413",
+      "Comments": "300 nm spectral"
+    }
+  },
+  "Component Elements Properties": {
+    "Nickel, Ni": {
+      "Metric": "100 %",
+      "English": "100 %",
+      "Comments": null
+    }
+  },
+  "Descriptive Properties": {
+    "CAS Number": "7440-02-0"
+  }
+}

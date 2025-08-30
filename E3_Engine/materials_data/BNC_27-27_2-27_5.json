@@ -1,0 +1,214 @@
+{
+  "material_grades": [
+    {
+      "grade_id": 1,
+      "physical": {
+        "density": {
+          "min": 5.60,
+          "max": 6.00,
+          "unit": "g/cc"
+        }
+      },
+      "mechanical": {
+        "hardness_rockwell_r": {
+          "min": 80,
+          "max": 120,
+          "unit": null
+        },
+        "modulus_of_elasticity": {
+          "value": 28.0,
+          "unit": "GPa"
+        },
+        "compressive_yield_strength": {
+          "min": 27.0,
+          "max": 33.0,
+          "unit": "MPa"
+        }
+      },
+      "electrical": {
+        "electrical_resistivity": {
+          "value": 0.0250,
+          "unit": "ohm-cm"
+        }
+      },
+      "magnetic": {
+        "magnetic_coercive_force_hc": {
+          "values": [
+            {
+              "min": 5000,
+              "max": 5400
+            },
+            {
+              "min": 9000,
+              "max": 10000
+            }
+          ],
+          "unit": "Oe"
+        },
+        "magnetic_remanence_br": {
+          "min": 6000,
+          "max": 6400,
+          "unit": "Gauss"
+        },
+        "magnetic_maximum_energy_product_bh": {
+          "min": 7.0,
+          "max": 8.0,
+          "unit": "MGOe"
+        },
+        "curie_temperature": {
+          "value": "<= 320",
+          "unit": "°C"
+        }
+      },
+      "thermal": {
+        "maximum_service_temperature_air": {
+          "values": [
+            "<= 120",
+            "<= 160"
+          ],
+          "unit": "°C"
+        }
+      }
+    },
+    {
+      "grade_id": 2,
+      "physical": {
+        "density": {
+          "min": 5.60,
+          "max": 6.00,
+          "unit": "g/cc"
+        }
+      },
+      "mechanical": {
+        "hardness_rockwell_r": {
+          "min": 80,
+          "max": 120,
+          "unit": null
+        },
+        "modulus_of_elasticity": {
+          "value": 28.0,
+          "unit": "GPa"
+        },
+        "compressive_yield_strength": {
+          "min": 27.0,
+          "max": 33.0,
+          "unit": "MPa"
+        }
+      },
+      "electrical": {
+        "electrical_resistivity": {
+          "value": 0.0250,
+          "unit": "ohm-cm"
+        }
+      },
+      "magnetic": {
+        "magnetic_coercive_force_hc": {
+          "values": [
+            {
+              "min": 4000,
+              "max": 5000
+            },
+            {
+              "min": 9000,
+              "max": 10000
+            }
+          ],
+          "unit": "Oe"
+        },
+        "magnetic_remanence_br": {
+          "min": 5500,
+          "max": 6000,
+          "unit": "Gauss"
+        },
+        "magnetic_maximum_energy_product_bh": {
+          "min": 6.0,
+          "max": 7.0,
+          "unit": "MGOe"
+        },
+        "curie_temperature": {
+          "value": "<= 320",
+          "unit": "°C"
+        }
+      },
+      "thermal": {
+        "maximum_service_temperature_air": {
+          "values": [
+            "<= 120",
+            "<= 160"
+          ],
+          "unit": "°C"
+        }
+      }
+    },
+    {
+      "grade_id": 3,
+      "physical": {
+        "density": {
+          "min": 5.60,
+          "max": 6.00,
+          "unit": "g/cc"
+        }
+      },
+      "mechanical": {
+        "hardness_rockwell_r": {
+          "min": 80,
+          "max": 120,
+          "unit": null
+        },
+        "modulus_of_elasticity": {
+          "value": 28.0,
+          "unit": "GPa"
+        },
+        "compressive_yield_strength": {
+          "min": 27.0,
+          "max": 33.0,
+          "unit": "MPa"
+        }
+      },
+      "electrical": {
+        "electrical_resistivity": {
+          "value": 0.0250,
+          "unit": "ohm-cm"
+        }
+      },
+      "magnetic": {
+        "magnetic_coercive_force_hc": {
+          "values": [
+            {
+              "min": 3000,
+              "max": 4000
+            },
+            {
+              "min": 9000,
+              "max": 10000
+            }
+          ],
+          "unit": "Oe"
+        },
+        "magnetic_remanence_br": {
+          "min": 4000,
+          "max": 4500,
+          "unit": "Gauss"
+        },
+        "magnetic_maximum_energy_product_bh": {
+          "min": 3.0,
+          "max": 4.0,
+          "unit": "MGOe"
+        },
+        "curie_temperature": {
+          "value": "<= 320",
+          "unit": "°C"
+        }
+      },
+      "thermal": {
+        "maximum_service_temperature_air": {
+          "values": [
+            "<= 120",
+            "<= 160"
+          ],
+          "unit": "°C"
+        }
+      }
+    }
+  ]
+}

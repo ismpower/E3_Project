@@ -1,0 +1,148 @@
+{
+  "Overview": "Alumina, 96%, Al2O3",
+  "Physical_Properties": [
+    {
+      "Property": "Density",
+      "Metric": "3.80 g/cc",
+      "English": "0.137 lb/in³",
+      "Comments": null
+    },
+    {
+      "Property": "Water Absorption",
+      "Metric": "0.00 %",
+      "English": "0.00 %",
+      "Comments": null
+    },
+    {
+      "Property": "Weibull Modulus",
+      "Metric": ">= 10",
+      "English": ">= 10",
+      "Comments": null
+    }
+  ],
+  "Mechanical_Properties": [
+    {
+      "Property": "Hardness, Mohs",
+      "Metric": "9.0",
+      "English": "9.0",
+      "Comments": null
+    },
+    {
+      "Property": "Tensile Strength, Ultimate",
+      "Metric": "200 MPa",
+      "English": "29000 psi",
+      "Comments": null
+    },
+    {
+      "Property": "Modulus of Elasticity",
+      "Metric": "300 GPa",
+      "English": "43500 ksi",
+      "Comments": null
+    },
+    {
+      "Property": "Flexural Strength",
+      "Metric": "320 MPa",
+      "English": "46400 psi",
+      "Comments": null
+    },
+    {
+      "Property": "Compressive Strength",
+      "Metric": "2400 MPa",
+      "English": "348000 psi",
+      "Comments": null
+    },
+    {
+      "Property": "Poissons Ratio",
+      "Metric": "0.22",
+      "English": "0.22",
+      "Comments": null
+    },
+    {
+      "Property": "Fracture Toughness",
+      "Metric": "4.50 MPa-m½",
+      "English": "4.10 ksi-in½",
+      "Comments": null
+    },
+    {
+      "Property": "Shear Modulus",
+      "Metric": "130 GPa",
+      "English": "18900 ksi",
+      "Comments": null
+    }
+  ],
+  "Electrical_Properties": [
+    {
+      "Property": "Electrical Resistivity",
+      "Metric": "1.00e+14 ohm-cm",
+      "English": "1.00e+14 ohm-cm",
+      "Comments": null
+    },
+    {
+      "Property": "Dielectric Constant",
+      "Metric": "9.3",
+      "English": "9.3",
+      "Comments": null
+    },
+    {
+      "Property": "Dielectric Strength",
+      "Metric": "9.00 kV/mm",
+      "English": "229 kV/in",
+      "Comments": "Wide Variation Between Grades"
+    }
+  ],
+  "Thermal_Properties": [
+    {
+      "Property": "CTE, linear",
+      "data": [
+        {
+          "Value_Metric": "6.40 µm/m-°C",
+          "Temperature_Range_Metric": "20.0 - 300 °C",
+          "Value_English": "3.56 µin/in-°F",
+          "Temperature_Range_English": "68.0 - 572 °F"
+        },
+        {
+          "Value_Metric": "7.60 µm/m-°C",
+          "Temperature_Range_Metric": "20.0 - 700 °C",
+          "Value_English": "4.22 µin/in-°F",
+          "Temperature_Range_English": "68.0 - 1290 °F"
+        },
+        {
+          "Value_Metric": "8.00 µm/m-°C",
+          "Temperature_Range_Metric": "20.0 - 1000 °C",
+          "Value_English": "4.44 µin/in-°F",
+          "Temperature_Range_English": "68.0 - 1830 °F"
+        }
+      ],
+      "Comments": null
+    },
+    {
+      "Property": "Specific Heat Capacity",
+      "Metric": "0.880 J/g-°C",
+      "English": "0.210 BTU/lb-°F",
+      "Comments": null
+    },
+    {
+      "Property": "Thermal Conductivity",
+      "Metric": "25.0 W/m-K",
+      "English": "174 BTU-in/hr-ft²-°F",
+      "Comments": null
+    },
+    {
+      "Property": "Maximum Service Temperature, Air",
+      "Metric": "1575 °C",
+      "English": "2867 °F",
+      "Comments": "No Load"
+    }
+  ],
+  "Component_Elements_Properties": [
+    {
+      "Property": "Al2O3",
+      "Metric": "96 %",
+      "English": "96 %",
+      "Comments": null
+    }
+  ],
+  "Descriptive_Properties": {
+    "Color": "White to Ivory/Brown/Pink"
+  }
+}

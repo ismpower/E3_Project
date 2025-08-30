@@ -1,0 +1,84 @@
+{
+  "material": "Diamond, Synthetic",
+  "properties": {
+    "physical": [
+      {
+        "property": "Density",
+        "metric": "3.20 - 3.52 g/cc",
+        "english": "0.116 - 0.127 lb/in³",
+        "comments": null
+      }
+    ],
+    "mechanical": [
+      {
+        "property": "Knoop Microhardness",
+        "metric": "54 - 84 GPa",
+        "english": "54 - 84 GPa",
+        "comments": null
+      },
+      {
+        "property": "Vickers Microhardness",
+        "metric": "88 - 108 GPa",
+        "english": "88 - 108 GPa",
+        "comments": "Type 1b"
+      },
+      {
+        "property": "Vickers Microhardness",
+        "metric": "108 - 145 GPa",
+        "english": "108 - 145 GPa",
+        "comments": "Type IIa"
+      },
+      {
+        "property": "Modulus of Elasticity",
+        "metric": "800 - 925 GPa",
+        "english": "116000 - 134000 ksi",
+        "comments": null
+      },
+      {
+        "property": "Compressive Strength",
+        "metric": "4500 - 5800 MPa",
+        "english": "653000 - 841000 psi",
+        "comments": null
+      },
+      {
+        "property": "Poissons Ratio",
+        "metric": "0.20",
+        "english": "0.20",
+        "comments": null
+      },
+      {
+        "property": "Fracture Toughness",
+        "metric": "6.00 - 10.7 MPa-m½",
+        "english": "5.46 - 9.74 ksi-in½",
+        "comments": null
+      },
+      {
+        "property": "Shear Modulus",
+        "metric": "333 - 385 GPa",
+        "english": "48300 - 55800 ksi",
+        "comments": "Calculated"
+      }
+    ],
+    "thermal": [
+      {
+        "property": "Thermal Conductivity",
+        "metric": "2000 W/m-K",
+        "english": "13900 BTU-in/hr-ft²-°F",
+        "comments": null
+      }
+    ],
+    "component_elements": [
+      {
+        "element": "Carbon, C",
+        "metric": "99.9+ %",
+        "english": "99.9+ %",
+        "comments": "Synthetic diamond"
+      }
+    ],
+    "descriptive": {
+      "color": "Clear",
+      "crystal_structure": "Cubic - Diamond structure, Space Group Fd3m",
+      "notes": "Impurities (i.e. Nitrogen) and irradiation can change color to yellow, green, blue, pink, or brown."
+    }
+  }
+}

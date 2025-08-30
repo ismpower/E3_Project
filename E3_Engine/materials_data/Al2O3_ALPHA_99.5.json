@@ -1,0 +1,110 @@
+{
+  "physical_properties": {
+    "density": {
+      "metric": "3.90 g/cc",
+      "english": "0.141 lb/in³"
+    },
+    "water_absorption": {
+      "metric": "0.00 %",
+      "english": "0.00 %"
+    }
+  },
+  "mechanical_properties": {
+    "hardness_mohs": {
+      "metric": "9.0",
+      "english": "9.0"
+    },
+    "tensile_strength_ultimate": {
+      "metric": "260 MPa",
+      "english": "37700 psi"
+    },
+    "modulus_of_elasticity": {
+      "metric": "370 GPa",
+      "english": "53700 ksi"
+    },
+    "flexural_strength": {
+      "metric": "350 MPa",
+      "english": "50800 psi"
+    },
+    "compressive_strength": {
+      "metric": "2600 MPa",
+      "english": "377000 psi"
+    },
+    "poissons_ratio": {
+      "metric": "0.22",
+      "english": "0.22"
+    },
+    "fracture_toughness": {
+      "metric": "4.00 MPa-m½",
+      "english": "3.64 ksi-in½"
+    },
+    "shear_modulus": {
+      "metric": "140 GPa",
+      "english": "20300 ksi"
+    }
+  },
+  "electrical_properties": {
+    "electrical_resistivity": {
+      "metric": "1.00e+14 ohm-cm",
+      "english": "1.00e+14 ohm-cm"
+    },
+    "dielectric_constant": {
+      "metric": "9.7",
+      "english": "9.7"
+    },
+    "dielectric_strength": {
+      "metric": "9.00 kV/mm",
+      "english": "229 kV/in",
+      "comment": "Wide Variation Between Grades"
+    }
+  },
+  "thermal_properties": {
+    "cte_linear": [
+      {
+        "metric": "7.60 µm/m-°C",
+        "english": "4.22 µin/in-°F",
+        "temperature_metric": "25.0 - 400 °C",
+        "temperature_english": "77.0 - 752 °F"
+      },
+      {
+        "metric": "8.20 µm/m-°C",
+        "english": "4.56 µin/in-°F",
+        "temperature_metric": "20.0 - 1000 °C",
+        "temperature_english": "68.0 - 1830 °F"
+      }
+    ],
+    "specific_heat_capacity": {
+      "metric": "0.880 J/g-°C",
+      "english": "0.210 BTU/lb-°F"
+    },
+    "thermal_conductivity": [
+      {
+        "metric": "30.0 W/m-K",
+        "english": "208 BTU-in/hr-ft²-°F"
+      },
+      {
+        "metric": "12.0 W/m-K",
+        "english": "83.3 BTU-in/hr-ft²-°F",
+        "temperature_metric": "400 °C",
+        "temperature_english": "752 °F"
+      },
+      {
+        "metric": "26.0 W/m-K",
+        "english": "180 BTU-in/hr-ft²-°F",
+        "temperature_metric": "100 °C",
+        "temperature_english": "212 °F"
+      }
+    ],
+    "maximum_service_temperature_air": {
+      "metric": "1700 °C",
+      "english": "3090 °F",
+      "comment": "No Load"
+    }
+  },
+  "component_elements_properties": {
+    "Al2O3": {
+      "metric": "99.5 %",
+      "english": "99.5 %"
+    }
+  }
+}

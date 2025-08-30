@@ -1,0 +1,301 @@
+{
+  "Barium": {
+    "Physical": {
+      "Density": {
+        "value": 3.66,
+        "unit": "g/cc"
+      }
+    },
+    "Chemical": {
+      "Atomic Mass": {
+        "value": 137.327,
+        "unit": null
+      },
+      "Atomic Number": {
+        "value": 56,
+        "unit": null
+      },
+      "Thermal Neutron Cross Section": {
+        "value": 1.17,
+        "unit": "barns/atom"
+      },
+      "X-ray Absorption Edge": {
+        "value": [
+          0.33137,
+          2.08336,
+          2.20216,
+          2.36114
+        ],
+        "unit": "Å"
+      },
+      "Electrode Potential": {
+        "value": -2.9,
+        "unit": "V"
+      },
+      "Electronegativity": {
+        "value": 0.89,
+        "unit": null
+      },
+      "Ionic Radius": {
+        "value": [
+          1.34,
+          1.53
+        ],
+        "unit": "Å"
+      },
+      "Electrochemical Equivalent": {
+        "value": 2.56,
+        "unit": "g/A/h"
+      }
+    },
+    "Mechanical": {
+      "Modulus of Elasticity": {
+        "value": 12.8,
+        "unit": "GPa"
+      },
+      "Bulk Modulus": {
+        "value": 10.2,
+        "unit": "GPa"
+      },
+      "Poissons Ratio": {
+        "value": 0.28,
+        "unit": null
+      },
+      "Shear Modulus": {
+        "value": 5,
+        "unit": "GPa"
+      }
+    },
+    "Electrical": {
+      "Electrical Resistivity": {
+        "value": "5.0e-5",
+        "unit": "ohm-cm"
+      },
+      "Magnetic Susceptibility": {
+        "value": "9.0e-7",
+        "unit": null
+      },
+      "Critical Superconducting Temperature": {
+        "value": "1.00 - 1.80",
+        "unit": "K"
+      }
+    },
+    "Thermal": {
+      "Heat of Fusion": {
+        "value": 55.7,
+        "unit": "J/g"
+      },
+      "Heat of Vaporization": {
+        "value": 1290,
+        "unit": "J/g"
+      },
+      "CTE, linear": {
+        "value": 18,
+        "unit": "µm/m-°C"
+      },
+      "Specific Heat Capacity": {
+        "value": 0.285,
+        "unit": "J/g-°C"
+      },
+      "Thermal Conductivity": {
+        "value": 18.4,
+        "unit": "W/m-K"
+      },
+      "Melting Point": {
+        "value": 725,
+        "unit": "°C"
+      },
+      "Boiling Point": {
+        "value": 1897,
+        "unit": "°C"
+      }
+    },
+    "Component_Elements": {
+      "Barium, Ba": {
+        "value": 100,
+        "unit": "%"
+      }
+    }
+  },
+  "Beryllium": {
+    "Physical": {
+      "Density": {
+        "value": 1.844,
+        "unit": "g/cc"
+      }
+    },
+    "Chemical": {
+      "Atomic Mass": {
+        "value": 9.012182,
+        "unit": null
+      },
+      "Atomic Number": {
+        "value": 4,
+        "unit": null
+      },
+      "Thermal Neutron Cross Section": {
+        "value": 0.009,
+        "unit": "barns/atom"
+      },
+      "X-ray Absorption Edge": {
+        "value": 110.68,
+        "unit": "Å"
+      },
+      "Electrode Potential": {
+        "value": -1.7,
+        "unit": "V"
+      },
+      "Electronegativity": {
+        "value": 1.57,
+        "unit": null
+      },
+      "Ionic Radius": {
+        "value": [
+          0.35,
+          0.44
+        ],
+        "unit": "Å"
+      }
+    },
+    "Mechanical": {
+      "Hardness, Rockwell B": {
+        "value": "75 - 85",
+        "unit": null
+      },
+      "Tensile Strength, Ultimate": {
+        "value": 370,
+        "unit": "MPa"
+      },
+      "Tensile Strength, Yield": {
+        "value": 240,
+        "unit": "MPa"
+      },
+      "Elongation at Break": {
+        "value": 3,
+        "unit": "%"
+      },
+      "Modulus of Elasticity": {
+        "value": 303,
+        "unit": "GPa"
+      },
+      "Compressive Yield Strength": {
+        "value": 270,
+        "unit": "MPa"
+      },
+      "Poissons Ratio": {
+        "value": "0.070 - 0.18",
+        "unit": null
+      },
+      "Fatigue Strength": {
+        "value": [
+          160,
+          240,
+          240
+        ],
+        "unit": "MPa"
+      },
+      "Fracture Toughness": {
+        "value": "10.6 - 12.3",
+        "unit": "MPa-m½"
+      },
+      "Shear Modulus": {
+        "value": 135,
+        "unit": "GPa"
+      },
+      "Shear Strength": {
+        "value": [
+          345,
+          480
+        ],
+        "unit": "MPa"
+      },
+      "Charpy Impact": {
+        "value": "1.50 - 5.50",
+        "unit": "J"
+      }
+    },
+    "Electrical": {
+      "Electrical Resistivity": {
+        "value": "4.3e-6",
+        "unit": "ohm-cm"
+      },
+      "Magnetic Susceptibility": {
+        "value": "-1.00e-6",
+        "unit": null
+      },
+      "Critical Superconducting Temperature": {
+        "value": 0.026,
+        "unit": "K"
+      }
+    },
+    "Thermal": {
+      "Heat of Fusion": {
+        "value": 1133,
+        "unit": "J/g"
+      },
+      "Heat of Vaporization": {
+        "value": 24770,
+        "unit": "J/g"
+      },
+      "CTE, linear": {
+        "value": [
+          11.5,
+          14.5,
+          16.5,
+          18.4
+        ],
+        "unit": "µm/m-°C"
+      },
+      "Specific Heat Capacity": {
+        "value": 1.925,
+        "unit": "J/g-°C"
+      },
+      "Thermal Conductivity": {
+        "value": 216,
+        "unit": "W/m-K"
+      },
+      "Melting Point": {
+        "value": "1273 - 1283",
+        "unit": "°C"
+      },
+      "Boiling Point": {
+        "value": 2471,
+        "unit": "°C"
+      }
+    },
+    "Optical": {
+      "Emissivity (0-1)": {
+        "value": 0.61,
+        "unit": null
+      },
+      "Reflection Coefficient, Visible (0-1)": {
+        "value": 0.5,
+        "unit": null
+      }
+    },
+    "Component_Elements": {
+      "Beryllium, Be": {
+        "value": 100,
+        "unit": "%"
+      }
+    }
+  },
+  "Bohrium": {
+    "Chemical": {
+      "Atomic Mass": {
+        "value": 264,
+        "unit": null
+      },
+      "Atomic Number": {
+        "value": 107,
+        "unit": null
+      }
+    },
+    "Component_Elements": {
+      "Bohrium, Bh": {
+        "value": 100,
+        "unit": "%"
+      }
+    }
+  }
+}

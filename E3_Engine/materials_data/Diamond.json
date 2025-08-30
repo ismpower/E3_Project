@@ -1,0 +1,72 @@
+{
+  "material": "Diamond, Natural",
+  "properties": {
+    "physical": [
+      {
+        "property": "Density",
+        "metric": "3.515 g/cc",
+        "english": "0.127 lb/in^3",
+        "comments": "Type IIa natural diamond"
+      }
+    ],
+    "mechanical": [
+      {
+        "property": "Knoop Microhardness",
+        "metric": "57 - 104 GPa",
+        "english": "57 - 104 GPa",
+        "comments": null
+      },
+      {
+        "property": "Vickers Microhardness",
+        "metric": "115 - 150 GPa",
+        "english": "115 - 150 GPa",
+        "comments": "Natural diamond"
+      },
+      {
+        "property": "Modulus of Elasticity",
+        "metric": "1050 GPa",
+        "english": "152000 ksi",
+        "comments": null
+      },
+      {
+        "property": "Compressive Strength",
+        "metric": "6000 MPa",
+        "english": "870000 psi",
+        "comments": null
+      },
+      {
+        "property": "Fracture Toughness",
+        "metric": "7.4 MPa-m0.5",
+        "english": "6.7 ksi-in0.5",
+        "comments": null
+      }
+    ],
+    "thermal": [
+      {
+        "property": "Thermal Conductivity",
+        "metric": "2000 - 2500 W/m-K",
+        "english": "13900 - 17400 BTU-in/hr-ft^2-F",
+        "comments": "Type IIa, room temperature"
+      },
+      {
+        "property": "Specific Heat Capacity",
+        "metric": "0.509 J/g-C",
+        "english": "0.122 BTU/lb-F",
+        "comments": "at 25C"
+      }
+    ],
+    "component_elements": [
+      {
+        "element": "Carbon, C",
+        "metric": "99.95+ %",
+        "english": "99.95+ %",
+        "comments": "Natural diamond purity"
+      }
+    ],
+    "descriptive": {
+      "crystal_structure": "Cubic - Diamond structure",
+      "color": "Colorless (Type IIa)",
+      "refractive_index": "2.42"
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "material": "Graphite, Carbon, C",
+  "properties": {
+    "physical": [
+      {
+        "property": "Density",
+        "metric": "2.25 g/cc",
+        "english": "0.0813 lb/in³",
+        "comments": null
+      },
+      {
+        "property": "Specific Surface Area",
+        "metric": "1.0 m²/g",
+        "english": "1.0 m²/g",
+        "comments": "Cloth"
+      }
+    ],
+    "chemical": [
+      {
+        "property": "Atomic Mass",
+        "metric": "12.0107",
+        "english": "12.0107",
+        "comments": "1995"
+      },
+      {
+        "property": "Atomic Number",
+        "metric": "6",
+        "english": "6",
+        "comments": null
+      },
+      {
+        "property": "X-ray Absorption Edge",
+        "metric": "43.648 Å",
+        "english": "43.648 Å",
+        "comments": "K"
+      },
+      {
+        "property": "Critical Pressure",
+        "metric": "103 bar",
+        "english": "77500 torr",
+        "comments": null
+      },
+      {
+        "property": "Critical Temperature",
+        "metric": "4492 °C",
+        "english": "8118 °F",
+        "comments": null
+      },
+      {
+        "property": "Electronegativity",
+        "metric": "2.55",
+        "english": "2.55",
+        "comments": "Pauling"
+      },
+      {
+        "property": "Ionic Radius",
+        "values": [
+          {
+            "metric": "0.160 Å",
+            "english": "0.160 Å",
+            "comments": "Crystal Ionic Radius for Valence +4"
+          },
+          {
+            "metric": "2.60 Å",
+            "english": "2.60 Å",
+            "comments": "Crystal Ionic Radius for Valence -4"
+          }
+        ]
+      }
+    ],
+    "mechanical": [
+      {
+        "property": "Hardness, Mohs",
+        "metric": "1.0 - 2.0",
+        "english": "1.0 - 2.0",
+        "comments": null
+      },
+      {
+        "property": "Tensile Modulus",
+        "metric": "4.80 GPa",
+        "english": "696 ksi",
+        "comments": null
+      }
+    ],
+    "electrical": [
+      {
+        "property": "Electrical Resistivity",
+        "metric": "0.00600 ohm-cm",
+        "english": "0.00600 ohm-cm",
+        "comments": null
+      }
+    ],
+    "thermal": [
+      {
+        "property": "Heat of Fusion",
+        "metric": "9741 J/g",
+        "english": "4191 BTU/lb",
+        "comments": null
+      },
+      {
+        "property": "CTE, linear",
+        "metric": {
+          "value": "0.600 - 4.30 µm/m-°C",
+          "temperature": "20.0 °C"
+        },
+        "english": {
+          "value": "0.333 - 2.39 µin/in-°F",
+          "temperature": "68.0 °F"
+        }
+      },
+      {
+        "property": "Specific Heat Capacity",
+        "values": [
+          {
+            "metric": "0.7077 J/g-°C",
+            "english": "0.1691 BTU/lb-°F",
+            "comments": "Crystal"
+          },
+          {
+            "metric": "1.732 J/g-°C",
+            "english": "0.4140 BTU/lb-°F",
+            "comments": "Gas"
+          }
+        ]
+      },
+      {
+        "property": "Thermal Conductivity",
+        "metric": "24.0 W/m-K",
+        "english": "167 BTU-in/hr-ft²-°F",
+        "comments": null
+      },
+      {
+        "property": "Sublimation Temperature",
+        "metric": "3650 °C",
+        "english": "6600 °F",
+        "comments": null
+      },
+      {
+        "property": "Maximum Service Temperature, Inert",
+        "metric": "<= 3650 °C",
+        "english": "<= 6600 °F",
+        "comments": "Sublimation temperature. Graphite cloth is stable in vacuum and inert atmospheres approaching this temperature."
+      },
+      {
+        "property": "Heat of Formation",
+        "values": [
+          {
+            "metric": "0.000 kJ/mol",
+            "english": "0.000 kJ/mol",
+            "comments": "Crystal"
+          },
+          {
+            "metric": "716.7 kJ/mol",
+            "english": "716.7 kJ/mol",
+            "comments": "Gas"
+          }
+        ]
+      }
+    ],
+    "optical": [
+      {
+        "property": "Emissivity (0-1)",
+        "metric": "0.90",
+        "english": "0.90",
+        "comments": null
+      }
+    ],
+    "component_elements": [
+      {
+        "element": "Carbon, C",
+        "metric": "100 %",
+        "english": "100 %",
+        "comments": null
+      }
+    ],
+    "descriptive": {
+      "color": "Black"
+    }
+  }
+}

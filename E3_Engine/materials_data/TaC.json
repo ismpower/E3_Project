@@ -1,0 +1,79 @@
+{
+  "material": "Tantalum Carbide, TaC",
+  "properties": {
+    "physical": [
+      {
+        "property": "Density",
+        "metric": "14.3 g/cc",
+        "english": "0.517 lb/in^3",
+        "comments": null
+      },
+      {
+        "property": "Molecular Weight",
+        "metric": "192.959 g/mol",
+        "english": "192.959 g/mol",
+        "comments": null
+      }
+    ],
+    "mechanical": [
+      {
+        "property": "Hardness, Rockwell A",
+        "metric": "88",
+        "english": "88",
+        "comments": null
+      },
+      {
+        "property": "Vickers Microhardness",
+        "metric": "1790",
+        "english": "1790",
+        "comments": null
+      },
+      {
+        "property": "Hardness, Mohs",
+        "metric": "9 - 10",
+        "english": "9 - 10",
+        "comments": "Extremely hard"
+      }
+    ],
+    "thermal": [
+      {
+        "property": "Melting Point",
+        "metric": "3965 °C",
+        "english": "7169 °F",
+        "comments": "One of highest melting points"
+      },
+      {
+        "property": "Boiling Point",
+        "metric": "4780 °C",
+        "english": "8640 °F",
+        "comments": null
+      },
+      {
+        "property": "Boiling Point (alternate)",
+        "metric": "5500 °C",
+        "english": "9932 °F",
+        "comments": "Alternate measurement"
+      }
+    ],
+    "component_elements": [
+      {
+        "element": "Tantalum, Ta",
+        "metric": "93.76 %",
+        "english": "93.76 %",
+        "comments": null
+      },
+      {
+        "element": "Carbon, C",
+        "metric": "6.24 %",
+        "english": "6.24 %",
+        "comments": null
+      }
+    ],
+    "descriptive": {
+      "crystal_structure": "Face-centered cubic",
+      "color": "Golden-brown to gray",
+      "applications": "Ultra-high temperature applications, cutting tools",
+      "notes": "One of the hardest known materials"
+    }
+  }
+}

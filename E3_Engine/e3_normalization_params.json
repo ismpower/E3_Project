@@ -1,0 +1,316 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "created": "2025-08-01T01:52:51.439657",
+    "numerical_stability": true,
+    "feature_count": 50,
+    "target_range": "[0.4, 300.0] K"
+  },
+  "feature_scalers": {
+    "0": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "element_0"
+    },
+    "1": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "element_1"
+    },
+    "2": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "element_2"
+    },
+    "3": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "element_3"
+    },
+    "4": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "element_4"
+    },
+    "5": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "element_5"
+    },
+    "6": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "element_6"
+    },
+    "7": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "element_7"
+    },
+    "8": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "element_8"
+    },
+    "9": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "element_9"
+    },
+    "10": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "composition_0"
+    },
+    "11": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "composition_1"
+    },
+    "12": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "composition_2"
+    },
+    "13": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "composition_3"
+    },
+    "14": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "composition_4"
+    },
+    "15": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "composition_5"
+    },
+    "16": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "composition_6"
+    },
+    "17": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "composition_7"
+    },
+    "18": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "composition_8"
+    },
+    "19": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "composition_9"
+    },
+    "20": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "atomic_number_0"
+    },
+    "21": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "atomic_number_1"
+    },
+    "22": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "atomic_number_2"
+    },
+    "23": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "atomic_number_3"
+    },
+    "24": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "atomic_number_4"
+    },
+    "25": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "atomic_number_5"
+    },
+    "26": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "atomic_number_6"
+    },
+    "27": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "atomic_number_7"
+    },
+    "28": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "atomic_number_8"
+    },
+    "29": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "atomic_number_9"
+    },
+    "30": {
+      "min": -10.0,
+      "max": -9.0,
+      "range": 1.0,
+      "name": "penetration_depth_log"
+    },
+    "31": {
+      "min": -10.0,
+      "max": -9.0,
+      "range": 1.0,
+      "name": "coherence_length_log"
+    },
+    "32": {
+      "min": -10.0,
+      "max": -9.0,
+      "range": 1.0,
+      "name": "critical_field_log"
+    },
+    "33": {
+      "min": -10.0,
+      "max": -9.0,
+      "range": 1.0,
+      "name": "plasma_frequency_log"
+    },
+    "34": {
+      "min": -10.0,
+      "max": -9.0,
+      "range": 1.0,
+      "name": "fermi_energy_log"
+    },
+    "35": {
+      "min": -10.0,
+      "max": -9.0,
+      "range": 1.0,
+      "name": "conductivity_log"
+    },
+    "36": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "lattice_a"
+    },
+    "37": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "lattice_b"
+    },
+    "38": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "lattice_c"
+    },
+    "39": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "volume"
+    },
+    "40": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "pressure"
+    },
+    "41": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "magnetic_field"
+    },
+    "42": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "temperature"
+    },
+    "43": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "is_anomalous"
+    },
+    "44": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "anomaly_score"
+    },
+    "45": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "feature_45"
+    },
+    "46": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "feature_46"
+    },
+    "47": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "feature_47"
+    },
+    "48": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "feature_48"
+    },
+    "49": {
+      "min": 0.0,
+      "max": 1.0,
+      "range": 1.0,
+      "name": "feature_49"
+    }
+  },
+  "target_scaler": {
+    "min": 0.4,
+    "max": 300.0,
+    "range": 299.6,
+    "name": "Critical_Temperature",
+    "valid_count": 

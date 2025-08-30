@@ -1,0 +1,243 @@
+{
+  "title": "Overview of materials for AISI 4000 Series Steel",
+  "properties": {
+    "Physical Properties": [
+      {
+        "Property": "Density",
+        "Metric": "7.75 - 7.85 g/cc",
+        "English": "0.280 - 0.284 lb/in³",
+        "Comments": "Average value: 7.84 g/cc Grade Count:667"
+      },
+      {
+        "Property": "Particle Size",
+        "Metric": "6.70 - 12.0 µm",
+        "English": "6.70 - 12.0 µm",
+        "Comments": "Average value: 9.27 µm Grade Count:12"
+      }
+    ],
+    "Mechanical Properties": [
+      {
+        "Property": "Hardness, Brinell",
+        "Metric": "50.0 - 578",
+        "English": "50.0 - 578",
+        "Comments": "Average value: 280 Grade Count:605"
+      },
+      {
+        "Property": "Hardness, Knoop",
+        "Metric": "140 - 616",
+        "English": "140 - 616",
+        "Comments": "Average value: 309 Grade Count:578"
+      },
+      {
+        "Property": "Hardness, Rockwell B",
+        "Metric": "68.0 - 112",
+        "English": "68.0 - 112",
+        "Comments": "Average value: 96.3 Grade Count:533"
+      },
+      {
+        "Property": "Hardness, Rockwell C",
+        "Metric": "10.0 - 62.5",
+        "English": "10.0 - 62.5",
+        "Comments": "Average value: 30.3 Grade Count:529"
+      },
+      {
+        "Property": "Hardness, Vickers",
+        "Metric": "36.0 - 1140",
+        "English": "36.0 - 1140",
+        "Comments": "Average value: 307 Grade Count:580"
+      },
+      {
+        "Property": "Tensile Strength, Ultimate",
+        "Metric": "450 - 1970 MPa",
+        "English": "65300 - 285000 psi",
+        "Comments": "Average value: 984 MPa Grade Count:562"
+      },
+      {
+        "Property": "Tensile Strength, Yield",
+        "Metric": "150 - 1860 MPa",
+        "English": "21800 - 270000 psi",
+        "Comments": "Average value: 748 MPa Grade Count:560"
+      },
+      {
+        "Property": "Elongation at Break",
+        "Metric": "7.00 - 34.0 %",
+        "English": "7.00 - 34.0 %",
+        "Comments": "Average value: 18.4 % Grade Count:556"
+      },
+      {
+        "Property": "Reduction of Area",
+        "Metric": "16.0 - 74.4 %",
+        "English": "16.0 - 74.4 %",
+        "Comments": "Average value: 54.3 % Grade Count:463"
+      },
+      {
+        "Property": "Modulus of Elasticity",
+        "Metric": "192 - 213 GPa",
+        "English": "27800 - 30900 ksi",
+        "Comments": "Average value: 205 GPa Grade Count:663"
+      },
+      {
+        "Property": "Compressive Yield Strength",
+        "Metric": "1650 - 1800 MPa",
+        "English": "239000 - 260000 psi",
+        "Comments": "Average value: 1700 MPa Grade Count:12"
+      },
+      {
+        "Property": "Bulk Modulus",
+        "Metric": "152 - 170 GPa",
+        "English": "22000 - 24700 ksi",
+        "Comments": "Average value: 160 GPa Grade Count:592"
+      },
+      {
+        "Property": "Poissons Ratio",
+        "Metric": "0.270 - 0.300",
+        "English": "0.270 - 0.300",
+        "Comments": "Average value: 0.291 Grade Count:658"
+      },
+      {
+        "Property": "Fatigue Strength",
+        "Metric": "138 - 772 MPa",
+        "English": "20000 - 112000 psi",
+        "Comments": "Average value: 528 MPa Grade Count:11"
+      },
+      {
+        "Property": "Fracture Toughness",
+        "Metric": "33.0 - 115 MPa-m½",
+        "English": "30.0 - 105 ksi-in½",
+        "Comments": "Average value: 67.3 MPa-m½ Grade Count:6"
+      },
+      {
+        "Property": "Machinability",
+        "Metric": "50.0 - 75.0 %",
+        "English": "50.0 - 75.0 %",
+        "Comments": "Average value: 59.7 % Grade Count:562"
+      },
+      {
+        "Property": "Shear Modulus",
+        "Metric": "74.0 - 82.0 GPa",
+        "English": "10700 - 11900 ksi",
+        "Comments": "Average value: 79.7 GPa Grade Count:658"
+      },
+      {
+        "Property": "Izod Impact",
+        "Metric": "9.00 - 138 J",
+        "English": "6.64 - 102 ft-lb",
+        "Comments": "Average value: 63.6 J Grade Count:68"
+      },
+      {
+        "Property": "Charpy Impact",
+        "Metric": "15.0 - 94.9 J",
+        "English": "11.1 - 70.0 ft-lb",
+        "Comments": "Average value: 42.7 J Grade Count:7"
+      }
+    ],
+    "Electrical Properties": [
+      {
+        "Property": "Electrical Resistivity",
+        "Metric": "0.00000200 - 0.0000263 ohm-cm",
+        "English": "0.00000200 - 0.0000263 ohm-cm",
+        "Comments": "Average value: 0.0000219 ohm-cm Grade Count:636"
+      }
+    ],
+    "Thermal Properties": [
+      {
+        "Property": "CTE, linear",
+        "Metric": "10.4 - 14.6 µm/m-°C",
+        "English": "5.78 - 8.11 µin/in-°F",
+        "Comments": "Average value: 12.6 µm/m-°C Grade Count:287"
+      },
+      {
+        "Property": "Specific Heat Capacity",
+        "Metric": "0.470 - 0.477 J/g-°C",
+        "English": "0.112 - 0.114 BTU/lb-°F",
+        "Comments": "Average value: 0.475 J/g-°C Grade Count:485"
+      },
+      {
+        "Property": "Thermal Conductivity",
+        "Metric": "40.0 - 52.0 W/m-K",
+        "English": "278 - 361 BTU-in/hr-ft²-°F",
+        "Comments": "Average value: 44.1 W/m-K Grade Count:597"
+      },
+      {
+        "Property": "Transformation Temperature",
+        "Metric": "296 - 833 °C",
+        "English": "565 - 1530 °F",
+        "Comments": "Average value: 625 °C Grade Count:64"
+      }
+    ],
+    "Component Elements Properties": [
+      {
+        "Property": "Aluminum, Al",
+        "Metric": "0.0150 - 1.15 %",
+        "English": "0.0150 - 1.15 %",
+        "Comments": "Average value: 0.166 % Grade Count:8"
+      },
+      {
+        "Property": "Carbon, C",
+        "Metric": "0.0500 - 1.29 %",
+        "English": "0.0500 - 1.29 %",
+        "Comments": "Average value: 0.300 % Grade Count:681"
+      },
+      {
+        "Property": "Chromium, Cr",
+        "Metric": "0.250 - 18.0 %",
+        "English": "0.250 - 18.0 %",
+        "Comments": "Average value: 0.885 % Grade Count:446"
+      },
+      {
+        "Property": "Copper, Cu",
+        "Metric": "0.250 - 0.350 %",
+        "English": "0.250 - 0.350 %",
+        "Comments": "Average value: 0.289 % Grade Count:9"
+      },
+      {
+        "Property": "Iron, Fe",
+        "Metric": "78.8 - 98.9 %",
+        "English": "78.8 - 98.9 %",
+        "Comments": "Average value: 96.8 % Grade Count:681"
+      },
+      {
+        "Property": "Manganese, Mn",
+        "Metric": "0.300 - 3.00 %",
+        "English": "0.300 - 3.00 %",
+        "Comments": "Average value: 0.709 % Grade Count:680"
+      },
+      {
+        "Property": "Molybdenum, Mo",
+        "Metric": "0.0400 - 0.750 %",
+        "English": "0.0400 - 0.750 %",
+        "Comments": "Average value: 0.253 % Grade Count:678"
+      },
+      {
+        "Property": "Nickel, Ni",
+        "Metric": "0.100 - 3.80 %",
+        "English": "0.100 - 3.80 %",
+        "Comments": "Average value: 2.05 % Grade Count:368"
+      },
+      {
+        "Property": "Phosphorus, P",
+        "Metric": "0.000 - 0.0400 %",
+        "English": "0.000 - 0.0400 %",
+        "Comments": "Average value: 0.0331 % Grade Count:662"
+      },
+      {
+        "Property": "Silicon, Si",
+        "Metric": "0.100 - 1.05 %",
+        "English": "0.100 - 1.05 %",
+        "Comments": "Average value: 0.244 % Grade Count:681"
+      },
+      {
+        "Property": "Sulfur, S",
+        "Metric": "0.00200 - 0.400 %",
+        "English": "0.00200 - 0.400 %",
+        "Comments": "Average value: 0.0381 % Grade Count:665"
+      },
+      {
+        "Property": "Vanadium, V",
+        "Metric": "0.0140 - 0.120 %",
+        "English": "0.0140 - 0.120 %",
+        "Comments": "Average value: 0.0867 % Grade Count:11"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "training_info": {
+    "dataset": "BYU_UNP_2023",
+    "model_type": "SimpleNeuralNetwork",
+    "training_date": "2025-07-31T09:16:46.580277",
+    "anomaly_types": [
+      "temperature_persistence",
+      "ion_acoustic_waves"
+    ]
+  },
+  "performance_metrics": {
+    "final_loss": 0.06458069474227678,
+    "temp_mae": 0.23929970150248217,
+    "temp_r2": -0.8086341433985058,
+    "iaw_mae": 0.013493768172611225,
+    "iaw_r2": -73612.39465717759,
+    "classification_accuracy": 0.21428571428571427
+  },
+  "model_file": "e3_simple_model.json",
+  "training_status": "COMPLETED"
+}

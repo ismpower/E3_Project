@@ -1,0 +1,65 @@
+{
+  "title": "Bruno/E3 Framework: Physics-Informed Graph Neural Networks for Entropy Collapse Prediction in Materials Science",
+  "description": "Complete implementation of the Bruno constant framework (κ = 1366 K⁻¹) integrated with neural network physics modeling. Successfully predicts phase transitions across 14 validated materials spanning temperature range from -259°C to +3965°C with 100% accuracy. Includes comprehensive materials database, validation suite, and educational framework for physics-informed machine learning.",
+  "creators": [
+    {
+      "name": "Chajar, Ismail",
+      "affiliation": "Developpment EthI.C Lab inc.",
+      "orcid": "0009-0001-4027-0430"
+    }
+  ],
+  "keywords": [
+    "Bruno constant",
+    "entropy collapse",
+    "phase transitions", 
+    "materials informatics",
+    "physics-informed machine learning",
+    "neural networks",
+    "materials science",
+    "computational physics",
+    "ultracold neutral plasmas",
+    "graph neural networks",
+    "PyTorch",
+    "scientific computing"
+  ],
+  "subjects": [
+    {
+      "scheme": "dewey",
+      "identifier": "530.4",
+      "term": "States of matter"
+    },
+    {
+      "scheme": "dewey", 
+      "identifier": "006.3",
+      "term": "Artificial intelligence"
+    },
+    {
+      "scheme": "dewey",
+      "identifier": "620.1",
+      "term": "Materials engineering"
+    }
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "version": "2.0",
+  "notes": "This repository contains the complete Bruno/E3 Framework implementation with 14 validated materials spanning 4,224°C temperature range. The framework achieves 100% accuracy in phase transition prediction across metals, ceramics, molecular systems, and ultra-hard materials. Includes comprehensive validation suite, educational documentation, and production-ready code for materials informatics research.",
+  "related_identifiers": [
+    {
+      "scheme": "url",
+      "identifier": "https://github.com/ismpower/E3_Project",
+      "relation": "isSupplementTo"
+    }
+  ],
+  "references": [
+    "Materials Project. https://materialsproject.org",
+    "NIST Physical Reference Data. https://physics.nist.gov", 
+    "Chajar, I. (2025). A Physics-Informed Graph Neural Network for Unified Modeling of Anomalous Expansion in Ultracold Neutral Plasmas"
+  ],
+  "grants": [
+    {
+      "id": "N/A"
+    }
+  ]
+}

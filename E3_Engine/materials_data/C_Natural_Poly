@@ -1,0 +1,100 @@
+[
+  {
+    "property_category": "Physical Properties",
+    "properties": [
+      {
+        "property_name": "Density",
+        "metric_value": "3.00 - 4.00 g/cc",
+        "english_value": "0.108 - 0.145 lb/in³",
+        "comments": ""
+      }
+    ]
+  },
+  {
+    "property_category": "Mechanical Properties",
+    "properties": [
+      {
+        "property_name": "Knoop Microhardness",
+        "metric_value": "49 - 78",
+        "english_value": "49 - 78",
+        "comments": "GPa Microhardness"
+      },
+      {
+        "property_name": "Vickers Microhardness",
+        "metric_value": "25 - 98",
+        "english_value": "25 - 98",
+        "comments": "GPa Microhardness"
+      },
+      {
+        "property_name": "Modulus of Elasticity",
+        "metric_value": "749 - 953 GPa",
+        "english_value": "109000 - 138000 ksi",
+        "comments": ""
+      },
+      {
+        "property_name": "Compressive Strength",
+        "metric_value": "1900 - 6900 MPa",
+        "english_value": "276000 - 1.00e+6 psi",
+        "comments": "values depend on grain size and Co content"
+      },
+      {
+        "property_name": "Poissons Ratio",
+        "metric_value": "0.070 - 0.20",
+        "english_value": "0.070 - 0.20",
+        "comments": ""
+      },
+      {
+        "property_name": "Fracture Toughness",
+        "metric_value": "6.00 - 8.80 MPa-m½",
+        "english_value": "5.46 - 8.01 ksi-in½",
+        "comments": "values depend on grain size and Co content"
+      }
+    ]
+  },
+  {
+    "property_category": "Thermal Properties",
+    "properties": [
+      {
+        "property_name": "CTE, linear",
+        "metric_value": "1.50 - 3.80 µm/m-°C",
+        "english_value": "0.833 - 2.11 µin/in-°F",
+        "comments": ""
+      },
+      {
+        "property_name": "Temperature",
+        "metric_value": "25.0 - 100 °C",
+        "english_value": "77.0 - 212 °F",
+        "comments": ""
+      },
+      {
+        "property_name": "Thermal Conductivity",
+        "metric_value": "1200 W/m-K",
+        "english_value": "8330 BTU-in/hr-ft²-°F",
+        "comments": "Thick film diamond made by SP3"
+      },
+      {
+        "property_name": "",
+        "metric_value": "1800 W/m-K",
+        "english_value": "12500 BTU-in/hr-ft²-°F",
+        "comments": "De Beers thermal thick film synthetic diamond."
+      }
+    ]
+  },
+  {
+    "property_category": "Descriptive Properties",
+    "properties": [
+      {
+        "property_name": "Color",
+        "metric_value": "Clear",
+        "english_value": "",
+        "comments": "Impurities (i.e. Nitrogen) and irradiation can change color to yellow, green, blue, pink, or brown."
+      },
+      {
+        "property_name": "Crystal Structure",
+        "metric_value": "Cubic",
+        "english_value": "",
+        "comments": "Diamond - Space Group Fd3m"
+      }
+    ]
+  }
+]

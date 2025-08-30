@@ -1,0 +1,45 @@
+# E3 Engine .gitignore
+
+# Generated data files
+data/processed/*.json
+data/processed/*.pt
+
+# Model files  
+models/*.json
+models/*.pt
+models/*.pkl
+
+# Results and outputs
+results/plots/*.png
+results/logs/*.log
+results/reports/*.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep directory structure
+!data/input/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+!results/plots/.gitkeep
+!results/logs/.gitkeep
+!results/reports/.gitkeep

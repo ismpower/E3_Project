@@ -1,0 +1,187 @@
+{
+  "materialName": "Alliance BCN-16 Compression Bonded Neodymium Iron Boron Magnet",
+  "properties": {
+    "physical": [
+      {
+        "name": "Density",
+        "metric": {
+          "min": 5.60,
+          "max": 6.00,
+          "unit": "g/cc"
+        },
+        "english": {
+          "min": 0.202,
+          "max": 0.217,
+          "unit": "lb/in³"
+        },
+        "comments": null
+      }
+    ],
+    "mechanical": [
+      {
+        "name": "Hardness, Rockwell R",
+        "metric": {
+          "min": 80,
+          "max": 120
+        },
+        "english": {
+          "min": 80,
+          "max": 120
+        },
+        "comments": null
+      },
+      {
+        "name": "Modulus of Elasticity",
+        "metric": {
+          "value": 28.0,
+          "unit": "GPa"
+        },
+        "english": {
+          "value": 4060,
+          "unit": "ksi"
+        },
+        "comments": null
+      },
+      {
+        "name": "Compressive Strength",
+        "metric": {
+          "min": 27.0,
+          "max": 33.0,
+          "unit": "MPa"
+        },
+        "english": {
+          "min": 3920,
+          "max": 4790,
+          "unit": "psi"
+        },
+        "comments": null
+      }
+    ],
+    "electricalAndMagnetic": [
+      {
+        "name": "Electrical Resistivity",
+        "metric": {
+          "value": 0.0250,
+          "unit": "ohm-cm"
+        },
+        "english": {
+          "value": 0.0250,
+          "unit": "ohm-cm"
+        },
+        "comments": null
+      },
+      {
+        "name": "Magnetic Coercive Force, Hc",
+        "metric": {
+          "min": 5000,
+          "max": 5500,
+          "unit": "Oe"
+        },
+        "english": {
+          "min": 5000,
+          "max": 5500,
+          "unit": "Oe"
+        },
+        "comments": null
+      },
+      {
+        "name": "Magnetic Coercive Force, Hc (Intrinsic)",
+        "metric": {
+          "min": 6500,
+          "max": 7500,
+          "unit": "Oe"
+        },
+        "english": {
+          "min": 6500,
+          "max": 7500,
+          "unit": "Oe"
+        },
+        "comments": "Intrinsic"
+      },
+      {
+        "name": "Magnetic Remanence, Br",
+        "metric": {
+          "min": 6800,
+          "max": 7500,
+          "unit": "Gauss"
+        },
+        "english": {
+          "min": 6800,
+          "max": 7500,
+          "unit": "Gauss"
+        },
+        "comments": null
+      },
+      {
+        "name": "Magnetic Maximum Energy Product, BH",
+        "metric": {
+          "min": 9.5,
+          "max": 10.5,
+          "unit": "MGOe"
+        },
+        "english": {
+          "min": 9.5,
+          "max": 10.5,
+          "unit": "MGOe"
+        },
+        "comments": null
+      },
+      {
+        "name": "Curie Temperature",
+        "metric": {
+          "condition": "<=",
+          "value": 290,
+          "unit": "°C"
+        },
+        "english": {
+          "condition": "<=",
+          "value": 554,
+          "unit": "°F"
+        },
+        "comments": null
+      }
+    ],
+    "thermal": [
+      {
+        "name": "Maximum Service Temperature, Air",
+        "metric": {
+          "condition": "<=",
+          "value": 90.0,
+          "unit": "°C"
+        },
+        "english": {
+          "condition": "<=",
+          "value": 194,
+          "unit": "°F"
+        },
+        "comments": "Long term"
+      },
+      {
+        "name": "Maximum Service Temperature, Air",
+        "metric": {
+          "condition": "<=",
+          "value": 130,
+          "unit": "°C"
+        },
+        "english": {
+          "condition": "<=",
+          "value": 266,
+          "unit": "°F"
+        },
+        "comments": "Short term"
+      }
+    ],
+    "descriptive": [
+      {
+        "name": "Reversible Temperature Coefficient (Bd)",
+        "value": -0.11,
+        "unit": "%/°C"
+      },
+      {
+        "name": "Reversible Temperature Coefficient (Hd)",
+        "value": -0.39,
+        "unit": "%/°C"
+      }
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "results": {
+    "Tungsten, W": {
+      "Melting Point": {
+        "material": "Tungsten, W",
+        "temperature": 3370.0,
+        "bruno_parameter": 4976542.9,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      }
+    },
+    "Iron, Fe": {
+      "Melting Point": {
+        "material": "Iron, Fe",
+        "temperature": 1535.0,
+        "bruno_parameter": 2469932.9,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      }
+    },
+    "Hydrogen, H\u2082": {
+      "Melting Point": {
+        "material": "Hydrogen, H\u2082",
+        "temperature": -259.1,
+        "bruno_parameter": 19192.299999999937,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      },
+      "Boiling Point": {
+        "material": "Hydrogen, H\u2082",
+        "temperature": -252.9,
+        "bruno_parameter": 27661.49999999996,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      }
+    },
+    "Chlorine, Cl\u2082": {
+      "Melting Point": {
+        "material": "Chlorine, Cl\u2082",
+        "temperature": -101.5,
+        "bruno_parameter": 234473.89999999997,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      },
+      "Boiling Point": {
+        "material": "Chlorine, Cl\u2082",
+        "temperature": -34.04,
+        "bruno_parameter": 326624.25999999995,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      }
+    },
+    "Nickel, Ni": {
+      "Melting Point": {
+        "material": "Nickel, Ni",
+        "temperature": 1455.0,
+        "bruno_parameter": 2360652.9,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      },
+      "Curie Temperature": {
+        "material": "Nickel, Ni",
+        "temperature": 358.0,
+        "bruno_parameter": 862150.9,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      }
+    },
+    "Aluminum Germanate, 3Al2O3-2GeO2": {
+      "Melting Point": {
+        "material": "Aluminum Germanate, 3Al2O3-2GeO2",
+        "temperature": 1550.0,
+        "bruno_parameter": 2490422.9,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      }
+    },
+    "Aluminum Oxide, Corundum 99.9%": {
+      "Melting Point": {
+        "material": "Aluminum Oxide, Corundum 99.9%",
+        "temperature": 2054.0,
+        "bruno_parameter": 3178886.9,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      },
+      "Boiling Point": {
+        "material": "Aluminum Oxide, Corundum 99.9%",
+        "temperature": 3000.0,
+        "bruno_parameter": 4471122.9,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      }
+    },
+    "Bromine, Br\u2082": {
+      "Melting Point": {
+        "material": "Bromine, Br\u2082",
+        "temperature": -7.2,
+        "bruno_parameter": 363287.7,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      },
+      "Boiling Point": {
+        "material": "Bromine, Br\u2082",
+        "temperature": 58.8,
+        "bruno_parameter": 453443.7,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      }
+    },
+    "Tantalum Carbide, TaC": {
+      "Melting Point": {
+        "material": "Tantalum Carbide, TaC",
+        "temperature": 3965.0,
+        "bruno_parameter": 5789312.899999999,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      },
+      "Boiling Point": {
+        "material": "Tantalum Carbide, TaC",
+        "temperature": 4780.0,
+        "bruno_parameter": 6902602.899999999,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      },
+      "Boiling Point (alternate)": {
+        "material": "Tantalum Carbide, TaC",
+        "temperature": 5500.0,
+        "bruno_parameter": 7886122.899999999,
+        "bruno_predicts_critical": true,
+        "literature_is_critical": true,
+        "prediction_correct": true
+      }
+    }
+  },
+  "summary": {
+    "total_predictions": 16,
+    "correct_predictions": 16,
+    "materials_tested": 14,
+    "critical_temps_found": 16
+  },
+  "bruno_constant": 1366.0
+}

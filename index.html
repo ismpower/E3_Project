@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="E3 Engine: Physics-informed Graph Neural Network for predicting multi-stage entropic relaxation in non-equilibrium plasmas. Open-source research repository." />
+    <meta name="keywords" content="physics, machine learning, plasma physics, entropy, graph neural networks, E3 Engine, Bruno Framework, open source" />
+    <meta name="author" content="Ismail Chajar, EthI.C Lab" />
+    <title>E3 Engine Repository - Elemental Embedding Engine | Research & Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+        }
+        .code-font { font-family: 'JetBrains Mono', monospace; }
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(34, 197, 94, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(168, 85, 247, 0.08) 0%, transparent 70%);
+        }
+        .repo-card {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            transition: all 0.3s ease;
+        }
+        .repo-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(34, 197, 94, 0.5);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        .nav-link {
+            transition: all 0.2s ease;
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+        }
+        .nav-link:hover {
+            background: rgba(34, 197, 94, 0.1);
+            color: #22c55e;
+        }
+        .performance-badge {
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            border-radius: 9999px;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: white;
+        }
+        .github-button {
+            background: linear-gradient(135deg, #374151, #4b5563);
+            border: 1px solid #6b7280;
+            transition: all 0.3s ease;
+        }
+        .github-button:hover {
+            background: linear-gradient(135deg, #4b5563, #6b7280);
+            border-color: #22c55e;
+            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.2);
+        }
+        .directory-tree {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+        .directory-item {
+            padding: 0.25rem 0;
+            transition: all 0.2s ease;
+        }
+        .directory-item:hover {
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 0.25rem;
+        }
+        .file-icon { color: #64748b; }
+        .folder-icon { color: #3b82f6; }
+        .notebook-icon { color: #f59e0b; }
+        .code-icon { color: #22c55e; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- REPOSITORY NAVIGATION -->
+    <header class="bg-slate-900/90 backdrop-blur-sm border-b border-slate-700 sticky top-0 z-50">
+        <nav class="container mx-auto flex items-center justify-between px-4 py-3">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span class="text-xl font-bold text-white code-font">E3_Project</span>
+                </div>
+                <div class="performance-badge">
+                    R² = 0.9993
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-2">
+                <a href="#about" class="nav-link text-slate-300">About</a>
+                <a href="#repository" class="nav-link text-slate-300">Repository</a>
+                <a href="#demonstrations" class="nav-link text-slate-300">Demos</a>
+                <a href="#documentation" class="nav-link text-slate-300">Docs</a>
+                <a href="https://github.com/ismpower/E3_Project" class="github-button px-4 py-2 rounded-lg text-white">
+                    <svg class="w-4 h-4 inline mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    View on GitHub
+                </a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-slate-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700">
+            <a href="#about" class="block py-3 px-4 text-slate-300 hover:bg-slate-700">About</a>
+            <a href="#repository" class="block py-3 px-4 text-slate-300 hover:bg-slate-700">Repository</a>
+            <a href="#demonstrations" class="block py-3 px-4 text-slate-300 hover:bg-slate-700">Demos</a>
+            <a href="#documentation" class="block py-3 px-4 text-slate-300 hover:bg-slate-700">Docs</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-bg text-white relative py-20">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-6xl mx-auto">
+                <div class="flex items-center justify-center space-x-4 mb-6">
+                    <div class="bg-green-600/20 text-green-300 px-4 py-2 rounded-full text-sm font-semibold border border-green-600/30">
+                        <svg class="w-4 h-4 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                        Patent-Pending CIPO #3280399
+                    </div>
+                    <div class="bg-blue-600/20 text-blue-300 px-4 py-2 rounded-full text-sm font-semibold border border-blue-600/30">
+                        <svg class="w-4 h-4 inline mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        Open Source
+                    </div>
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-6">
+                    Elemental Embedding <span class="text-green-400">Engine</span>
+                </h1>
+                <div class="code-font text-xl md:text-2xl text-green-300 mb-8">
+                    E3: Physics-Informed Graph Neural Network
+                </div>
+                <p class="text-xl text-slate-300 leading-relaxed mb-12 max-w-4xl mx-auto">
+                    Revolutionary AI system for predicting multi-stage entropic relaxation in non-equilibrium plasmas. Achieving 99.93% accuracy in resolving 20-year-old physics anomalies through context-dependent elemental embeddings.
+                </p>
+
+                <!-- Performance Metrics -->
+                <div class="grid md:grid-cols-4 gap-6 mb-12 max-w-4xl mx-auto">
+                    <div class="repo-card p-6 rounded-xl">
+                        <div class="text-3xl font-bold text-green-400 mb-2">R² = 0.9993</div>
+                        <div class="text-slate-300 font-semibold">Cross-Validation</div>
+                        <div class="text-slate-400 text-sm">4 Chemical Families</div>
+                    </div>
+                    <div class="repo-card p-6 rounded-xl">
+                        <div class="text-3xl font-bold text-blue-400 mb-2">6 Months</div>
+                        <div class="text-slate-300 font-semibold">Development</div>
+                        <div class="text-slate-400 text-sm">Feb - July 2025</div>
+                    </div>
+                    <div class="repo-card p-6 rounded-xl">
+                        <div class="text-3xl font-bold text-purple-400 mb-2">11,880+</div>
+                        <div class="text-slate-300 font-semibold">Files Generated</div>
+                        <div class="text-slate-400 text-sm">Complete History</div>
+                    </div>
+                    <div class="repo-card p-6 rounded-xl">
+                        <div class="text-3xl font-bold text-amber-400 mb-2">20+ Years</div>
+                        <div class="text-slate-300 font-semibold">Anomaly Resolved</div>
+                        <div class="text-slate-400 text-sm">UNP Expansion</div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://github.com/ismpower/E3_Project" class="github-button px-8 py-4 rounded-xl text-white font-semibold text-lg">
+                        <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        Clone Repository
+                    </a>
+                    <a href="#demonstrations" class="bg-green-600 hover:bg-green-700 px-8 py-4 rounded-xl text-white font-semibold text-lg transition">
+                        <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                        </svg>
+                        View Demonstrations
+                    </a>
+                    <a href="#documentation" class="bg-slate-700 hover:bg-slate-600 px-8 py-4 rounded-xl text-white font-semibold text-lg transition">
+                        <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        Read Documentation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">From Grief to Breakthrough</h2>
+                <p class="text-xl text-slate-300 max-w-4xl mx-auto">
+                    The E3 Engine emerged from a 6-month intensive research journey that began February 17, 2025, transforming personal loss into revolutionary scientific discovery.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                <div class="repo-card p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-white mb-4">The Bruno Legacy</h3>
+                    <p class="text-slate-300 mb-6">
+                        Named after Bruno, a loyal research companion of 14 years, this framework emerged from loss transformed into discovery. Every file, every framework, every breakthrough carries his name forward through the advancement of human knowledge.
+                    </p>
+                    <div class="bg-slate-700/50 p-4 rounded-lg">
+                        <div class="text-green-400 font-semibold mb-2">In Memory</div>
+                        <div class="text-slate-300 text-sm">Bruno (2011-2025) - The inspiration behind breakthrough science</div>
+                    </div>
+                </div>
+
+                <div class="repo-card p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-white mb-4">Scientific Achievement</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="text-green-400 font-semibold">Physics Innovation</div>
+                            <div class="text-slate-300 text-sm">First AI system to resolve ultracold neutral plasma anomalies through context-dependent elemental embeddings</div>
+                        </div>
+                        <div>
+                            <div class="text-blue-400 font-semibold">Theoretical Foundation</div>
+                            <div class="text-slate-300 text-sm">Bruno Framework: Entropy-first physics with universal scaling constant κ = 1340 ± 60 × 10⁻⁶ K⁻¹s⁻¹</div>
+                        </div>
+                        <div>
+                            <div class="text-purple-400 font-semibold">Validation Success</div>
+                            <div class="text-slate-300 text-sm">Cross-validated performance across 4 chemical families with laboratory-confirmed predictions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Timeline -->
+            <div class="repo-card p-8 rounded-xl">
+                <h3 class="text-2xl font-bold text-white mb-6 text-center">6-Month Development Timeline</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold">1</span>
+                        </div>
+                        <div class="text-green-400 font-semibold mb-2">Feb - Mar 2025</div>
+                        <div class="text-slate-300 text-sm">Theoretical foundations, Bruno Framework development, initial physics hypothesis</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold">2</span>
+                        </div>
+                        <div class="text-blue-400 font-semibold mb-2">Apr - May 2025</div>
+                        <div class="text-slate-300 text-sm">E3 Engine development, GNN architecture, experimental data integration</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white font-bold">3</span>
+                        </div>
+                        <div class="text-purple-400 font-semibold mb-2">Jun - July 2025</div>
+                        <div class="text-slate-300 text-sm">Validation, documentation, patent filing, repository publication</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REPOSITORY STRUCTURE -->
+    <section id="repository" class="py-20 bg-slate-900">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Repository Structure</h2>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                    Complete research framework with E3 Engine core, Bruno theoretical foundations, demonstrations, and comprehensive documentation.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Directory Tree -->
+                <div class="repo-card p-6 rounded-xl">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+                        </svg>
+                        Project Structure
+                    </h3>
+                    <div class="directory-tree text-slate-300">
+                        <div class="directory-item">
+                            <span class="folder-icon">📁</span> <strong>e3_engine/</strong>
+                        </div>
+                        <div class="directory-item ml-4">
+                            <span class="folder-icon">📁</span> core/
+                        </div>
+                        <div class="directory-item ml-8">
+                            <span class="code-icon">🐍</span> entropy_first_model.py
+                        </div>
+                        <div class="directory-item ml-8">
+                            <span class="code-icon">🐍</span> utils.py
+                        </div>
+                        <div class="directory-item ml-4">
+                            <span class="folder-icon">📁</span> models/
+                        </div>
+                        <div class="directory-item ml-4">
+                            <span class="folder-icon">📁</span> training/
+                        </div>
+                        <div class="directory-item">
+                            <span class="folder-icon">📁</span> <strong>notebooks/</strong>
+                        </div>
+                        <div class="directory-item ml-4">
+                            <span class="folder-icon">📁</span> e3_demos/
+                        </div>
+                        <div class="directory-item ml-8">
+                            <span class="notebook-icon">📓</span> Project_Archipelago.ipynb
+                        </div>
+                        <div class="directory-item ml-4">
+                            <span class="folder-icon">📁</span> e3_validation/
+                        </div>
+                        <div class="directory-item">
+                            <span class="folder-icon">📁</span> <strong>bruno_framework/</strong>
+                        </div>
+                        <div class="directory-item ml-4">
+                            <span class="folder-icon">📁</span> theory/
+                        </div>
+                        <div class="directory-item ml-8">
+                            <span class="code-icon">🐍</span> bruno_threshold.py
+                        </div>
+                        <div class="directory-item ml-4">
+                            <span class="folder-icon">📁</span> applications/
+                        </div>
+                        <div class="directory-item">
+                            <span class="folder-icon">📁</span> <strong>data/</strong>
+                        </div>
+                        <div class="directory-item ml-4">
+                            <span class="folder-icon">📁</span> experimental/
+                        </div>
+                        <div class="directory-item ml-4">
+                            <span class="folder-icon">📁</span> processed/
+                        </div>
+                        <div class="directory-item">
+                            <span class="file-icon">📄</span> <strong>TECHNICAL_README.md</strong>
+                        </div>
+                        <div class="directory-item">
+                            <span class="file-icon">📄</span> requirements.txt
+                        </div>
+                        <div class="directory-item">
+                            <span class="file-icon">📄</span> setup.py
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Components -->
+                <div class="space-y-6">
+                    <div class="repo-card p-6 rounded-xl">
+                        <h4 class="text-lg font-bold text-green-400 mb-3">🎯 E3 Engine Core</h4>
+                        <p class="text-slate-300 text-sm mb-3">Physics-informed Graph Neural Network implementation with context-dependent elemental embeddings.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-600/20 text-green-300 px-2 py-1 rounded text-xs">entropy_first_model.py</span>
+                            <span class="bg-green-600/20 text-green-300 px-2 py-1 rounded text-xs">GNN Architecture</span>
+                            <span class="bg-green-600/20 text-green-300 px-2 py-1 rounded text-xs">Multi-output</span>
+                        </div>
+                    </div>
+
+                    <div class="repo-card p-6 rounded-xl">
+                        <h4 class="text-lg font-bold text-amber-400 mb-3">📓 Interactive Demonstrations</h4>
+                        <p class="text-slate-300 text-sm mb-3">Jupyter notebooks showcasing E3 capabilities, validation results, and visual demonstrations.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-amber-600/20 text-amber-300 px-2 py-1 rounded text-xs">Project_Archipelago.ipynb</span>
+                            <span class="bg-amber-600/20 text-amber-300 px-2 py-1 rounded text-xs">Visualizations</span>
+                            <span class="bg-amber-600/20 text-amber-300 px-2 py-1 rounded text-xs">Validation</span>
+                        </div>
+                    </div>
+
+                    <div class="repo-card p-6 rounded-xl">
+                        <h4 class="text-lg font-bold text-blue-400 mb-3">🔬 Bruno Framework</h4>
+                        <p class="text-slate-300 text-sm mb-3">Theoretical foundations with entropy-first physics principles and universal scaling relationships.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs">bruno_threshold.py</span>
+                            <span class="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs">Theory</span>
+                            <span class="bg-blue-600/20 text-blue-300 px-2 py-1 rounded text-xs">Constants</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEMONSTRATIONS -->
+    <section id="demonstrations" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Interactive Demonstrations</h2>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                    Experience the E3 Engine through interactive notebooks, visualizations, and real-time predictions.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Project Archipelago -->
+                <div class="repo-card p-8 rounded-xl">
+                    <div class="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Project Archipelago</h3>
+                    <p class="text-slate-300 mb-6">
+                        Main visualization system showcasing E3 predictions, entropic periodic table, and interactive physics demonstrations.
+                    </p>
+                    <a href="notebooks/e3_demos/Project_Archipelago.ipynb" class="inline-flex items-center text-amber-400 font-semibold hover:text-amber-300 transition">
+                        Launch Notebook
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Historical Validation -->
+                <div class="repo-card p-8 rounded-xl">
+                    <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Historical Entropy Audit</h3>
+                    <p class="text-slate-300 mb-6">
+                        Comprehensive validation against experimental data with cross-validation metrics and performance analysis.
+                    </p>
+                    <a href="notebooks/e3_validation/Historical_Entropy_Audit.ipynb" class="inline-flex items-center text-green-400 font-semibold hover:text-green-300 transition">
+                        View Validation
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Fluence Comparison -->
+                <div class="repo-card p-8 rounded-xl">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Fluence Model Comparison</h3>
+                    <p class="text-slate-300 mb-6">
+                        Astrophysical applications with neutrino fluence predictions and gravitational wave event correlations.
+                    </p>
+                    <a href="notebooks/e3_validation/Fluence_Model_Comparison_Annotated.ipynb" class="inline-flex items-center text-blue-400 font-semibold hover:text-blue-300 transition">
+                        Explore Astrophysics
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Live Demo Embed -->
+            <div class="mt-16 repo-card p-8 rounded-xl">
+                <h3 class="text-2xl font-bold text-white mb-6 text-center">Live E3 Calculator</h3>
+                <p class="text-slate-300 text-center mb-8">
+                    Experience the E3 Engine's predictive power with real-time plasma condition analysis.
+                </p>
+                
+                <div class="max-w-2xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <label class="block text-slate-300 font-semibold mb-2">Temperature (K)</label>
+                            <input type="number" id="demo-temperature" value="10.0" min="0.1" max="1000" step="0.1" 
+                                   class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white focus:border-green-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-slate-300 font-semibold mb-2">Density (×10⁹ cm⁻³)</label>
+                            <input type="number" id="demo-density" value="1.5" min="0.01" max="100" step="0.01"
+                                   class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white focus:border-green-500 focus:outline-none">
+                        </div>
+                    </div>
+                    
+                    <button id="demo-predict-btn" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-lg transition text-lg">
+                        Predict with E3 Engine
+                    </button>
+                    
+                    <div id="demo-results" class="mt-8 grid md:grid-cols-3 gap-4 hidden">
+                        <div class="bg-slate-700 p-4 rounded-lg text-center">
+                            <div class="text-slate-400 text-sm">Relaxation Time</div>
+                            <div id="demo-tau" class="text-2xl font-bold text-green-400">--</div>
+                        </div>
+                        <div class="bg-slate-700 p-4 rounded-lg text-center">
+                            <div class="text-slate-400 text-sm">Coupling Parameter</div>
+                            <div id="demo-gamma" class="text-lg font-bold text-blue-400">--</div>
+                        </div>
+                        <div class="bg-slate-700 p-4 rounded-lg text-center">
+                            <div class="text-slate-400 text-sm">Regime</div>
+                            <div id="demo-regime" class="text-sm font-bold text-purple-400">--</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCUMENTATION -->
+    <section id="documentation" class="py-20 bg-slate-900">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Documentation & Resources</h2>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                    Comprehensive technical documentation, installation guides, and scientific references.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Technical README -->
+                <div class="repo-card p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Technical README</h3>
+                            <p class="text-slate-400">Complete project documentation</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 mb-6">
+                        In-depth technical documentation covering the E3 Engine architecture, Bruno Framework theory, installation instructions, and usage examples.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                            <span class="text-slate-300">Complete installation guide</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                            <span class="text-slate-300">API reference and examples</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                            <span class="text-slate-300">Development timeline & history</span>
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <span class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                            <span class="text-slate-300">Bruno Framework foundations</span>
+                        </div>
+                    </div>
+                    <a href="TECHNICAL_README.md" class="inline-flex items-center text-green-400 font-semibold hover:text-green-300 transition">
+                        Read Full Documentation
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Quick Reference -->
+                <div class="space-y-6">
+                    <div class="repo-card p-6 rounded-xl">
+                        <h4 class="text-lg font-bold text-blue-400 mb-3">Quick Start</h4>
+                        <div class="bg-slate-800 p-4 rounded-lg code-font text-sm">
+                            <div class="text-green-400"># Clone the repository</div>
+                            <div class="text-slate-300">git clone https://github.com/ismpower/E3_Project.git</div>
+                            <div class="text-slate-300 mt-2">cd E3_Project</div>
+                            <div class="text-green-400 mt-3"># Install dependencies</div>
+                            <div class="text-slate-300">pip install -r requirements.txt</div>
+                            <div class="text-green-400 mt-3"># Launch main demo</div>
+                            <div class="text-slate-300">jupyter notebook notebooks/e3_demos/Project_Archipelago.ipynb</div>
+                        </div>
+                    </div>
+
+                    <div class="repo-card p-6 rounded-xl">
+                        <h4 class="text-lg font-bold text-amber-400 mb-3">Citation</h4>
+                        <p class="text-slate-300 text-sm mb-3">If you use the E3 Engine in your research:</p>
+                        <div class="bg-slate-800 p-4 rounded-lg code-font text-xs">
+                            <div class="text-slate-300">@article{chajar2025e3,</div>
+                            <div class="text-slate-300 ml-2">title={The Elemental Embedding Engine (E3)},</div>
+                            <div class="text-slate-300 ml-2">author={Chajar, Ismail},</div>
+                            <div class="text-slate-300 ml-2">year={2025},</div>
+                            <div class="text-slate-300 ml-2">note={In memory of Bruno (2011-2025)}</div>
+                            <div class="text-slate-300">}</div>
+                        </div>
+                    </div>
+
+                    <div class="repo-card p-6 rounded-xl">
+                        <h4 class="text-lg font-bold text-purple-400 mb-3">Contact & Collaboration</h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                <a href="mailto:i.chajar@ethic-lab.ca" class="text-slate-300 hover:text-purple-400">i.chajar@ethic-lab.ca</a>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <span class="text-slate-300">EthI.C Lab, Saint-Jean-sur-Richelieu, QC</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                                <span class="text-slate-300">Patent CIPO #3280399</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4 code-font">E3_Project</h3>
+                    <p class="text-slate-400 mb-4">
+                        Revolutionary physics-informed AI for understanding entropic processes. From ultracold plasma laboratories to stellar phenomena.
+                    </p>
+                    <div class="text-sm text-slate-500">
+                        Patent-Pending: CIPO #3280399<br>
+                        Method for Predicting Entropic Properties in Materials
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Repository Links</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="TECHNICAL_README.md" class="hover:text-green-400 transition">📋 Technical Documentation</a></li>
+                        <li><a href="notebooks/e3_demos/Project_Archipelago.ipynb" class="hover:text-green-400 transition">📓 Main Demonstration</a></li>
+                        <li><a href="e3_engine/" class="hover:text-green-400 transition">🎯 E3 Engine Core</a></li>
+                        <li><a href="bruno_framework/" class="hover:text-green-400 transition">🔬 Bruno Framework</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">External Links</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="https://github.com/ismpower/E3_Project" class="hover:text-green-400 transition flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View on GitHub
+                        </a></li>
+                        <li><a href="mailto:i.chajar@ethic-lab.ca" class="hover:text-green-400 transition">📧 Research Collaboration</a></li>
+                        <li><span class="text-slate-500">🌟 Open for academic partnerships</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-slate-500">
+                <p>&copy; 2025 EthI.C Lab Inc. Revolutionary AI for Physics Discovery.</p>
+                <p class="mt-2 text-sm">In memory of Bruno (2011-2025) - The inspiration behind breakthrough science.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Demo calculator functionality
+        document.getElementById('demo-predict-btn').addEventListener('click', function() {
+            const temp = parseFloat(document.getElementById('demo-temperature').value);
+            const density = parseFloat(document.getElementById('demo-density').value) * 1e9;
+            
+            if (isNaN(temp) || isNaN(density) || temp <= 0 || density <= 0) {
+                alert("Please enter valid positive numbers for both temperature and density.");
+                return;
+            }
+            
+            // Simple E3 model prediction (simplified version)
+            const k_B = 1.38e-23;
+            const e = 1.6e-19;
+            const epsilon_0 = 8.85e-12;
+            const n0_m3 = density;
+            const a = Math.pow(3 / (4 * Math.PI * n0_m3), 1/3);
+            const gamma = (e * e) / (4 * Math.PI * epsilon_0 * a * k_B * temp);
+            
+            let tau = 25.0;
+            tau += temp * -0.15;
+            tau += Math.log10(density / 1e9) * 2.5;
+            
+            if (gamma > 0.3) {
+                tau += -0.9 * Math.log10(gamma) * 20;
+                tau *= (1 + 0.5 * Math.tanh((gamma - 1) * 2));
+            } else {
+                tau += temp * 0.8;
+            }
+            
+            tau = Math.max(1, Math.min(200, tau));
+            
+            const regime = temp < 10 ? 'Inelastic/TBR Heating' : 'Elastic/Cooling';
+            
+            document.getElementById('demo-tau').textContent = `${tau.toFixed(2)} µs`;
+            document.getElementById('demo-gamma').textContent = `Γ = ${gamma.toFixed(3)}`;
+            document.getElementById('demo-regime').textContent = regime;
+            document.getElementById('demo-results').classList.remove('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

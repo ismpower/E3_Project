@@ -1,0 +1,53 @@
+{
+  "material": "Diamond, Polycrystalline",
+  "properties": {
+    "physical": [
+      {
+        "property": "Density",
+        "metric": "3.10 - 3.40 g/cc",
+        "english": "0.112 - 0.123 lb/in³",
+        "comments": "Polycrystalline variation"
+      }
+    ],
+    "mechanical": [
+      {
+        "property": "Vickers Microhardness",
+        "metric": "80 - 120 GPa",
+        "english": "80 - 120 GPa",
+        "comments": "Polycrystalline"
+      },
+      {
+        "property": "Modulus of Elasticity",
+        "metric": "700 - 900 GPa",
+        "english": "101500 - 130500 ksi",
+        "comments": null
+      },
+      {
+        "property": "Compressive Strength",
+        "metric": "4000 - 5500 MPa",
+        "english": "580000 - 798000 psi",
+        "comments": null
+      }
+    ],
+    "thermal": [
+      {
+        "property": "Thermal Conductivity",
+        "metric": "1500 - 2000 W/m-K",
+        "english": "10400 - 13900 BTU-in/hr-ft²-°F",
+        "comments": "Lower than single crystal"
+      }
+    ],
+    "component_elements": [
+      {
+        "element": "Carbon, C",
+        "metric": "100 %",
+        "english": "100 %",
+        "comments": null
+      }
+    ],
+    "descriptive": {
+      "crystal_structure": "Cubic - polycrystalline aggregate",
+      "color": "Variable - typically darker than single crystal"
+    }
+  }
+}

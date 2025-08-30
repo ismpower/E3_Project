@@ -1,0 +1,73 @@
+{
+  "material": "Chlorine, Cl₂",
+  "properties": {
+    "physical": [
+      {
+        "property": "Density",
+        "metric": "0.00321 g/cc",
+        "english": "0.000116 lb/in³",
+        "comments": "Gas at STP"
+      },
+      {
+        "property": "Molecular Weight",
+        "metric": "70.906 g/mol",
+        "english": "70.906 g/mol",
+        "comments": null
+      }
+    ],
+    "chemical": [
+      {
+        "property": "Atomic Number",
+        "metric": "17",
+        "english": "17",
+        "comments": "Per chlorine atom"
+      },
+      {
+        "property": "Atomic Mass",
+        "metric": "35.453",
+        "english": "35.453",
+        "comments": "Per chlorine atom"
+      },
+      {
+        "property": "Electronegativity",
+        "metric": "3.16",
+        "english": "3.16",
+        "comments": "Pauling scale"
+      }
+    ],
+    "thermal": [
+      {
+        "property": "Melting Point",
+        "metric": "-101.5 °C",
+        "english": "-150.7 °F",
+        "comments": null
+      },
+      {
+        "property": "Boiling Point",
+        "metric": "-34.04 °C",
+        "english": "-29.27 °F",
+        "comments": "At 1 atm"
+      },
+      {
+        "property": "Critical Temperature",
+        "metric": "144.0 °C",
+        "english": "291.2 °F",
+        "comments": null
+      }
+    ],
+    "component_elements": [
+      {
+        "element": "Chlorine, Cl",
+        "metric": "100 %",
+        "english": "100 %",
+        "comments": null
+      }
+    ],
+    "descriptive": {
+      "state": "Gas at STP",
+      "color": "Pale yellow-green",
+      "odor": "Strong, pungent",
+      "toxicity": "Highly toxic"
+    }
+  }
+}

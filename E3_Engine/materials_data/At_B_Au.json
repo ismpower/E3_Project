@@ -1,0 +1,496 @@
+{
+  "Astatine": {
+    "symbol": "At",
+    "properties": {
+      "Physical": {
+        "Density": {
+          "value": null,
+          "units": "g/cc"
+        },
+        "a_Lattice_Constant": {
+          "value": null,
+          "units": "Å"
+        },
+        "c_Lattice_Constant": {
+          "value": null,
+          "units": "Å"
+        }
+      },
+      "Chemical": {
+        "Atomic_Mass": {
+          "value": 210,
+          "units": null
+        },
+        "Atomic_Number": {
+          "value": 85,
+          "units": null
+        },
+        "Thermal_Neutron_Cross_Section": {
+          "value": null,
+          "units": "barns/atom"
+        },
+        "X-ray_Absorption_Edge": {
+          "value": [
+            0.12949,
+            0.70915,
+            0.73873,
+            0.87234
+          ],
+          "units": "Å"
+        },
+        "Electrode_Potential": {
+          "value": null,
+          "units": "V"
+        },
+        "Electronegativity": {
+          "value": 2.2,
+          "units": null
+        },
+        "Ionic_Radius": {
+          "value": 0.620,
+          "units": "Å"
+        },
+        "Electrochemical_Equivalent": {
+          "value": null,
+          "units": "g/A/h"
+        }
+      },
+      "Mechanical": {
+        "Knoop_Microhardness": {
+          "value": null,
+          "units": null
+        },
+        "Hardness_Vickers": {
+          "value": null,
+          "units": null
+        },
+        "Hardness_Mohs": {
+          "value": null,
+          "units": null
+        },
+        "Tensile_Strength_Ultimate": {
+          "value": null,
+          "units": "MPa"
+        },
+        "Elongation_at_Break": {
+          "value": null,
+          "units": "%"
+        },
+        "Modulus_of_Elasticity": {
+          "value": null,
+          "units": "GPa"
+        },
+        "Compressive_Yield_Strength": {
+          "value": null,
+          "units": "MPa"
+        },
+        "Poissons_Ratio": {
+          "value": null,
+          "units": null
+        },
+        "Shear_Modulus": {
+          "value": null,
+          "units": "GPa"
+        }
+      },
+      "Electrical": {
+        "Electrical_Resistivity": {
+          "value": null,
+          "units": "ohm-cm"
+        },
+        "Magnetic_Susceptibility": {
+          "value": null,
+          "units": null
+        },
+        "Band_Gap": {
+          "value": null,
+          "units": "eV"
+        },
+        "Electron_Mobility": {
+          "value": null,
+          "units": "cm²/V-s"
+        }
+      },
+      "Thermal": {
+        "Heat_of_Fusion": {
+          "value": null,
+          "units": "J/g"
+        },
+        "Heat_of_Vaporization": {
+          "value": null,
+          "units": "J/g"
+        },
+        "CTE_linear": {
+          "value": null,
+          "units": "µm/m-°C"
+        },
+        "Specific_Heat_Capacity": {
+          "value": null,
+          "units": "J/g-°C"
+        },
+        "Thermal_Conductivity": {
+          "value": null,
+          "units": "W/m-K"
+        },
+        "Melting_Point": {
+          "value": 302,
+          "units": "°C"
+        },
+        "Boiling_Point": {
+          "value": null,
+          "units": "°C"
+        },
+        "Heat_of_Formation": {
+          "value": null,
+          "units": "kJ/mol"
+        },
+        "Debye_Temperature": {
+          "value": null,
+          "units": "°C"
+        }
+      },
+      "Optical": {
+        "Refractive_Index": {
+          "value": null,
+          "units": null
+        },
+        "Reflection_Coefficient_Visible": {
+          "value": null,
+          "units": "(0-1)"
+        }
+      }
+    }
+  },
+  "Boron": {
+    "symbol": "B",
+    "properties": {
+      "Physical": {
+        "Density": {
+          "value": 2.60,
+          "units": "g/cc"
+        },
+        "a_Lattice_Constant": {
+          "value": 4.91,
+          "units": "Å"
+        },
+        "c_Lattice_Constant": {
+          "value": 12.6,
+          "units": "Å"
+        }
+      },
+      "Chemical": {
+        "Atomic_Mass": {
+          "value": 10.811,
+          "units": null
+        },
+        "Atomic_Number": {
+          "value": 5,
+          "units": null
+        },
+        "Thermal_Neutron_Cross_Section": {
+          "value": null,
+          "units": "barns/atom"
+        },
+        "X-ray_Absorption_Edge": {
+          "value": 66.289,
+          "units": "Å"
+        },
+        "Electrode_Potential": {
+          "value": null,
+          "units": "V"
+        },
+        "Electronegativity": {
+          "value": 2.04,
+          "units": null
+        },
+        "Ionic_Radius": {
+          "value": [
+            0.230,
+            0.350
+          ],
+          "units": "Å"
+        },
+        "Electrochemical_Equivalent": {
+          "value": null,
+          "units": "g/A/h"
+        }
+      },
+      "Mechanical": {
+        "Knoop_Microhardness": {
+          "value": 3300,
+          "units": null
+        },
+        "Hardness_Vickers": {
+          "value": null,
+          "units": null
+        },
+        "Hardness_Mohs": {
+          "value": 9.5,
+          "units": null
+        },
+        "Tensile_Strength_Ultimate": {
+          "value": [
+            "1.60 - 2.40",
+            "2.60 - 3.10"
+          ],
+          "units": "MPa"
+        },
+        "Elongation_at_Break": {
+          "value": null,
+          "units": "%"
+        },
+        "Modulus_of_Elasticity": {
+          "value": 0.440,
+          "units": "GPa"
+        },
+        "Compressive_Yield_Strength": {
+          "value": "<= 0.500",
+          "units": "MPa"
+        },
+        "Poissons_Ratio": {
+          "value": null,
+          "units": null
+        },
+        "Shear_Modulus": {
+          "value": null,
+          "units": "GPa"
+        }
+      },
+      "Electrical": {
+        "Electrical_Resistivity": {
+          "value": 6500,
+          "units": "ohm-cm"
+        },
+        "Magnetic_Susceptibility": {
+          "value": -6.2e-07,
+          "units": null
+        },
+        "Band_Gap": {
+          "value": 1.55,
+          "units": "eV"
+        },
+        "Electron_Mobility": {
+          "value": 10,
+          "units": "cm²/V-s"
+        }
+      },
+      "Thermal": {
+        "Heat_of_Fusion": {
+          "value": 2050,
+          "units": "J/g"
+        },
+        "Heat_of_Vaporization": {
+          "value": 3140,
+          "units": "J/g"
+        },
+        "CTE_linear": {
+          "value": 8.20,
+          "units": "µm/m-°C"
+        },
+        "Specific_Heat_Capacity": {
+          "value": 1.285,
+          "units": "J/g-°C"
+        },
+        "Thermal_Conductivity": {
+          "value": 27.4,
+          "units": "W/m-K"
+        },
+        "Melting_Point": {
+          "value": 2300,
+          "units": "°C"
+        },
+        "Boiling_Point": {
+          "value": 4000,
+          "units": "°C"
+        },
+        "Heat_of_Formation": {
+          "value": 397.1,
+          "units": "kJ/mol"
+        },
+        "Debye_Temperature": {
+          "value": 1097,
+          "units": "°C"
+        }
+      },
+      "Optical": {
+        "Refractive_Index": {
+          "value": 3.40,
+          "units": null
+        },
+        "Reflection_Coefficient_Visible": {
+          "value": null,
+          "units": "(0-1)"
+        }
+      }
+    }
+  },
+  "Gold": {
+    "symbol": "Au",
+    "properties": {
+      "Physical": {
+        "Density": {
+          "value": 19.32,
+          "units": "g/cc"
+        },
+        "a_Lattice_Constant": {
+          "value": null,
+          "units": "Å"
+        },
+        "c_Lattice_Constant": {
+          "value": null,
+          "units": "Å"
+        }
+      },
+      "Chemical": {
+        "Atomic_Mass": {
+          "value": 196.9666,
+          "units": null
+        },
+        "Atomic_Number": {
+          "value": 79,
+          "units": null
+        },
+        "Thermal_Neutron_Cross_Section": {
+          "value": 99,
+          "units": "barns/atom"
+        },
+        "X-ray_Absorption_Edge": {
+          "value": [
+            0.15344,
+            0.86378,
+            0.90277,
+            1.04028
+          ],
+          "units": "Å"
+        },
+        "Electrode_Potential": {
+          "value": 1.68,
+          "units": "V"
+        },
+        "Electronegativity": {
+          "value": 2.4,
+          "units": null
+        },
+        "Ionic_Radius": {
+          "value": [
+            0.850,
+            1.37
+          ],
+          "units": "Å"
+        },
+        "Electrochemical_Equivalent": {
+          "value": 2.45,
+          "units": "g/A/h"
+        }
+      },
+      "Mechanical": {
+        "Knoop_Microhardness": {
+          "value": null,
+          "units": null
+        },
+        "Hardness_Vickers": {
+          "value": 25,
+          "units": null
+        },
+        "Hardness_Mohs": {
+          "value": null,
+          "units": null
+        },
+        "Tensile_Strength_Ultimate": {
+          "value": 120,
+          "units": "MPa"
+        },
+        "Elongation_at_Break": {
+          "value": 30,
+          "units": "%"
+        },
+        "Modulus_of_Elasticity": {
+          "value": 77.2,
+          "units": "GPa"
+        },
+        "Compressive_Yield_Strength": {
+          "value": null,
+          "units": "MPa"
+        },
+        "Poissons_Ratio": {
+          "value": 0.42,
+          "units": null
+        },
+        "Shear_Modulus": {
+          "value": 27.2,
+          "units": "GPa"
+        }
+      },
+      "Electrical": {
+        "Electrical_Resistivity": {
+          "value": 2.2e-06,
+          "units": "ohm-cm"
+        },
+        "Magnetic_Susceptibility": {
+          "value": -1.42e-07,
+          "units": null
+        },
+        "Band_Gap": {
+          "value": null,
+          "units": "eV"
+        },
+        "Electron_Mobility": {
+          "value": null,
+          "units": "cm²/V-s"
+        }
+      },
+      "Thermal": {
+        "Heat_of_Fusion": {
+          "value": 66.2,
+          "units": "J/g"
+        },
+        "Heat_of_Vaporization": {
+          "value": 1738,
+          "units": "J/g"
+        },
+        "CTE_linear": {
+          "value": 14.4,
+          "units": "µm/m-°C"
+        },
+        "Specific_Heat_Capacity": {
+          "value": 0.128,
+          "units": "J/g-°C"
+        },
+        "Thermal_Conductivity": {
+          "value": 301,
+          "units": "W/m-K"
+        },
+        "Melting_Point": {
+          "value": 1064.43,
+          "units": "°C"
+        },
+        "Boiling_Point": {
+          "value": 2856,
+          "units": "°C"
+        },
+        "Heat_of_Formation": {
+          "value": null,
+          "units": "kJ/mol"
+        },
+        "Debye_Temperature": {
+          "value": null,
+          "units": "°C"
+        }
+      },
+      "Optical": {
+        "Refractive_Index": {
+          "value": null,
+          "units": null
+        },
+        "Reflection_Coefficient_Visible": {
+          "value": [
+            0.27,
+            0.50,
+            0.85
+          ],
+          "units": "(0-1)"
+        }
+      }
+    }
+  }
+}

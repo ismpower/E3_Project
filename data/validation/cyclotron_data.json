@@ -1,0 +1,1006 @@
+{
+  "description": "Known cyclotron frequency test data",
+  "physics_law": "\u03c9c = eB/m",
+  "data_points": [
+    {
+      "magnetic_field": 0.001,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 175882001.0772163,
+      "cyclotron_frequency_mhz": 27.992489872333035,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 0
+    },
+    {
+      "magnetic_field": 0.0011233240329780276,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 197572478.77830446,
+      "cyclotron_frequency_mhz": 31.44463661648575,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 1
+    },
+    {
+      "magnetic_field": 0.001261856883066021,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 120871.16735215962,
+      "cyclotron_frequency_mhz": 0.019237243761383922,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 2
+    },
+    {
+      "magnetic_field": 0.0014174741629268048,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 3423.3403423877535,
+      "cyclotron_frequency_mhz": 0.0005448415373769124,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 3
+    },
+    {
+      "magnetic_field": 0.0015922827933410922,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 280053883.973651,
+      "cyclotron_frequency_mhz": 44.57195996649069,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 4
+    },
+    {
+      "magnetic_field": 0.001788649529057435,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 314591258.3964423,
+      "cyclotron_frequency_mhz": 50.06875382729352,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 5
+    },
+    {
+      "magnetic_field": 0.002009233002565048,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 192461.0799858954,
+      "cyclotron_frequency_mhz": 0.0306311322325599,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 6
+    },
+    {
+      "magnetic_field": 0.002257019719633919,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 5450.9259229344225,
+      "cyclotron_frequency_mhz": 0.0008675418050627651,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 7
+    },
+    {
+      "magnetic_field": 0.0025353644939701114,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 445924980.65958714,
+      "cyclotron_frequency_mhz": 70.97116492013113,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 8
+    },
+    {
+      "magnetic_field": 0.002848035868435802,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 500918247.68017644,
+      "cyclotron_frequency_mhz": 79.72361520323042,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 9
+    },
+    {
+      "magnetic_field": 0.0031992671377973846,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 306452.4660493849,
+      "cyclotron_frequency_mhz": 0.04877342479446085,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 10
+    },
+    {
+      "magnetic_field": 0.003593813663804626,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 8679.415554865394,
+      "cyclotron_frequency_mhz": 0.0013813718887055132,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 11
+    },
+    {
+      "magnetic_field": 0.004037017258596553,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 710038673.8252199,
+      "cyclotron_frequency_mhz": 113.00616472569772,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 12
+    },
+    {
+      "magnetic_field": 0.004534878508128582,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 797603506.6517164,
+      "cyclotron_frequency_mhz": 126.94254071105009,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 13
+    },
+    {
+      "magnetic_field": 0.0050941380148163806,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 487958.9886673808,
+      "cyclotron_frequency_mhz": 0.0776610850725358,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 14
+    },
+    {
+      "magnetic_field": 0.00572236765935022,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 13820.084044269208,
+      "cyclotron_frequency_mhz": 0.0021995346895908765,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 15
+    },
+    {
+      "magnetic_field": 0.006428073117284319,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 1130582362.9386258,
+      "cyclotron_frequency_mhz": 179.93777163419756,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 16
+    },
+    {
+      "magnetic_field": 0.007220809018385464,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 1270010339.5500455,
+      "cyclotron_frequency_mhz": 202.12842331720617,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 17
+    },
+    {
+      "magnetic_field": 0.008111308307896872,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 776968.7015111913,
+      "cyclotron_frequency_mhz": 0.12365840947319748,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 18
+    },
+    {
+      "magnetic_field": 0.009111627561154887,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 22005.482026217614,
+      "cyclotron_frequency_mhz": 0.0035022812395923905,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 19
+    },
+    {
+      "magnetic_field": 0.010235310218990263,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 1800206842.9620886,
+      "cyclotron_frequency_mhz": 286.5118176452718,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 20
+    },
+    {
+      "magnetic_field": 0.011497569953977356,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 2022215611.0308154,
+      "cyclotron_frequency_mhz": 321.8456104931518,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 21
+    },
+    {
+      "magnetic_field": 0.01291549665014884,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 1237153.8943808412,
+      "cyclotron_frequency_mhz": 0.19689915765609947,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 22
+    },
+    {
+      "magnetic_field": 0.014508287784959394,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 35038.950389523,
+      "cyclotron_frequency_mhz": 0.005576622155244277,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 23
+    },
+    {
+      "magnetic_field": 0.016297508346206444,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 2866438380.5034237,
+      "cyclotron_frequency_mhz": 456.20783732544703,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 24
+    },
+    {
+      "magnetic_field": 0.01830738280295368,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 3219939121.8701105,
+      "cyclotron_frequency_mhz": 512.469227700605,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 25
+    },
+    {
+      "magnetic_field": 0.020565123083486514,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 1969898.8587375365,
+      "cyclotron_frequency_mhz": 0.3135191407591622,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 26
+    },
+    {
+      "magnetic_field": 0.02310129700083159,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 55791.917801969634,
+      "cyclotron_frequency_mhz": 0.00887955950276018,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 27
+    },
+    {
+      "magnetic_field": 0.02595024211399736,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 4564180511.448108,
+      "cyclotron_frequency_mhz": 726.4118895606614,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 28
+    },
+    {
+      "magnetic_field": 0.029150530628251757,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 5127053659.359603,
+      "cyclotron_frequency_mhz": 815.9959333844714,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 29
+    },
+    {
+      "magnetic_field": 0.03274549162877728,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 3136636.057390034,
+      "cyclotron_frequency_mhz": 0.4992111332138979,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 30
+    },
+    {
+      "magnetic_field": 0.036783797718286326,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 88836.51072357682,
+      "cyclotron_frequency_mhz": 0.01413876980869342,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 31
+    },
+    {
+      "magnetic_field": 0.04132012400115337,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 7267466094.081569,
+      "cyclotron_frequency_mhz": 1156.6531526258311,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 32
+    },
+    {
+      "magnetic_field": 0.046415888336127795,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 8163719322.334782,
+      "cyclotron_frequency_mhz": 1299.2962841643987,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 33
+    },
+    {
+      "magnetic_field": 0.052140082879996844,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 4994411.623155394,
+      "cyclotron_frequency_mhz": 0.7948852976607973,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 34
+    },
+    {
+      "magnetic_field": 0.05857020818056667,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 141452.84744561283,
+      "cyclotron_frequency_mhz": 0.022512919885393064,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 35
+    },
+    {
+      "magnetic_field": 0.0657933224657568,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 11571861212.795877,
+      "cyclotron_frequency_mhz": 1841.718912789839,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 36
+    },
+    {
+      "magnetic_field": 0.07390722033525779,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 12998949806.619875,
+      "cyclotron_frequency_mhz": 2068.8471167269904,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 37
+    },
+    {
+      "magnetic_field": 0.08302175681319744,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 7952515.6904130895,
+      "cyclotron_frequency_mhz": 1.2656821821451,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 38
+    },
+    {
+      "magnetic_field": 0.093260334688322,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 225232.9350567518,
+      "cyclotron_frequency_mhz": 0.03584693496137789,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 39
+    },
+    {
+      "magnetic_field": 0.10476157527896651,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 18425675496.066067,
+      "cyclotron_frequency_mhz": 2932.5373350061254,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 40
+    },
+    {
+      "magnetic_field": 0.11768119524349979,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 20698004108.58533,
+      "cyclotron_frequency_mhz": 3294.1896660177144,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 41
+    },
+    {
+      "magnetic_field": 0.13219411484660287,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 12662653.89761982,
+      "cyclotron_frequency_mhz": 2.015323960468049,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 42
+    },
+    {
+      "magnetic_field": 0.1484968262254465,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 358634.52698457753,
+      "cyclotron_frequency_mhz": 0.05707845773301924,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 43
+    },
+    {
+      "magnetic_field": 0.1668100537200059,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 29338886048.07259,
+      "cyclotron_frequency_mhz": 4669.4287393605955,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 44
+    },
+    {
+      "magnetic_field": 0.1873817422860383,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 32957075798.603653,
+      "cyclotron_frequency_mhz": 5245.281523202046,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 45
+    },
+    {
+      "magnetic_field": 0.21049041445120198,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 20162525.919213552,
+      "cyclotron_frequency_mhz": 3.2089656652612977,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 46
+    },
+    {
+      "magnetic_field": 0.23644894126454072,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 571047.5864155645,
+      "cyclotron_frequency_mhz": 0.09088504611873337,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 47
+    },
+    {
+      "magnetic_field": 0.26560877829466867,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 46715803430.14103,
+      "cyclotron_frequency_mhz": 7435.051036416265,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 48
+    },
+    {
+      "magnetic_field": 0.298364724028334,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 52476984712.954796,
+      "cyclotron_frequency_mhz": 8351.971515624582,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 49
+    },
+    {
+      "magnetic_field": 0.3351602650938841,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 32104443.09145753,
+      "cyclotron_frequency_mhz": 5.109580813217916,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 50
+    },
+    {
+      "magnetic_field": 0.37649358067924676,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 909269.2460284639,
+      "cyclotron_frequency_mhz": 0.14471469510687077,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 51
+    },
+    {
+      "magnetic_field": 0.4229242874389499,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 74384769978.91832,
+      "cyclotron_frequency_mhz": 11838.70383289847,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 52
+    },
+    {
+      "magnetic_field": 0.4750810162102798,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 83558199804.86145,
+      "cyclotron_frequency_mhz": 13298.700534803946,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 53
+    },
+    {
+      "magnetic_field": 0.5336699231206307,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 51119352.32432612,
+      "cyclotron_frequency_mhz": 8.135897610072671,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 54
+    },
+    {
+      "magnetic_field": 0.5994842503189409,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 1447813.7749653514,
+      "cyclotron_frequency_mhz": 0.23042671896227268,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 55
+    },
+    {
+      "magnetic_field": 0.6734150657750821,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 118441589324.0667,
+      "cyclotron_frequency_mhz": 18850.564408585473,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 56
+    },
+    {
+      "magnetic_field": 0.7564633275546291,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 133048283791.8379,
+      "cyclotron_frequency_mhz": 21175.292035364306,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 57
+    },
+    {
+      "magnetic_field": 0.8497534359086438,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 81396465.11276546,
+      "cyclotron_frequency_mhz": 12.954649772903633,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 58
+    },
+    {
+      "magnetic_field": 0.9545484566618337,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 2305328.9618395413,
+      "cyclotron_frequency_mhz": 0.3669044997296704,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 59
+    },
+    {
+      "magnetic_field": 1.072267222010323,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 188592504696.6834,
+      "cyclotron_frequency_mhz": 30015.429352558655,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 60
+    },
+    {
+      "magnetic_field": 1.2045035402587825,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 211850492965.30603,
+      "cyclotron_frequency_mhz": 33717.05315188326,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 61
+    },
+    {
+      "magnetic_field": 1.3530477745798062,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 129606190.83784495,
+      "cyclotron_frequency_mhz": 20.627465927154542,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 62
+    },
+    {
+      "magnetic_field": 1.5199110829529332,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 3670735.638927985,
+      "cyclotron_frequency_mhz": 0.5842157217189755,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 63
+    },
+    {
+      "magnetic_field": 1.7073526474706904,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 300292600181.62805,
+      "cyclotron_frequency_mhz": 47793.051692824294,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 64
+    },
+    {
+      "magnetic_field": 1.9179102616724888,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 337325894709.4849,
+      "cyclotron_frequency_mhz": 53687.08357591076,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 65
+    },
+    {
+      "magnetic_field": 2.1544346900318843,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 206369707.58158264,
+      "cyclotron_frequency_mhz": 32.84475906603787,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 66
+    },
+    {
+      "magnetic_field": 2.420128264794381,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 5844849.196768951,
+      "cyclotron_frequency_mhz": 0.9302366412924725,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 67
+    },
+    {
+      "magnetic_field": 2.71858824273294,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 478150740236.8625,
+      "cyclotron_frequency_mhz": 76100.05385174548,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 68
+    },
+    {
+      "magnetic_field": 3.0538555088334154,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 537118217894.3017,
+      "cyclotron_frequency_mhz": 85485.01940258783,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 69
+    },
+    {
+      "magnetic_field": 3.4304692863149193,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 328598934.4489868,
+      "cyclotron_frequency_mhz": 52.298144712285946,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 70
+    },
+    {
+      "magnetic_field": 3.8535285937105273,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 9306652.805688703,
+      "cyclotron_frequency_mhz": 1.4811997976654137,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 71
+    },
+    {
+      "magnetic_field": 4.328761281083057,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 761351196302.4626,
+      "cyclotron_frequency_mhz": 121172.80632046488,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 72
+    },
+    {
+      "magnetic_field": 4.862601580065354,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 855244096343.1283,
+      "cyclotron_frequency_mhz": 136116.32548317005,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 73
+    },
+    {
+      "magnetic_field": 5.462277217684343,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 523222429.23333913,
+      "cyclotron_frequency_mhz": 83.27343594903533,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 74
+    },
+    {
+      "magnetic_field": 6.13590727341317,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 14818823.126097722,
+      "cyclotron_frequency_mhz": 2.3584889513229457,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 75
+    },
+    {
+      "magnetic_field": 6.892612104349695,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 1212286409562.0671,
+      "cyclotron_frequency_mhz": 192941.37452492892,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 76
+    },
+    {
+      "magnetic_field": 7.742636826811269,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 1361790458713.7144,
+      "cyclotron_frequency_mhz": 216735.68295966726,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 77
+    },
+    {
+      "magnetic_field": 8.697490026177835,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 833118071.1583734,
+      "cyclotron_frequency_mhz": 132.59485920404052,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 78
+    },
+    {
+      "magnetic_field": 9.770099572992246,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 23595757.081250455,
+      "cyclotron_frequency_mhz": 3.755381375476603,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 79
+    },
+    {
+      "magnetic_field": 10.974987654930567,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 1930302790546.9338,
+      "cyclotron_frequency_mhz": 307217.230779624,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 80
+    },
+    {
+      "magnetic_field": 12.32846739442066,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 2168355515545.9207,
+      "cyclotron_frequency_mhz": 345104.4986797084,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 81
+    },
+    {
+      "magnetic_field": 13.848863713938718,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 1326559569.5269961,
+      "cyclotron_frequency_mhz": 211.12851279607827,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 82
+    },
+    {
+      "magnetic_field": 15.556761439304722,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 37571117.99633138,
+      "cyclotron_frequency_mhz": 5.9796291466050056,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 83
+    },
+    {
+      "magnetic_field": 17.47528400007683,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 3073587919326.174,
+      "cyclotron_frequency_mhz": 489176.71038829425,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 84
+    },
+    {
+      "magnetic_field": 19.630406500402724,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 3452635177250.0264,
+      "cyclotron_frequency_mhz": 549503.9551523039,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 85
+    },
+    {
+      "magnetic_field": 22.051307399030456,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 2112257976.899804,
+      "cyclotron_frequency_mhz": 336.1762981088903,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 86
+    },
+    {
+      "magnetic_field": 24.77076355991709,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 59823844.712146245,
+      "cyclotron_frequency_mhz": 9.52126060070002,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 87
+    },
+    {
+      "magnetic_field": 27.825594022071257,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 4894021157764.121,
+      "cyclotron_frequency_mhz": 778907.6588544805,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 88
+    },
+    {
+      "magnetic_field": 31.25715849688235,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 5497571584419.383,
+      "cyclotron_frequency_mhz": 874965.6926618878,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 89
+    },
+    {
+      "magnetic_field": 35.11191734215127,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 3363312031.715021,
+      "cyclotron_frequency_mhz": 535.2877350078911,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 90
+    },
+    {
+      "magnetic_field": 39.442060594376564,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 95256478.56666005,
+      "cyclotron_frequency_mhz": 15.160539425411129,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 91
+    },
+    {
+      "magnetic_field": 44.30621457583877,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 7792665679755.052,
+      "cyclotron_frequency_mhz": 1240241.2627955812,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 92
+    },
+    {
+      "magnetic_field": 49.770235643321136,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 8753688639031.919,
+      "cyclotron_frequency_mhz": 1393192.8171892958,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 93
+    },
+    {
+      "magnetic_field": 55.90810182512222,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 5355343876.736903,
+      "cyclotron_frequency_mhz": 852.329449939592,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 94
+    },
+    {
+      "magnetic_field": 62.80291441834247,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 151675251.77595717,
+      "cyclotron_frequency_mhz": 24.13986606485136,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 95
+    },
+    {
+      "magnetic_field": 70.54802310718645,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 12408127476133.648,
+      "cyclotron_frequency_mhz": 1974814.822341034,
+      "particle_type": "electron",
+      "mass_ratio": 1.0,
+      "point_id": 96
+    },
+    {
+      "magnetic_field": 79.24828983539169,
+      "particle_mass": 9.1093837015e-31,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 13938347798195.912,
+      "cyclotron_frequency_mhz": 2218356.9506169152,
+      "particle_type": "positron",
+      "mass_ratio": 1.0,
+      "point_id": 97
+    },
+    {
+      "magnetic_field": 89.02150854450393,
+      "particle_mass": 1.672621898e-27,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 8527221907.35276,
+      "cyclotron_frequency_mhz": 1357.1495173966919,
+      "particle_type": "proton",
+      "mass_ratio": 1836.152645238313,
+      "point_id": 98
+    },
+    {
+      "magnetic_field": 100.0,
+      "particle_mass": 6.634e-26,
+      "charge": 1,
+      "cyclotron_frequency_rad_s": 241509893.5785348,
+      "cyclotron_frequency_mhz": 38.43749336862141,
+      "particle_type": "argon_ion",
+      "mass_ratio": 72826.00247597002,
+      "point_id": 99
+    }
+  ]
+}

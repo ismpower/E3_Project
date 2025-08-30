@@ -1,0 +1,100 @@
+{
+  "physical_properties": [
+    {
+      "property": "Density",
+      "metric": "15.5 g/cc",
+      "english": "0.560 lb/in³",
+      "comments": null
+    }
+  ],
+  "mechanical_properties": [
+    {
+      "property": "Hardness, Rockwell C",
+      "metric": "26",
+      "english": "26",
+      "comments": null
+    },
+    {
+      "property": "Tensile Strength, Yield",
+      "metric": "1370 MPa",
+      "english": "199000 psi",
+      "comments": "@Strain 0.2 %"
+    },
+    {
+      "property": "Modulus of Rupture",
+      "metric": "1.57 GPa",
+      "english": "228 ksi",
+      "comments": "Transverse"
+    }
+  ],
+  "electrical_properties": [
+    {
+      "property": "Electrical Resistivity",
+      "metric": "0.0000280 ohm-cm",
+      "english": "0.0000280 ohm-cm",
+      "comments": null
+    },
+    {
+      "property": "Magnetic Coercive Force, Hc",
+      "metric": "4461 Oe",
+      "english": "4461 Oe",
+      "comments": null
+    },
+    {
+      "property": "Magnetic Remanence, Br",
+      "metric": "6450 Gauss",
+      "english": "6450 Gauss",
+      "comments": null
+    },
+    {
+      "property": "Magnetic Maximum Energy Product, BH",
+      "metric": "9.3 MGOe",
+      "english": "9.3 MGOe",
+      "comments": null
+    },
+    {
+      "property": "Curie Temperature",
+      "metric": "480 °C",
+      "english": "896 °F",
+      "comments": null
+    }
+  ],
+  "thermal_properties": [
+    {
+      "property": "CTE, linear",
+      "metric": "11.0 µm/m-°C",
+      "english": "6.11 µin/in-°F",
+      "comments": null
+    },
+    {
+      "property": "Maximum Service Temperature, Air",
+      "metric": "350 °C",
+      "english": "662 °F",
+      "comments": null
+    }
+  ],
+  "component_elements_properties": [
+    {
+      "property": "Cobalt, Co",
+      "metric": "23.3 %",
+      "english": "23.3 %",
+      "comments": null
+    },
+    {
+      "property": "Platinum, Pt",
+      "metric": "76.7 %",
+      "english": "76.7 %",
+      "comments": null
+    }
+  ],
+  "descriptive_properties": [
+    {
+      "property": "Demagnetization Induction, Bd (Tesla)",
+      "value": "0.35"
+    },
+    {
+      "property": "Intrinsic Magnetic Coercive Force, HCi (Oe)",
+      "value": "5404"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="e3-engine",
+    version="1.0.0",
+    description="Elemental Embedding Engine: Physics-Informed GNN for Entropic Relaxation Prediction",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    author="Ismail Chajar",
+    author_email="i.chajar@ethic-lab.ca",
+    url="https://github.com/ismpower/E3_Project",
+    packages=find_packages(),
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Science/Research",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Topic :: Scientific/Engineering :: Physics",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    ],
+    python_requires=">=3.9",
+    install_requires=[
+        "torch>=1.10.0",
+        "torch-geometric>=2.0.0",
+        "numpy>=1.21.0",
+        "pandas>=1.3.0",
+        "matplotlib>=3.4.0",
+        "scipy>=1.7.0",
+        "scikit-learn>=1.0.0",
+        "jupyter>=1.0.0",
+    ],
+)

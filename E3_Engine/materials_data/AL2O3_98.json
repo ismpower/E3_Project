@@ -1,0 +1,131 @@
+{
+  "product": {
+    "name": "Alumina, 98%, Al2O3",
+    "properties": {
+      "physical": [
+        {
+          "property": "Density",
+          "metric": "3.90 g/cc",
+          "english": "0.141 lb/in³",
+          "comments": null
+        },
+        {
+          "property": "Water Absorption",
+          "metric": "0.00 %",
+          "english": "0.00 %",
+          "comments": null
+        },
+        {
+          "property": "Weibull Modulus",
+          "metric": ">= 10",
+          "english": ">= 10",
+          "comments": null
+        }
+      ],
+      "mechanical": [
+        {
+          "property": "Hardness, Mohs",
+          "metric": "9.0",
+          "english": "9.0",
+          "comments": null
+        },
+        {
+          "property": "Tensile Strength, Ultimate",
+          "metric": "240 MPa",
+          "english": "34800 psi",
+          "comments": null
+        },
+        {
+          "property": "Modulus of Elasticity",
+          "metric": "340 GPa",
+          "english": "49300 ksi",
+          "comments": null
+        },
+        {
+          "property": "Flexural Strength",
+          "metric": "350 MPa",
+          "english": "50800 psi",
+          "comments": null
+        },
+        {
+          "property": "Compressive Strength",
+          "metric": "2500 MPa",
+          "english": "363000 psi",
+          "comments": null
+        },
+        {
+          "property": "Poissons Ratio",
+          "metric": "0.22",
+          "english": "0.22",
+          "comments": null
+        },
+        {
+          "property": "Shear Modulus",
+          "metric": "140 GPa",
+          "english": "20300 ksi",
+          "comments": null
+        }
+      ],
+      "electrical": [
+        {
+          "property": "Electrical Resistivity",
+          "metric": "1.00e+14 ohm-cm",
+          "english": "1.00e+14 ohm-cm",
+          "comments": null
+        },
+        {
+          "property": "Dielectric Constant",
+          "metric": "9.6",
+          "english": "9.6",
+          "comments": null
+        },
+        {
+          "property": "Dielectric Strength",
+          "metric": "9.00 kV/mm",
+          "english": "229 kV/in",
+          "comments": "Wide Variation Between Grades"
+        }
+      ],
+      "thermal": [
+        {
+          "property": "CTE, linear",
+          "metric": "8.10 µm/m-°C @Temperature 20.0 - 1000 °C",
+          "english": "4.50 µin/in-°F @Temperature 68.0 - 1830 °F",
+          "comments": null
+        },
+        {
+          "property": "Specific Heat Capacity",
+          "metric": "0.880 J/g-°C",
+          "english": "0.210 BTU/lb-°F",
+          "comments": null
+        },
+        {
+          "property": "Thermal Conductivity",
+          "metric": "25.0 W/m-K",
+          "english": "174 BTU-in/hr-ft²-°F",
+          "comments": null
+        },
+        {
+          "property": "Maximum Service Temperature, Air",
+          "metric": "1650 °C",
+          "english": "3000 °F",
+          "comments": "No Load"
+        }
+      ],
+      "componentElements": [
+        {
+          "property": "Al2O3",
+          "metric": "98 %",
+          "english": "98 %",
+          "comments": null
+        }
+      ],
+      "descriptive": [
+        {
+          "property": "Color",
+          "value": "White to Ivory"
+        }
+      ]
+    }
+  }
+}

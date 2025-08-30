@@ -1,0 +1,77 @@
+{
+  "material": "Momentive Performance Materials 'PG' Pyrolytic Graphite",
+  "properties": {
+    "physical_properties": [
+      {
+        "property_name": "Density",
+        "metric": "2.18 - 2.22 g/cc",
+        "english": "0.0788 - 0.0802 lb/in³",
+        "comments": null
+      },
+      {
+        "property_name": "c Lattice Constant",
+        "metric": "3.42 Å",
+        "english": "3.42 Å",
+        "comments": "C/2"
+      }
+    ],
+    "mechanical_properties": [
+      {
+        "property_name": "Tensile Strength, Ultimate",
+        "metric": "80.0 MPa",
+        "english": "11600 psi",
+        "comments": "'ab' direction"
+      },
+      {
+        "property_name": "Modulus of Elasticity",
+        "metric": "20.0 GPa",
+        "english": "2900 ksi",
+        "comments": "Young's modulus; 'ab' direction"
+      },
+      {
+        "property_name": "Compressive Yield Strength",
+        "metric": "100 MPa",
+        "english": "14500 psi",
+        "comments": "'ab' direction"
+      }
+    ],
+    "thermal_properties": [
+      {
+        "property_name": "CTE, linear",
+        "direction": "ab direction",
+        "metric": "0.500 µm/m-°C",
+        "metric_condition": "@Temperature 20.0 °C",
+        "english": "0.278 µin/in-°F",
+        "english_condition": "@Temperature 68.0 °F"
+      },
+      {
+        "property_name": "CTE, linear",
+        "direction": "c direction",
+        "metric": "6.50 µm/m-°C",
+        "metric_condition": "@Temperature 20.0 °C",
+        "english": "3.61 µin/in-°F",
+        "english_condition": "@Temperature 68.0 °F"
+      },
+      {
+        "property_name": "Thermal Conductivity",
+        "direction": "in 'c' direction",
+        "metric": ">= 3.50 W/m-K",
+        "english": ">= 24.3 BTU-in/hr-ft²-°F",
+        "comments": null
+      },
+      {
+        "property_name": "Thermal Conductivity",
+        "direction": "in 'ab' direction",
+        "metric": ">= 400 W/m-K",
+        "english": ">= 2780 BTU-in/hr-ft²-°F",
+        "comments": null
+      },
+      {
+        "property_name": "Sublimation Temperature",
+        "metric": "3650 °C",
+        "english": "6600 °F",
+        "comments": null
+      }
+    ]
+  }
+}

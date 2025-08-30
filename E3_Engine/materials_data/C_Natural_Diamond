@@ -1,0 +1,106 @@
+{
+  "Tantalum Carbide, TaC": {
+    "Physical Properties": {
+      "Density": {
+        "Metric": "14.3 g/cc",
+        "English": "0.517 lb/in³",
+        "Comments": ""
+      },
+      "Molecular Weight": {
+        "Metric": "192.959 g/mol",
+        "English": "192.959 g/mol",
+        "Comments": ""
+      }
+    },
+    "Mechanical Properties": {
+      "Hardness, Rockwell A": {
+        "Metric": "88",
+        "English": "88",
+        "Comments": ""
+      },
+      "Vickers Microhardness": {
+        "Metric": "1790",
+        "English": "1790",
+        "Comments": ""
+      },
+      "Hardness, Mohs": {
+        "Metric": "9 - 10",
+        "English": "9 - 10",
+        "Comments": ""
+      },
+      "Tensile Strength, Ultimate": {
+        "Metric": "96.0 - 291 MPa",
+        "English": "13900 - 42200 psi",
+        "Comments": "at RT"
+      },
+      "Modulus of Elasticity": {
+        "Metric": "241 - 722 GPa",
+        "English": "35000 - 105000 ksi",
+        "Comments": ""
+      },
+      "Poissons Ratio": {
+        "Metric": "0.24",
+        "English": "0.24",
+        "Comments": ""
+      },
+      "Shear Modulus": {
+        "Metric": "215 - 227 GPa",
+        "English": "31200 - 32900 ksi",
+        "Comments": ""
+      }
+    },
+    "Electrical Properties": {
+      "Electrical Resistivity": {
+        "Metric": "0.0000300 ohm-cm",
+        "English": "0.0000300 ohm-cm",
+        "Comments": ""
+      }
+    },
+    "Thermal Properties": {
+      "CTE, linear": {
+        "Metric": "6.30 µm/m-°C",
+        "English": "3.50 µin/in-°F",
+        "Comments": " @Temperature 20.0 °C; @Temperature 68.0 °F"
+      },
+      "Thermal Conductivity": {
+        "Metric": "22.0 W/m-K",
+        "English": "153 BTU-in/hr-ft²-°F",
+        "Comments": ""
+      },
+      "Melting Point": {
+        "Metric": "3865 - 3965 °C",
+        "English": "6989 - 7169 °F",
+        "Comments": ""
+      },
+      "Solidus": {
+        "Metric": "3865 °C",
+        "English": "6989 °F",
+        "Comments": ""
+      },
+      "Liquidus": {
+        "Metric": "3965 °C",
+        "English": "7169 °F",
+        "Comments": ""
+      },
+      "Boiling Point": {
+        "Metric": "4780 °C",
+        "English": "8640 °F",
+        "Comments": " alternate test"
+      },
+      "Boiling Point_alt": {
+        "Metric": "5500 °C",
+        "English": "9930 °F",
+        "Comments": "Alternate tests."
+      }
+    },
+    "Descriptive Properties": {
+      "Color": {
+        "Value": "Gold brown"
+      },
+      "Crystal Structure": {
+        "Value": "Cubic",
+        "Comments": "NaCl Structure"
+      }
+    }
+  }
+}

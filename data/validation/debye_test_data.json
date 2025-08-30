@@ -1,0 +1,606 @@
+{
+  "description": "Known Debye screening length test data",
+  "physics_law": "\u03bbD = sqrt(\u03b5\u2080kT / (n*e\u00b2))",
+  "data_points": [
+    {
+      "temperature": 100.0,
+      "density": 1e+18,
+      "debye_length_true": 6.900898067745979e-07,
+      "point_id": 0
+    },
+    {
+      "temperature": 104.76157527896652,
+      "density": 1.0974987654930591e+18,
+      "debye_length_true": 6.742246126494797e-07,
+      "point_id": 1
+    },
+    {
+      "temperature": 109.74987654930557,
+      "density": 1.2045035402587786e+18,
+      "debye_length_true": 6.587241600147566e-07,
+      "point_id": 2
+    },
+    {
+      "temperature": 114.97569953977356,
+      "density": 1.3219411484660288e+18,
+      "debye_length_true": 6.435800634479846e-07,
+      "point_id": 3
+    },
+    {
+      "temperature": 120.45035402587824,
+      "density": 1.4508287784959432e+18,
+      "debye_length_true": 6.287841303079475e-07,
+      "point_id": 4
+    },
+    {
+      "temperature": 126.1856883066021,
+      "density": 1.5922827933410872e+18,
+      "debye_length_true": 6.143283563026e-07,
+      "point_id": 5
+    },
+    {
+      "temperature": 132.19411484660287,
+      "density": 1.747528400007683e+18,
+      "debye_length_true": 6.002049211589054e-07,
+      "point_id": 6
+    },
+    {
+      "temperature": 138.48863713938732,
+      "density": 1.9179102616724928e+18,
+      "debye_length_true": 5.864061843922464e-07,
+      "point_id": 7
+    },
+    {
+      "temperature": 145.082877849594,
+      "density": 2.1049041445120133e+18,
+      "debye_length_true": 5.729246811730719e-07,
+      "point_id": 8
+    },
+    {
+      "temperature": 151.99110829529332,
+      "density": 2.310129700083158e+18,
+      "debye_length_true": 5.597531182885744e-07,
+      "point_id": 9
+    },
+    {
+      "temperature": 159.22827933410923,
+      "density": 2.5353644939701166e+18,
+      "debye_length_true": 5.468843701972277e-07,
+      "point_id": 10
+    },
+    {
+      "temperature": 166.81005372000593,
+      "density": 2.782559402207114e+18,
+      "debye_length_true": 5.343114751740087e-07,
+      "point_id": 11
+    },
+    {
+      "temperature": 174.7528400007683,
+      "density": 3.0538555088334126e+18,
+      "debye_length_true": 5.220276315442433e-07,
+      "point_id": 12
+    },
+    {
+      "temperature": 183.07382802953677,
+      "density": 3.3516026509388477e+18,
+      "debye_length_true": 5.100261940040563e-07,
+      "point_id": 13
+    },
+    {
+      "temperature": 191.79102616724887,
+      "density": 3.6783797718286495e+18,
+      "debye_length_true": 4.983006700253889e-07,
+      "point_id": 14
+    },
+    {
+      "temperature": 200.9233002565048,
+      "density": 4.0370172585965496e+18,
+      "debye_length_true": 4.86844716343682e-07,
+      "point_id": 15
+    },
+    {
+      "temperature": 210.49041445120199,
+      "density": 4.430621457583887e+18,
+      "debye_length_true": 4.756521355262934e-07,
+      "point_id": 16
+    },
+    {
+      "temperature": 220.51307399030455,
+      "density": 4.862601580065373e+18,
+      "debye_length_true": 4.647168726198286e-07,
+      "point_id": 17
+    },
+    {
+      "temperature": 231.01297000831605,
+      "density": 5.336699231206302e+18,
+      "debye_length_true": 4.540330118745296e-07,
+      "point_id": 18
+    },
+    {
+      "temperature": 242.01282647943833,
+      "density": 5.857020818056673e+18,
+      "debye_length_true": 4.4359477354397236e-07,
+      "point_id": 19
+    },
+    {
+      "temperature": 253.53644939701115,
+      "density": 6.428073117284346e+18,
+      "debye_length_true": 4.333965107583552e-07,
+      "point_id": 20
+    },
+    {
+      "temperature": 265.6087782946687,
+      "density": 7.054802310718631e+18,
+      "debye_length_true": 4.2343270646965515e-07,
+      "point_id": 21
+    },
+    {
+      "temperature": 278.2559402207126,
+      "density": 7.742636826811277e+18,
+      "debye_length_true": 4.136979704670127e-07,
+      "point_id": 22
+    },
+    {
+      "temperature": 291.50530628251755,
+      "density": 8.497534359086473e+18,
+      "debye_length_true": 4.041870364607515e-07,
+      "point_id": 23
+    },
+    {
+      "temperature": 305.3855508833416,
+      "density": 9.32603346883218e+18,
+      "debye_length_true": 3.9489475923342043e-07,
+      "point_id": 24
+    },
+    {
+      "temperature": 319.92671377973846,
+      "density": 1.0235310218990268e+19,
+      "debye_length_true": 3.858161118563315e-07,
+      "point_id": 25
+    },
+    {
+      "temperature": 335.1602650938841,
+      "density": 1.1233240329780312e+19,
+      "debye_length_true": 3.769461829701069e-07,
+      "point_id": 26
+    },
+    {
+      "temperature": 351.1191734215131,
+      "density": 1.2328467394420634e+19,
+      "debye_length_true": 3.682801741277312e-07,
+      "point_id": 27
+    },
+    {
+      "temperature": 367.8379771828634,
+      "density": 1.3530477745798076e+19,
+      "debye_length_true": 3.598133971986855e-07,
+      "point_id": 28
+    },
+    {
+      "temperature": 385.3528593710527,
+      "density": 1.4849682622544695e+19,
+      "debye_length_true": 3.5154127183277626e-07,
+      "point_id": 29
+    },
+    {
+      "temperature": 403.70172585965537,
+      "density": 1.62975083462064e+19,
+      "debye_length_true": 3.434593229822571e-07,
+      "point_id": 30
+    },
+    {
+      "temperature": 422.9242874389499,
+      "density": 1.788649529057435e+19,
+      "debye_length_true": 3.355631784809154e-07,
+      "point_id": 31
+    },
+    {
+      "temperature": 443.0621457583882,
+      "density": 1.9630406500402766e+19,
+      "debye_length_true": 3.278485666788311e-07,
+      "point_id": 32
+    },
+    {
+      "temperature": 464.1588833612782,
+      "density": 2.1544346900318777e+19,
+      "debye_length_true": 3.20311314131498e-07,
+      "point_id": 33
+    },
+    {
+      "temperature": 486.26015800653533,
+      "density": 2.364489412645407e+19,
+      "debye_length_true": 3.1294734334207304e-07,
+      "point_id": 34
+    },
+    {
+      "temperature": 509.413801481638,
+      "density": 2.5950242113997427e+19,
+      "debye_length_true": 3.0575267055554444e-07,
+      "point_id": 35
+    },
+    {
+      "temperature": 533.6699231206312,
+      "density": 2.848035868435793e+19,
+      "debye_length_true": 2.987234036035974e-07,
+      "point_id": 36
+    },
+    {
+      "temperature": 559.0810182512223,
+      "density": 3.1257158496882352e+19,
+      "debye_length_true": 2.9185573979902944e-07,
+      "point_id": 37
+    },
+    {
+      "temperature": 585.7020818056667,
+      "density": 3.430469286314926e+19,
+      "debye_length_true": 2.8514596387858323e-07,
+      "point_id": 38
+    },
+    {
+      "temperature": 613.5907273413176,
+      "density": 3.764935806792456e+19,
+      "debye_length_true": 2.785904459930619e-07,
+      "point_id": 39
+    },
+    {
+      "temperature": 642.807311728432,
+      "density": 4.132012400115334e+19,
+      "debye_length_true": 2.7218563974365307e-07,
+      "point_id": 40
+    },
+    {
+      "temperature": 673.4150657750821,
+      "density": 4.534878508128591e+19,
+      "debye_length_true": 2.659280802634085e-07,
+      "point_id": 41
+    },
+    {
+      "temperature": 705.4802310718645,
+      "density": 4.9770235643320934e+19,
+      "debye_length_true": 2.5981438234281844e-07,
+      "point_id": 42
+    },
+    {
+      "temperature": 739.0722033525775,
+      "density": 5.462277217684337e+19,
+      "debye_length_true": 2.538412385984812e-07,
+      "point_id": 43
+    },
+    {
+      "temperature": 774.263682681127,
+      "density": 5.994842503189421e+19,
+      "debye_length_true": 2.480054176838843e-07,
+      "point_id": 44
+    },
+    {
+      "temperature": 811.1308307896873,
+      "density": 6.579332246575709e+19,
+      "debye_length_true": 2.4230376254130803e-07,
+      "point_id": 45
+    },
+    {
+      "temperature": 849.7534359086446,
+      "density": 7.220809018385456e+19,
+      "debye_length_true": 2.3673318869392568e-07,
+      "point_id": 46
+    },
+    {
+      "temperature": 890.2150854450392,
+      "density": 7.924828983539186e+19,
+      "debye_length_true": 2.312906825771615e-07,
+      "point_id": 47
+    },
+    {
+      "temperature": 932.60334688322,
+      "density": 8.697490026177798e+19,
+      "debye_length_true": 2.259732999084218e-07,
+      "point_id": 48
+    },
+    {
+      "temperature": 977.0099572992257,
+      "density": 9.545484566618328e+19,
+      "debye_length_true": 2.2077816409429193e-07,
+      "point_id": 49
+    },
+    {
+      "temperature": 1023.5310218990269,
+      "density": 1.0476157527896662e+20,
+      "debye_length_true": 2.1570246467436525e-07,
+      "point_id": 50
+    },
+    {
+      "temperature": 1072.2672220103232,
+      "density": 1.1497569953977403e+20,
+      "debye_length_true": 2.107434558008389e-07,
+      "point_id": 51
+    },
+    {
+      "temperature": 1123.3240329780276,
+      "density": 1.2618568830660184e+20,
+      "debye_length_true": 2.0589845475306937e-07,
+      "point_id": 52
+    },
+    {
+      "temperature": 1176.811952434999,
+      "density": 1.3848863713938745e+20,
+      "debye_length_true": 2.0116484048627255e-07,
+      "point_id": 53
+    },
+    {
+      "temperature": 1232.8467394420659,
+      "density": 1.5199110829529393e+20,
+      "debye_length_true": 1.965400522135983e-07,
+      "point_id": 54
+    },
+    {
+      "temperature": 1291.549665014884,
+      "density": 1.6681005372000557e+20,
+      "debye_length_true": 1.9202158802079573e-07,
+      "point_id": 55
+    },
+    {
+      "temperature": 1353.0477745798075,
+      "density": 1.8307382802953696e+20,
+      "debye_length_true": 1.8760700351272686e-07,
+      "point_id": 56
+    },
+    {
+      "temperature": 1417.4741629268049,
+      "density": 2.009233002565054e+20,
+      "debye_length_true": 1.8329391049100456e-07,
+      "point_id": 57
+    },
+    {
+      "temperature": 1484.9682622544651,
+      "density": 2.205130739903041e+20,
+      "debye_length_true": 1.790799756620249e-07,
+      "point_id": 58
+    },
+    {
+      "temperature": 1555.6761439304723,
+      "density": 2.4201282647943833e+20,
+      "debye_length_true": 1.749629193747011e-07,
+      "point_id": 59
+    },
+    {
+      "temperature": 1629.7508346206434,
+      "density": 2.6560877829466948e+20,
+      "debye_length_true": 1.709405143872242e-07,
+      "point_id": 60
+    },
+    {
+      "temperature": 1707.352647470692,
+      "density": 2.9150530628251697e+20,
+      "debye_length_true": 1.6701058466217008e-07,
+      "point_id": 61
+    },
+    {
+      "temperature": 1788.649529057435,
+      "density": 3.1992671377973844e+20,
+      "debye_length_true": 1.6317100418930515e-07,
+      "point_id": 62
+    },
+    {
+      "temperature": 1873.817422860385,
+      "density": 3.5111917342151416e+20,
+      "debye_length_true": 1.5941969583546458e-07,
+      "point_id": 63
+    },
+    {
+      "temperature": 1963.0406500402723,
+      "density": 3.8535285937105194e+20,
+      "debye_length_true": 1.5575463022086317e-07,
+      "point_id": 64
+    },
+    {
+      "temperature": 2056.5123083486515,
+      "density": 4.229242874389499e+20,
+      "debye_length_true": 1.5217382462124188e-07,
+      "point_id": 65
+    },
+    {
+      "temperature": 2154.4346900318847,
+      "density": 4.641588833612792e+20,
+      "debye_length_true": 1.4867534189525918e-07,
+      "point_id": 66
+    },
+    {
+      "temperature": 2257.0197196339213,
+      "density": 5.094138014816365e+20,
+      "debye_length_true": 1.452572894365353e-07,
+      "point_id": 67
+    },
+    {
+      "temperature": 2364.4894126454074,
+      "density": 5.5908101825122225e+20,
+      "debye_length_true": 1.4191781814979035e-07,
+      "point_id": 68
+    },
+    {
+      "temperature": 2477.0763559917114,
+      "density": 6.135907273413189e+20,
+      "debye_length_true": 1.3865512145052572e-07,
+      "point_id": 69
+    },
+    {
+      "temperature": 2595.0242113997374,
+      "density": 6.734150657750856e+20,
+      "debye_length_true": 1.3546743428769688e-07,
+      "point_id": 70
+    },
+    {
+      "temperature": 2718.58824273294,
+      "density": 7.390722033525775e+20,
+      "debye_length_true": 1.3235303218885863e-07,
+      "point_id": 71
+    },
+    {
+      "temperature": 2848.035868435802,
+      "density": 8.11130830789689e+20,
+      "debye_length_true": 1.2931023032725962e-07,
+      "point_id": 72
+    },
+    {
+      "temperature": 2983.64724028334,
+      "density": 8.902150854450356e+20,
+      "debye_length_true": 1.2633738261038926e-07,
+      "point_id": 73
+    },
+    {
+      "temperature": 3125.7158496882353,
+      "density": 9.770099572992247e+20,
+      "debye_length_true": 1.234328807894721e-07,
+      "point_id": 74
+    },
+    {
+      "temperature": 3274.5491628777318,
+      "density": 1.0722672220103254e+21,
+      "debye_length_true": 1.2059515358944245e-07,
+      "point_id": 75
+    },
+    {
+      "temperature": 3430.4692863149194,
+      "density": 1.1768119524350039e+21,
+      "debye_length_true": 1.1782266585891447e-07,
+      "point_id": 76
+    },
+    {
+      "temperature": 3593.813663804626,
+      "density": 1.2915496650148828e+21,
+      "debye_length_true": 1.1511391773969918e-07,
+      "point_id": 77
+    },
+    {
+      "temperature": 3764.9358067924713,
+      "density": 1.4174741629268077e+21,
+      "debye_length_true": 1.1246744385540996e-07,
+      "point_id": 78
+    },
+    {
+      "temperature": 3944.206059437656,
+      "density": 1.5556761439304658e+21,
+      "debye_length_true": 1.0988181251872737e-07,
+      "point_id": 79
+    },
+    {
+      "temperature": 4132.012400115339,
+      "density": 1.7073526474706888e+21,
+      "debye_length_true": 1.0735562495688318e-07,
+      "point_id": 80
+    },
+    {
+      "temperature": 4328.7612810830615,
+      "density": 1.8738174228603868e+21,
+      "debye_length_true": 1.0488751455495595e-07,
+      "point_id": 81
+    },
+    {
+      "temperature": 4534.878508128582,
+      "density": 2.05651230834866e+21,
+      "debye_length_true": 1.0247614611655922e-07,
+      "point_id": 82
+    },
+    {
+      "temperature": 4750.810162102798,
+      "density": 2.257019719633917e+21,
+      "debye_length_true": 1.0012021514152899e-07,
+      "point_id": 83
+    },
+    {
+      "temperature": 4977.023564332114,
+      "density": 2.477076355991714e+21,
+      "debye_length_true": 9.781844712021437e-08,
+      "point_id": 84
+    },
+    {
+      "temperature": 5214.008287999684,
+      "density": 2.718588242732951e+21,
+      "debye_length_true": 9.556959684399701e-08,
+      "point_id": 85
+    },
+    {
+      "temperature": 5462.277217684343,
+      "density": 2.983647240283334e+21,
+      "debye_length_true": 9.337244773165797e-08,
+      "point_id": 86
+    },
+    {
+      "temperature": 5722.3676593502205,
+      "density": 3.2745491628777317e+21,
+      "debye_length_true": 9.122581117123119e-08,
+      "point_id": 87
+    },
+    {
+      "temperature": 5994.8425031894085,
+      "density": 3.59381366380464e+21,
+      "debye_length_true": 8.912852587699162e-08,
+      "point_id": 88
+    },
+    {
+      "temperature": 6280.29144183426,
+      "density": 3.944206059437648e+21,
+      "debye_length_true": 8.707945726122279e-08,
+      "point_id": 89
+    },
+    {
+      "temperature": 6579.332246575683,
+      "density": 4.3287612810830613e+21,
+      "debye_length_true": 8.507749682042685e-08,
+      "point_id": 90
+    },
+    {
+      "temperature": 6892.612104349695,
+      "density": 4.750810162102813e+21,
+      "debye_length_true": 8.312156153565006e-08,
+      "point_id": 91
+    },
+    {
+      "temperature": 7220.809018385471,
+      "density": 5.214008287999674e+21,
+      "debye_length_true": 8.121059328659066e-08,
+      "point_id": 92
+    },
+    {
+      "temperature": 7564.633275546291,
+      "density": 5.72236765935022e+21,
+      "debye_length_true": 7.934355827917658e-08,
+      "point_id": 93
+    },
+    {
+      "temperature": 7924.828983539178,
+      "density": 6.280291441834272e+21,
+      "debye_length_true": 7.75194464863068e-08,
+      "point_id": 94
+    },
+    {
+      "temperature": 8302.175681319752,
+      "density": 6.892612104349681e+21,
+      "debye_length_true": 7.573727110144641e-08,
+      "point_id": 95
+    },
+    {
+      "temperature": 8697.490026177835,
+      "density": 7.56463327554629e+21,
+      "debye_length_true": 7.399606800478389e-08,
+      "point_id": 96
+    },
+    {
+      "temperature": 9111.627561154895,
+      "density": 8.302175681319769e+21,
+      "debye_length_true": 7.229489524166439e-08,
+      "point_id": 97
+    },
+    {
+      "temperature": 9545.484566618346,
+      "density": 9.111627561154868e+21,
+      "debye_length_true": 7.063283251301069e-08,
+      "point_id": 98
+    },
+    {
+      "temperature": 10000.0,
+      "density": 1e+22,
+      "debye_length_true": 6.90089806774598e-08,
+      "point_id": 99
+    }
+  ]
+}

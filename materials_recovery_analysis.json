@@ -1,0 +1,118 @@
+{
+  "schema_patterns": {
+    "complex_nested": 20,
+    "flat_properties": 2,
+    "array_format": 1,
+    "standard_schema": 9
+  },
+  "salvageable_count": 13,
+  "total_files": 34,
+  "materials_with_temps": 4,
+  "recovered_materials": {
+    "3Al2O3-2GeO2.json": {
+      "material_name": "3Al2O3-2GeO2",
+      "schema_pattern": "complex_nested",
+      "temperatures_found": {
+        "melting_point": 1550.0
+      },
+      "temp_count": 1,
+      "data_preview": "{'mechanical_properties': {'knoop_microhardness': {'metric': '1120', 'english': '1120', 'comments': 'kg/mm\u00b2'}}, 'thermal_properties': {'cte_linear': {'metric': {'value': '5.80 \u00b5m/m-\u00b0C', 'temperature':..."
+    },
+    "Al2O3_orundum_99.9.json": {
+      "material_name": "Al2O3 orundum 99.9",
+      "schema_pattern": "complex_nested",
+      "temperatures_found": {
+        "melting_point": 2054.0,
+        "boiling_point": 3000.0
+      },
+      "temp_count": 2,
+      "data_preview": "{'physical_properties': {'density': {'metric': '3.96 g/cc', 'english': '0.143 lb/in\u00b3'}, 'water_absorption': {'metric': '0.00 %', 'english': '0.00 %'}, 'a_lattice_constant': {'metric': '4.7591 \u00c5', 'eng..."
+    },
+    "Br2.json": {
+      "material_name": "Br2",
+      "schema_pattern": "complex_nested",
+      "temperatures_found": {
+        "critical_temperature": 315.0,
+        "critical_molar_volume": 127.0,
+        "melting_point": -7.2,
+        "boiling_point": 58.8
+      },
+      "temp_count": 4,
+      "data_preview": "{'title': 'Bromine, Br2', 'categories': ['Fluid', 'Pure Element'], 'material_notes': {'cas_number': '7726-95-6', 'physical_form': 'Red Liquid'}, 'keywords': ['Bromine', 'Br2'], 'physical_properties': ..."
+    },
+    "Carbon.json": {
+      "material_name": "Graphite, Carbon, C",
+      "schema_pattern": "standard_schema",
+      "temperatures_found": {},
+      "temp_count": 0,
+      "data_preview": "{'material': 'Graphite, Carbon, C', 'properties': {'physical': [{'property': 'Density', 'metric': '2.25 g/cc', 'english': '0.0813 lb/in\u00b3', 'comments': None}, {'property': 'Specific Surface Area', 'met..."
+    },
+    "Chlorine.json": {
+      "material_name": "Chlorine, Cl\u2082",
+      "schema_pattern": "standard_schema",
+      "temperatures_found": {},
+      "temp_count": 0,
+      "data_preview": "{'material': 'Chlorine, Cl\u2082', 'properties': {'physical': [{'property': 'Density', 'metric': '0.00321 g/cc', 'english': '0.000116 lb/in\u00b3', 'comments': 'Gas at STP'}, {'property': 'Molecular Weight', 'm..."
+    },
+    "Diamond.json": {
+      "material_name": "Diamond, Natural",
+      "schema_pattern": "standard_schema",
+      "temperatures_found": {},
+      "temp_count": 0,
+      "data_preview": "{'material': 'Diamond, Natural', 'properties': {'physical': [{'property': 'Density', 'metric': '3.515 g/cc', 'english': '0.127 lb/in^3', 'comments': 'Type IIa natural diamond'}], 'mechanical': [{'prop..."
+    },
+    "Diamond_Polycrystalline.json": {
+      "material_name": "Diamond, Polycrystalline",
+      "schema_pattern": "standard_schema",
+      "temperatures_found": {},
+      "temp_count": 0,
+      "data_preview": "{'material': 'Diamond, Polycrystalline', 'properties': {'physical': [{'property': 'Density', 'metric': '3.10 - 3.40 g/cc', 'english': '0.112 - 0.123 lb/in\u00b3', 'comments': 'Polycrystalline variation'}],..."
+    },
+    "Diamond_Synthetic.json": {
+      "material_name": "Diamond, Synthetic",
+      "schema_pattern": "standard_schema",
+      "temperatures_found": {},
+      "temp_count": 0,
+      "data_preview": "{'material': 'Diamond, Synthetic', 'properties': {'physical': [{'property': 'Density', 'metric': '3.20 - 3.52 g/cc', 'english': '0.116 - 0.127 lb/in\u00b3', 'comments': None}], 'mechanical': [{'property': ..."
+    },
+    "Fe.json": {
+      "material_name": "Iron, Fe",
+      "schema_pattern": "standard_schema",
+      "temperatures_found": {},
+      "temp_count": 0,
+      "data_preview": "{'material': 'Iron, Fe', 'properties': {'physical': [{'property': 'Density', 'metric': '7.87 g/cc', 'english': '0.284 lb/in\u00b3', 'comments': None}], 'chemical': [{'property': 'Atomic Mass', 'metric': '5..."
+    },
+    "H2.json": {
+      "material_name": "Hydrogen, H\u2082",
+      "schema_pattern": "standard_schema",
+      "temperatures_found": {},
+      "temp_count": 0,
+      "data_preview": "{'material': 'Hydrogen, H\u2082', 'properties': {'physical': [{'property': 'Density', 'metric': '0.0000820 g/cc', 'english': '0.00000296 lb/in\u00b3', 'comments': 'At standard conditions'}, {'property': 'Molecu..."
+    },
+    "Ni.json": {
+      "material_name": "Nickel, Ni",
+      "schema_pattern": "standard_schema",
+      "temperatures_found": {},
+      "temp_count": 0,
+      "data_preview": "{'material': 'Nickel, Ni', 'properties': {'physical': [{'property': 'Density', 'metric': '8.908 g/cc', 'english': '0.322 lb/in^3', 'comments': 'At room temperature'}], 'chemical': [{'property': 'Atomi..."
+    },
+    "TaC.json": {
+      "material_name": "TaC",
+      "schema_pattern": "complex_nested",
+      "temperatures_found": {
+        "Melting Point": 3965.0,
+        "Boiling Point": 4780.0,
+        "Boiling Point_alt": 5500.0
+      },
+      "temp_count": 3,
+      "data_preview": "{'Tantalum Carbide, TaC': {'Physical Properties': {'Density': {'Metric': '14.3 g/cc', 'English': '0.517 lb/in\u00b3', 'Comments': ''}, 'Molecular Weight': {'Metric': '192.959 g/mol', 'English': '192.959 g/..."
+    },
+    "Tungsten.json": {
+      "material_name": "Tungsten, W",
+      "schema_pattern": "standard_schema",
+      "temperatures_found": {},
+      "temp_count": 0,
+      "data_preview": "{'material': 'Tungsten, W', 'properties': {'physical': [{'property': 'Density', 'metric': '19.3 g/cc', 'english': '0.697 lb/in\u00b3', 'comments': None}, {'property': 'Lattice Constant', 'metric': '3.165 \u00c5..."
+    }
+  }
+}

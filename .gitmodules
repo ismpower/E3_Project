@@ -1,0 +1,3 @@
+[submodule "external/mdqt-sim"]
+	path = external/mdqt-sim
+	url = https://github.com/vrinceanu/plasma-MDQT-simulation.git

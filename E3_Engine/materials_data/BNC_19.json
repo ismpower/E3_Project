@@ -1,0 +1,97 @@
+{
+  "tabTitle": "Alliance BCN-19 Compression Bonded Neodymium Iron Boron Magnet",
+  "selection": {
+    "physicalProperties": [
+      {
+        "property": "Density",
+        "metric": "5.60 - 6.00 g/cc",
+        "english": "0.202 - 0.217 lb/in³",
+        "comments": null
+      }
+    ],
+    "mechanicalProperties": [
+      {
+        "property": "Hardness, Rockwell R",
+        "metric": "80 - 120",
+        "english": "80 - 120",
+        "comments": null
+      },
+      {
+        "property": "Modulus of Elasticity",
+        "metric": "28.0 GPa",
+        "english": "4060 ksi",
+        "comments": null
+      },
+      {
+        "property": "Compressive Strength",
+        "metric": "27.0 - 33.0 MPa",
+        "english": "3920 - 4790 psi",
+        "comments": null
+      }
+    ],
+    "electricalProperties": [
+      {
+        "property": "Electrical Resistivity",
+        "metric": "0.0250 ohm-cm",
+        "english": "0.0250 ohm-cm",
+        "comments": null
+      },
+      {
+        "property": "Magnetic Coercive Force, Hc",
+        "metric": "5200 - 6200 Oe",
+        "english": "5200 - 6200 Oe",
+        "comments": null
+      },
+      {
+        "property": "Magnetic Coercive Force, Hc",
+        "metric": "11000 - 13500 Oe",
+        "english": "11000 - 13500 Oe",
+        "comments": "Intrinsic"
+      },
+      {
+        "property": "Magnetic Remanence, Br",
+        "metric": "6500 - 6900 Gauss",
+        "english": "6500 - 6900 Gauss",
+        "comments": null
+      },
+      {
+        "property": "Magnetic Maximum Energy Product, BH",
+        "metric": "9.0 - 10 MGOe",
+        "english": "9.0 - 10 MGOe",
+        "comments": null
+      },
+      {
+        "property": "Curie Temperature",
+        "metric": "<= 330 °C",
+        "english": "<= 626 °F",
+        "comments": null
+      }
+    ],
+    "thermalProperties": [
+      {
+        "property": "Maximum Service Temperature, Air",
+        "metric": "<= 140 °C",
+        "english": "<= 284 °F",
+        "comments": "Long term"
+      },
+      {
+        "property": "Maximum Service Temperature, Air",
+        "metric": "<= 180 °C",
+        "english": "<= 356 °F",
+        "comments": "Short term"
+      }
+    ],
+    "descriptiveProperties": [
+      {
+        "property": "Reversible Temperature Coefficients",
+        "value": "-0.14",
+        "unit": "Bd. %/°C"
+      },
+      {
+        "property": "Reversible Temperature Coefficients",
+        "value": "-0.36",
+        "unit": "Hd. %/°C"
+      }
+    ]
+  }
+}

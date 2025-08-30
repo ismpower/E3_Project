@@ -1,0 +1,81 @@
+{
+  "material": "Bromine, Br₂",
+  "properties": {
+    "physical": [
+      {
+        "property": "Density",
+        "metric": "3.1028 g/cc",
+        "english": "0.11210 lb/in^3",
+        "comments": "Red liquid at room temperature"
+      },
+      {
+        "property": "Molecular Weight",
+        "metric": "159.808 g/mol",
+        "english": "159.808 g/mol",
+        "comments": null
+      },
+      {
+        "property": "Viscosity",
+        "metric": "0.996 cP",
+        "english": "0.996 cP",
+        "comments": "Dynamic viscosity at 20°C"
+      }
+    ],
+    "chemical": [
+      {
+        "property": "Atomic Number",
+        "metric": "35",
+        "english": "35",
+        "comments": "Per bromine atom"
+      },
+      {
+        "property": "Atomic Mass",
+        "metric": "79.904",
+        "english": "79.904",
+        "comments": "Per bromine atom"
+      }
+    ],
+    "thermal": [
+      {
+        "property": "Melting Point",
+        "metric": "-7.20 °C",
+        "english": "19.0 °F",
+        "comments": null
+      },
+      {
+        "property": "Boiling Point",
+        "metric": "58.8 °C",
+        "english": "138 °F",
+        "comments": null
+      },
+      {
+        "property": "Critical Temperature",
+        "metric": "315 °C",
+        "english": "599 °F",
+        "comments": null
+      },
+      {
+        "property": "Critical Molar Volume",
+        "metric": "127 cm³/mol",
+        "english": "127 cm³/mol",
+        "comments": null
+      }
+    ],
+    "component_elements": [
+      {
+        "element": "Bromine, Br",
+        "metric": "100 %",
+        "english": "100 %",
+        "comments": null
+      }
+    ],
+    "descriptive": {
+      "CAS_Number": "7726-95-6",
+      "physical_form": "Red liquid",
+      "state": "Liquid at STP",
+      "color": "Red-brown",
+      "odor": "Pungent, irritating",
+      "toxicity": "Highly toxic and corrosive"
+    }
+  }
+}
