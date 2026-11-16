@@ -1,0 +1,91 @@
+name: Code Scan
+
+# Drop-in for any repo. It looks at what's inside and only runs the
+# checks that apply: Python, Docker, JavaScript (files or inside HTML).
+# Nothing to edit.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    name: Code Scan
+    runs-on: ubuntu-latest   # change to: self-hosted   once your runner is up
+    steps:
+      - uses: actions/checkout@v4
+
+      # ── What's in this repo? ──────────────────────────────
+      - name: Detect languages
+        id: detect
+        run: |
+          skip='/_archive/|/node_modules/|/\.venv/|/venv/'
+          has() { git ls-files "$@" | grep -Ev "$skip" | grep -q . && echo true || echo false; }
+          echo "python=$(has '*.py')"                    >> "$GITHUB_OUTPUT"
+          echo "pyreqs=$(has '*requirements*.txt')"      >> "$GITHUB_OUTPUT"
+          echo "docker=$(has '*Dockerfile*')"            >> "$GITHUB_OUTPUT"
+          echo "web=$(has '*.js' '*.html' '*.htm')"      >> "$GITHUB_OUTPUT"
+          cat "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # ── Python ────────────────────────────────────────────
+      - name: "Python: risky code (bandit)"
+        if: steps.detect.outputs.python == 'true'
+        continue-on-error: true      # warns, doesn't block
+        run: |
+          pip install -q bandit
+          bandit -r . -x './_archive,./node_modules,./.venv,./venv' -ll
+
+      - name: "Python: vulnerable libraries (pip-audit)"
+        if: steps.detect.outputs.pyreqs == 'true'
+        continue-on-error: true      # warns, doesn't block
+        run: |
+          pip install -q pip-audit
+          git ls-files '*requirements*.txt' | grep -Ev '/_archive/' | while read -r req; do
+            echo "── $req"
+            pip-audit -r "$req" || echo "::warning file=$req::vulnerable or unresolvable dependencies"
+          done
+
+      # ── Docker ────────────────────────────────────────────
+      - name: "Docker: Dockerfile mistakes (hadolint)"
+        if: steps.detect.outputs.docker == 'true'
+        run: |                       # blocks on real errors only
+          curl -sSL -o /tmp/hadolint \
+            https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64
+          chmod +x /tmp/hadolint
+          mapfile -t files < <(git ls-files '*Dockerfile*' | grep -Ev '/_archive/')
+          /tmp/hadolint --failure-threshold error \
+            --ignore DL3008 --ignore DL3009 --ignore DL3015 "${files[@]}"
+
+      # ── JavaScript (in .js files AND inside <script> in HTML) ──
+      - name: "JavaScript/HTML: risky patterns (semgrep)"
+        if: steps.detect.outputs.web == 'true'
+        continue-on-error: true      # warns, doesn't block
+        run: |
+          pip install -q semgrep
+          semgrep scan --metrics=off \
+            --config p/javascript --config p/xss \
+            --exclude _archive --exclude node_modules \
+            .
+
+      - name: "HTML: outside scripts without integrity check"
+        if: steps.detect.outputs.web == 'true'
+        continue-on-error: true      # warns, doesn't block
+        run: |
+          # <script src="https://cdn..."> without integrity= means: if that CDN
+          # gets hacked, its code runs in your page.
+          found=$(git ls-files '*.html' '*.htm' | grep -Ev '/_archive/' \
+            | xargs -r grep -nE '<script[^>]+src="https?://' | grep -v 'integrity=' || true)
+          if [ -n "$found" ]; then
+            echo "::warning::External scripts without integrity= :"
+            echo "$found"
+          else
+            echo "✅ no unprotected external scripts"
+          fi
